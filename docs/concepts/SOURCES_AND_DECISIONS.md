@@ -18,6 +18,8 @@ Aufgenommen / zuletzt abgeglichen: 22.10.2026. Aktuelle Nutzerentscheidungen hab
 | S8 | Vom Nutzer vorgelegte Management-Antwort und anschliessende Klärung. | Aufwand ca. 10–30, vereinzelt 45 Minuten; zunächst ca. 50 % weniger Nacharbeit als ungemessene Einschätzung. Technisches Logging ist nicht mit Jira-Projektarbeit gleichzusetzen. |
 | S9 | Nutzer beauftragt umfassendes Repository-Review und entwicklungsorientierte Verdichtung. | Aktive Entwicklungsunterlagen, Beispielindex und Konzeptkontext trennen; menschliche und AI-Entwicklung unterstützen. |
 
+S10: Am 22.10.2026 liefert der Nutzer vier weitere Buchungs-JSONs und beauftragt Anonymisierung, fiktive Preise und Veröffentlichung als Beispiele. Sie sind als Beispiele 03–06 ergänzt; bestehende Beispiele unverändert. Der [Beispielkatalog](../../examples/nezasa/README.md) dokumentiert Abdeckung, synthetisierte Inhalte und Prüfungen.
+
 S8 verweist auf einen [Arbeitsprozess in Confluence](https://switzerlandtravelcentre.atlassian.net/wiki/x/AgDlIQ) und SharePoint. Das sind Nutzerangaben zu Ablageorten; die Inhalte wurden nicht geprüft.
 
 S2s bisheriger Reiseablauf ist ausdrücklich keine Benchmark/Zielvorlage. Der historische JSON-Abdruck mit Reisezeitraum 2024 ist keine direkt ausführbare Fixture. Für Entwicklung die maschinenlesbaren Beispiele aus S4 verwenden.

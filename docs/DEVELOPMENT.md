@@ -50,7 +50,7 @@ Ein manueller JSON-Export ist kein notwendiger Produktionsschritt. Der bestehend
 ## Mit den Daten arbeiten
 
 - Zuerst eine [Beispielbuchung](../examples/nezasa/README.md) wählen. Komponenten über die Ressourcenbeziehungen auflösen; mehrere Zimmer im selben Hotel nicht automatisch zusammenfassen.
-- Gesamtstatus und Leistungsstatus getrennt behandeln. Beide Beispiele enthalten Booked und Open.
+- Gesamtstatus und Leistungsstatus getrennt behandeln. Alle sechs Beispiele enthalten Booked und Open; Deutsch, Englisch und Französisch sowie Kinder und Zahlungstransaktionen sind abgedeckt.
 - Kalenderdaten, Zeitstempel und Zeitzonen nicht ungeprüft gleichsetzen. Tageszuordnung und Darstellung brauchen abgestimmte Regeln.
 - Erweiterte Inhalte getrennt von den Quelldaten verarbeiten; keine Fixtures durch Anreicherung umschreiben.
 - Das [Inhaltsbeispiel](../examples/content/README.md) demonstriert nur den vorgeschlagenen Release-Vertrag. Es ist nicht mit den Buchungsbeispielen verknüpft.

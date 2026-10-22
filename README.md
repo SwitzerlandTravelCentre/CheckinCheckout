@@ -34,6 +34,10 @@ Die aktuelle Grundlage ist in [MVP](docs/MVP.md) konkretisiert; die Herkunft der
 
 - [Buchung 01](examples/nezasa/booking_example_01.json): 2 Reisende, 14 Komponenten.
 - [Buchung 02](examples/nezasa/booking_example_02.json): 4 Reisende, 23 Komponenten.
+- [Buchung 03](examples/nezasa/booking_example_03.json): Englisch, 5 Reisende mit Kindern, 19 Komponenten.
+- [Buchung 04](examples/nezasa/booking_example_04.json): Englisch, 2 Reisende, 17 Komponenten.
+- [Buchung 05](examples/nezasa/booking_example_05.json): Französisch, 4 Reisende mit Kindern, 4 Komponenten.
+- [Buchung 06](examples/nezasa/booking_example_06.json): Deutsch, 3 Reisende, 8 Komponenten und Zahlungstransaktion.
 - [Inhalts-Release](examples/content/README.md): synthetischer Katalog und Package-Mapping, getrennt von den Buchungsbeispielen.
 
-Beide Buchungen enthalten auch offene Leistungen. Preise und personenbezogene Angaben sind synthetisch; die Dateien sind keine Referenz für kaufmännische Berechnungen. Reale Fetcher-Exporte und Zugangsdaten gehören nicht ins öffentliche Git.
+Alle sechs Buchungen enthalten auch offene Leistungen. Preise und personenbezogene Angaben sind synthetisch; die Dateien sind keine Referenz für kaufmännische Berechnungen. Reale Fetcher-Exporte und Zugangsdaten gehören nicht ins öffentliche Git.

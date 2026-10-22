@@ -63,7 +63,7 @@ class FetcherIntegrationTests(unittest.TestCase):
 
     def test_example_exports_preserve_all_json_data(self):
         examples = sorted((ROOT / "examples/nezasa").glob("booking_example_*.json"))
-        self.assertEqual(len(examples), 2)
+        self.assertEqual(len(examples), 6)
         for source in examples:
             with self.subTest(example=source.name), tempfile.TemporaryDirectory() as temp:
                 payload = json.loads(source.read_text(encoding="utf-8"))

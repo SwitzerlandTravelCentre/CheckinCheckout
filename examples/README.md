@@ -6,11 +6,15 @@ Alle hier abgelegten Daten sind für das öffentliche Repository bereinigt oder 
 | --- | --- | --- |
 | Nezasa-Struktur verstehen, Parser beginnen | [Buchung 01](nezasa/booking_example_01.json) | 2 Reisende, 14 Komponenten; kleineres Beispiel. |
 | Weitere Zimmer-/Leistungskonstellationen verarbeiten | [Buchung 02](nezasa/booking_example_02.json) | 4 Reisende, 23 Komponenten; mehr Unterkunftskomponenten und Zusatzleistungen. |
+| Englische Familienreise, mehrere Zimmer | [Buchung 03](nezasa/booking_example_03.json) | 5 Reisende, davon 2 Kinder, 19 Komponenten. |
+| Englische Reise mit vielen offenen Leistungen | [Buchung 04](nezasa/booking_example_04.json) | 2 Reisende, 17 Komponenten; 9 davon Open. |
+| Kleinen französischen Familienfall verarbeiten | [Buchung 05](nezasa/booking_example_05.json) | 4 Reisende, davon 2 Kinder, 4 Komponenten. |
+| Zahlungstransaktion und String-Beträge lesen | [Buchung 06](nezasa/booking_example_06.json) | 3 Reisende, 8 Komponenten; Deutsch. |
 | Feldpfade und Grenzen der Buchungsbeispiele verstehen | [Nezasa-Lesehilfe](nezasa/README.md) | Struktur, Status, Anonymisierung und nicht abgedeckte Fälle. |
 | Inhaltsabruf und Release-Prüfung entwickeln | [Inhaltsrelease](content/README.md) | Freigabezeiger, Manifest, Katalog und fiktives Package-Mapping. |
 | Vorhandenen JSON-Export offline prüfen | [Fetcher-Tests](../tests/test_nezasa_fetcher.py) | HTTP-Simulation, vollständiger JSON-Roundtrip und Fehlerfälle. |
 
-Die beiden Buchungen und das Inhaltsrelease sind **unabhängige Beispiele**. Die fiktive Mapping-Referenz des Inhaltsrelease passt nicht automatisch zu den Buchungen. Ein gemeinsames End-to-End-Beispiel muss später ausdrücklich erstellt werden.
+Die sechs Buchungen und das Inhaltsrelease sind **unabhängige Beispiele**. Die fiktive Mapping-Referenz des Inhaltsrelease passt nicht automatisch zu den Buchungen. Ein gemeinsames End-to-End-Beispiel muss später ausdrücklich erstellt werden.
 
 Es gibt noch kein freigegebenes DOCX-Template und kein erwartetes Word-Ausgabedokument als Testreferenz. Die Buchungen sind keine vollständige Nezasa-Schemaspezifikation. Preise sind fiktiv und rechnerisch nicht abgestimmt.
 

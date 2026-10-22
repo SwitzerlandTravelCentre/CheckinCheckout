@@ -1,0 +1,1233 @@
+{
+  "data": {
+    "type": "booking",
+    "id": "demo-06-ref-0001",
+    "attributes": {
+      "tourOperator": "demo-organisation-06",
+      "refId": "demo-06-ref-0001",
+      "travelAgencyRefId": "demo-06-ref-0002",
+      "travelAgentExternalReferences": [],
+      "travelAgencyShortName": "demo-organisation-06",
+      "startDate": "2027-06-26",
+      "endDate": "2027-06-29",
+      "pax": {
+        "contact": {
+          "firstName": "Demo06Person01",
+          "lastName": "ExampleFamily06",
+          "gender": "Male",
+          "countryCode": "CH",
+          "city": "Example City",
+          "postalCode": "0000",
+          "street1": "Example Street 1",
+          "phone": "+00 000 000 0000",
+          "email": "contact06@example.invalid"
+        },
+        "paxInfo": [
+          {
+            "firstName": "Demo06Person01",
+            "lastName": "ExampleFamily06",
+            "gender": "Male",
+            "birthDate": "1993-01-01",
+            "age": 34,
+            "nationality": "Swiss",
+            "nationalityCode": "CH",
+            "isMainContact": false,
+            "loyaltyProgramMemberships": [],
+            "tags": [
+              "demo-tag-06"
+            ],
+            "address": {},
+            "refId": "demo-06-ref-0003"
+          },
+          {
+            "firstName": "Demo06Person02",
+            "lastName": "ExampleFamily06",
+            "gender": "Female",
+            "birthDate": "1989-01-01",
+            "age": 38,
+            "nationality": "Swiss",
+            "nationalityCode": "CH",
+            "loyaltyProgramMemberships": [],
+            "tags": [
+              "demo-tag-06"
+            ],
+            "refId": "demo-06-ref-0004"
+          },
+          {
+            "firstName": "Demo06Person03",
+            "lastName": "ExampleFamily06",
+            "gender": "Female",
+            "birthDate": "1985-01-01",
+            "age": 42,
+            "nationality": "Swiss",
+            "nationalityCode": "CH",
+            "loyaltyProgramMemberships": [],
+            "tags": [
+              "demo-tag-06"
+            ],
+            "refId": "demo-06-ref-0005"
+          }
+        ]
+      },
+      "lang": "de",
+      "distributionChannelShortName": "demo-organisation-06",
+      "optIns": [],
+      "templateRefId": "demo-06-ref-0006",
+      "templateTags": [],
+      "templateExternalReferences": [],
+      "travelAgency": "demo-organisation-06",
+      "travelAgent": "contact06@example.invalid",
+      "travelAgentFirstName": "DemoAgent",
+      "travelAgentLastName": "Example06",
+      "travelAgencyRefs": [],
+      "bookingType": "Booking",
+      "bookingClient": "demo-organisation-06",
+      "caseId": "demo-06-ref-0007",
+      "externalCaseId": "demo-06-ref-0007",
+      "externalRefId": "demo-06-ref-0008",
+      "modules": [
+        {
+          "refId": "demo-06-ref-0009",
+          "alias": "Synthetischer Beispieltext fuer Reiseunterlagen.",
+          "startDate": "2027-06-26",
+          "endDate": "2027-06-29",
+          "tags": [
+            "demo-tag-06"
+          ],
+          "remarks": ""
+        }
+      ],
+      "alias": "Synthetischer Beispieltext fuer Reiseunterlagen.",
+      "url": "https://booking.example.invalid/demo-06/link-001",
+      "price": {
+        "salesPrice": {
+          "amount": 6795,
+          "currency": "EUR"
+        },
+        "unroundedSalesPrice": {
+          "amount": 998.0,
+          "currency": "EUR"
+        },
+        "customerSalesPrice": {
+          "amount": 6795,
+          "currency": "EUR"
+        },
+        "unroundedCustomerSalesPrice": {
+          "amount": 998.0,
+          "currency": "EUR"
+        },
+        "netPrices": [
+          {
+            "amount": 7280.0,
+            "currency": "CHF"
+          }
+        ],
+        "netPriceConsolidated": {
+          "amount": 7280.0,
+          "currency": "CHF"
+        }
+      },
+      "surcharges": [],
+      "startCode": "ZRH",
+      "countryCodes": [
+        "CH"
+      ],
+      "bookingState": "BookingCompleted",
+      "purchaseCancellationFees": [
+        {
+          "from": "2027-01-14",
+          "to": "2027-06-04",
+          "cost": [
+            {
+              "amount": 0,
+              "currency": "CHF"
+            }
+          ]
+        },
+        {
+          "from": "2027-06-05",
+          "to": "2027-06-12",
+          "cost": [
+            {
+              "amount": 1577,
+              "currency": "CHF"
+            }
+          ]
+        },
+        {
+          "from": "2027-06-13",
+          "to": "2027-06-24",
+          "cost": [
+            {
+              "amount": 8743.0,
+              "currency": "CHF"
+            }
+          ]
+        },
+        {
+          "from": "2027-06-25",
+          "to": "2027-06-27",
+          "cost": [
+            {
+              "amount": 4446.0,
+              "currency": "CHF"
+            }
+          ]
+        },
+        {
+          "from": "2027-06-28",
+          "to": "2027-06-28",
+          "cost": [
+            {
+              "amount": 765.0,
+              "currency": "CHF"
+            }
+          ]
+        },
+        {
+          "from": "2027-06-29",
+          "to": "2027-06-29",
+          "cost": [
+            {
+              "amount": 5123.0,
+              "currency": "CHF"
+            }
+          ]
+        }
+      ],
+      "payment": {
+        "coveredAmount": {
+          "amount": 4204,
+          "currency": "EUR"
+        },
+        "uncoveredAmount": {
+          "amount": 7505,
+          "currency": "EUR"
+        },
+        "transactions": [
+          {
+            "transactionRefId": "demo-06-ref-0010",
+            "externalRefId": "demo-06-ref-0010",
+            "status": "Closed",
+            "amount": {
+              "currency": "EUR",
+              "value": "4204.00",
+              "amount": "4204.00"
+            },
+            "transactionType": "Payment",
+            "paymentMethod": "Datatrans",
+            "paymentServiceProviderPaymentMethod": "VIS",
+            "paymentServiceProviderId": "demo-06-ref-0010",
+            "created": "2027-01-14T14:56:09.142Z",
+            "valuta": "2027-01-14T14:56:11.447Z"
+          }
+        ],
+        "restPaymentLink": "https://booking.example.invalid/demo-06/link-002",
+        "downPayment": {
+          "amount": 4204,
+          "currency": "EUR"
+        }
+      },
+      "created": "2027-01-14T13:51:35.297Z",
+      "modified": "2027-01-14T14:56:24.458Z",
+      "firstBooked": "2027-01-14T14:56:11.218Z",
+      "lastBooked": "2027-01-14T14:56:11.218Z",
+      "distributionChannel": "demo-organisation-06",
+      "includedItems": "Synthetischer Beispieltext fuer Reiseunterlagen.",
+      "tourType": "Individual",
+      "urls": {
+        "b2cPlanner": "https://booking.example.invalid/demo-06/link-003"
+      },
+      "uniqueServices": {
+        "accommodations": 3,
+        "activities": 2,
+        "baseServices": 2,
+        "upsellItems": 1
+      },
+      "atolPackageType": {
+        "classification": "not_atol",
+        "atolRequired": false
+      }
+    },
+    "relationships": {
+      "components": {
+        "data": [
+          {
+            "type": "component",
+            "id": "demo-06-ref-0011"
+          },
+          {
+            "type": "component",
+            "id": "demo-06-ref-0012"
+          },
+          {
+            "type": "component",
+            "id": "demo-06-ref-0013"
+          },
+          {
+            "type": "component",
+            "id": "demo-06-ref-0014"
+          },
+          {
+            "type": "component",
+            "id": "demo-06-ref-0015"
+          },
+          {
+            "type": "component",
+            "id": "demo-06-ref-0016"
+          },
+          {
+            "type": "component",
+            "id": "demo-06-ref-0017"
+          },
+          {
+            "type": "component",
+            "id": "demo-06-ref-0018"
+          }
+        ]
+      }
+    }
+  },
+  "included": [
+    {
+      "type": "component",
+      "id": "demo-06-ref-0011",
+      "attributes": {
+        "desc": "Synthetischer Beispieltext fuer Reiseunterlagen.",
+        "categoryName": "3-Gang Menü",
+        "supplier": {
+          "id": "demo-06-ref-0019",
+          "refId": "demo-06-ref-0020",
+          "name": "Example Supplier 06",
+          "externalReferences": [
+            {
+              "id": "demo-06-ref-0021",
+              "system": "demo-system"
+            }
+          ],
+          "email": "contact06@example.invalid",
+          "bookingReference": "demo-06-ref-0022"
+        },
+        "isOnRequest": false,
+        "status": "Booked",
+        "type": "upsell-item",
+        "productRefId": "demo-06-ref-0023",
+        "productSupplier": "demo-06-ref-0002",
+        "price": {
+          "salesPrice": {
+            "amount": 1929.0,
+            "currency": "EUR",
+            "fx": {
+              "originalCurrency": "CHF",
+              "rate": 1.98
+            }
+          },
+          "netPrice": {
+            "amount": 2837.0,
+            "currency": "CHF"
+          },
+          "details": {
+            "supplierPurchasePrice": {
+              "amount": 2837.0,
+              "currency": "CHF"
+            },
+            "markups": [
+              {
+                "markupType": "TourOperatorBase",
+                "priceWithoutMarkup": {
+                  "amount": 2837.0,
+                  "currency": "CHF"
+                },
+                "priceWithMarkup": {
+                  "amount": 2837.0,
+                  "currency": "CHF"
+                },
+                "totalMarkup": {
+                  "amount": 0,
+                  "currency": "CHF"
+                }
+              },
+              {
+                "markupType": "TourOperatorAgency",
+                "priceWithoutMarkup": {
+                  "amount": 2837.0,
+                  "currency": "CHF"
+                },
+                "priceWithMarkup": {
+                  "amount": 323.0,
+                  "currency": "CHF"
+                },
+                "totalMarkup": {
+                  "amount": 2443.0,
+                  "currency": "CHF"
+                }
+              }
+            ],
+            "purchaseAmountExcludedFromMarkups": {
+              "amount": 0,
+              "currency": "CHF"
+            }
+          }
+        },
+        "productName": "Mittagessen Glacier Express",
+        "cancellationPeriods": [],
+        "isAdhoc": false
+      }
+    },
+    {
+      "type": "component",
+      "id": "demo-06-ref-0012",
+      "attributes": {
+        "refundable": true,
+        "startDateTime": "2027-06-26T00:00:00.000Z",
+        "endDateTime": "2027-06-29T23:59:59.999Z",
+        "isOnRequest": false,
+        "status": "Open",
+        "type": "baseService",
+        "productRefId": "demo-06-ref-0024",
+        "moduleRefId": "demo-06-ref-0009",
+        "desc": "Synthetischer Beispieltext fuer Reiseunterlagen.",
+        "productSupplier": "demo-06-ref-0002",
+        "price": {
+          "salesPrice": {
+            "amount": 7947.0,
+            "currency": "EUR",
+            "fx": {
+              "originalCurrency": "CHF",
+              "rate": 1.98
+            }
+          },
+          "netPrice": {
+            "amount": 742,
+            "currency": "CHF"
+          },
+          "details": {
+            "supplierPurchasePrice": {
+              "amount": 742,
+              "currency": "CHF"
+            },
+            "markups": [
+              {
+                "markupType": "TourOperatorBase",
+                "priceWithoutMarkup": {
+                  "amount": 742,
+                  "currency": "CHF"
+                },
+                "priceWithMarkup": {
+                  "amount": 742,
+                  "currency": "CHF"
+                },
+                "totalMarkup": {
+                  "amount": 0,
+                  "currency": "CHF"
+                }
+              },
+              {
+                "markupType": "TourOperatorAgency",
+                "priceWithoutMarkup": {
+                  "amount": 742,
+                  "currency": "CHF"
+                },
+                "priceWithMarkup": {
+                  "amount": 6623.0,
+                  "currency": "CHF"
+                },
+                "totalMarkup": {
+                  "amount": 3079.0,
+                  "currency": "CHF"
+                }
+              }
+            ],
+            "purchaseAmountExcludedFromMarkups": {
+              "amount": 0,
+              "currency": "CHF"
+            }
+          }
+        },
+        "productExternalRefId": "",
+        "supplier": {
+          "id": "demo-06-ref-0025",
+          "refId": "demo-06-ref-0026",
+          "name": "Example Supplier 06",
+          "externalReferences": [
+            {
+              "id": "demo-06-ref-0027",
+              "system": "demo-system"
+            }
+          ],
+          "email": "contact06@example.invalid"
+        },
+        "productName": "Swiss Travel Pass 3 Tage",
+        "cancellationPeriods": [],
+        "isAdhoc": false
+      }
+    },
+    {
+      "type": "component",
+      "id": "demo-06-ref-0013",
+      "attributes": {
+        "refundable": true,
+        "startDateTime": "2027-06-26T00:00:00.000Z",
+        "endDateTime": "2027-06-29T23:59:59.999Z",
+        "supplier": {
+          "id": "demo-06-ref-0028",
+          "refId": "demo-06-ref-0029",
+          "name": "Example Supplier 06",
+          "externalReferences": [
+            {
+              "id": "demo-06-ref-0030",
+              "system": "demo-system"
+            }
+          ],
+          "email": "contact06@example.invalid"
+        },
+        "isOnRequest": false,
+        "status": "Open",
+        "type": "baseService",
+        "productRefId": "demo-06-ref-0031",
+        "moduleRefId": "demo-06-ref-0009",
+        "desc": "Synthetischer Beispieltext fuer Reiseunterlagen.",
+        "productSupplier": "demo-06-ref-0002",
+        "price": {
+          "salesPrice": {
+            "amount": 4303.0,
+            "currency": "EUR",
+            "fx": {
+              "originalCurrency": "CHF",
+              "rate": 1.98
+            }
+          },
+          "netPrice": {
+            "amount": 5361,
+            "currency": "CHF"
+          },
+          "details": {
+            "supplierPurchasePrice": {
+              "amount": 5361,
+              "currency": "CHF"
+            },
+            "markups": [
+              {
+                "markupType": "TourOperatorBase",
+                "priceWithoutMarkup": {
+                  "amount": 5361,
+                  "currency": "CHF"
+                },
+                "priceWithMarkup": {
+                  "amount": 5361,
+                  "currency": "CHF"
+                },
+                "totalMarkup": {
+                  "amount": 0,
+                  "currency": "CHF"
+                }
+              },
+              {
+                "markupType": "TourOperatorAgency",
+                "priceWithoutMarkup": {
+                  "amount": 5361,
+                  "currency": "CHF"
+                },
+                "priceWithMarkup": {
+                  "amount": 9157.0,
+                  "currency": "CHF"
+                },
+                "totalMarkup": {
+                  "amount": 2138.0,
+                  "currency": "CHF"
+                }
+              }
+            ],
+            "purchaseAmountExcludedFromMarkups": {
+              "amount": 0,
+              "currency": "CHF"
+            }
+          }
+        },
+        "productName": "Digital Swiss Coupon Pass",
+        "cancellationPeriods": [],
+        "isAdhoc": false
+      }
+    },
+    {
+      "type": "component",
+      "id": "demo-06-ref-0014",
+      "attributes": {
+        "refundable": true,
+        "startDateTime": "2027-06-26T12:00:00.000+02:00",
+        "isOnRequest": false,
+        "componentVoucherUrl": "https://booking.example.invalid/demo-06/link-004",
+        "status": "Booked",
+        "remarks": "Synthetischer Beispieltext fuer Reiseunterlagen.",
+        "productRefId": "demo-06-ref-0032",
+        "moduleRefId": "demo-06-ref-0009",
+        "desc": "Synthetischer Beispieltext fuer Reiseunterlagen.",
+        "endDateTime": "2027-06-27T12:00:00.000+02:00",
+        "categoryName": "Zweibettzimmer Südbalkon",
+        "productSupplier": "demo-06-ref-0002",
+        "price": {
+          "salesPrice": {
+            "amount": 8858.0,
+            "currency": "EUR",
+            "fx": {
+              "originalCurrency": "CHF",
+              "rate": 1.98
+            }
+          },
+          "netPrice": {
+            "amount": 1577,
+            "currency": "CHF"
+          },
+          "details": {
+            "supplierPurchasePrice": {
+              "amount": 1577,
+              "currency": "CHF"
+            },
+            "markups": [
+              {
+                "markupType": "TourOperatorBase",
+                "priceWithoutMarkup": {
+                  "amount": 1577,
+                  "currency": "CHF"
+                },
+                "priceWithMarkup": {
+                  "amount": 1577,
+                  "currency": "CHF"
+                },
+                "totalMarkup": {
+                  "amount": 0,
+                  "currency": "CHF"
+                }
+              },
+              {
+                "markupType": "TourOperatorAgency",
+                "priceWithoutMarkup": {
+                  "amount": 1577,
+                  "currency": "CHF"
+                },
+                "priceWithMarkup": {
+                  "amount": 5343.0,
+                  "currency": "CHF"
+                },
+                "totalMarkup": {
+                  "amount": 335.0,
+                  "currency": "CHF"
+                }
+              }
+            ],
+            "purchaseAmountExcludedFromMarkups": {
+              "amount": 0,
+              "currency": "CHF"
+            }
+          }
+        },
+        "productExternalRefId": "demo-06-opaque-0001",
+        "supplier": {
+          "id": "demo-06-ref-0033",
+          "bookingReference": "demo-06-ref-0034"
+        },
+        "productName": "Adonis",
+        "cancellationPeriods": [
+          {
+            "from": "2027-06-05",
+            "to": "2027-06-27",
+            "fee": {
+              "amount": 1577,
+              "currency": "CHF"
+            }
+          }
+        ],
+        "startLocation": {
+          "countries": [
+            "CH"
+          ],
+          "city": "Zermatt"
+        },
+        "isAdhoc": false,
+        "room": {
+          "roomIndex": 1,
+          "desc": "Synthetischer Beispieltext fuer Reiseunterlagen.",
+          "numPax": 3,
+          "paxInfo": [
+            {
+              "firstName": "Demo06Person01",
+              "lastName": "ExampleFamily06",
+              "gender": "Male",
+              "birthDate": "1993-01-01",
+              "age": 34,
+              "nationality": "Swiss",
+              "nationalityCode": "CH",
+              "isMainContact": false,
+              "loyaltyProgramMemberships": [],
+              "tags": [
+                "demo-tag-06"
+              ],
+              "address": {},
+              "refId": "demo-06-ref-0003"
+            },
+            {
+              "firstName": "Demo06Person02",
+              "lastName": "ExampleFamily06",
+              "gender": "Female",
+              "birthDate": "1989-01-01",
+              "age": 38,
+              "nationality": "Swiss",
+              "nationalityCode": "CH",
+              "loyaltyProgramMemberships": [],
+              "tags": [
+                "demo-tag-06"
+              ],
+              "refId": "demo-06-ref-0004"
+            },
+            {
+              "firstName": "Demo06Person03",
+              "lastName": "ExampleFamily06",
+              "gender": "Female",
+              "birthDate": "1985-01-01",
+              "age": 42,
+              "nationality": "Swiss",
+              "nationalityCode": "CH",
+              "loyaltyProgramMemberships": [],
+              "tags": [
+                "demo-tag-06"
+              ],
+              "refId": "demo-06-ref-0005"
+            }
+          ]
+        },
+        "type": "accommodation",
+        "externallyPaidCharges": [
+          {
+            "name": "Kurtaxe",
+            "value": {
+              "amount": 4626,
+              "currency": "CHF"
+            },
+            "chargeType": "AdditionalFees"
+          }
+        ],
+        "voucherUrl": "https://booking.example.invalid/demo-06/link-005"
+      }
+    },
+    {
+      "type": "component",
+      "id": "demo-06-ref-0015",
+      "attributes": {
+        "refundable": true,
+        "startDateTime": "2027-06-27T08:52:00.000+02:00",
+        "supplier": {
+          "id": "demo-06-ref-0019",
+          "refId": "demo-06-ref-0020",
+          "name": "Example Supplier 06",
+          "externalReferences": [
+            {
+              "id": "demo-06-ref-0021",
+              "system": "demo-system"
+            }
+          ],
+          "email": "contact06@example.invalid"
+        },
+        "isOnRequest": false,
+        "endLocation": {
+          "countries": [
+            "CH"
+          ],
+          "city": "Saint Moritz"
+        },
+        "status": "Open",
+        "type": "activity",
+        "productRefId": "demo-06-ref-0035",
+        "moduleRefId": "demo-06-ref-0009",
+        "desc": "Synthetischer Beispieltext fuer Reiseunterlagen.",
+        "endDateTime": "2027-06-27T16:37:00.000+02:00",
+        "categoryName": "Sitzplatzreservation",
+        "productSupplier": "demo-06-ref-0002",
+        "price": {
+          "salesPrice": {
+            "amount": 1041.0,
+            "currency": "EUR",
+            "fx": {
+              "originalCurrency": "CHF",
+              "rate": 1.98
+            }
+          },
+          "netPrice": {
+            "amount": 7603.0,
+            "currency": "CHF"
+          },
+          "details": {
+            "supplierPurchasePrice": {
+              "amount": 7603.0,
+              "currency": "CHF"
+            },
+            "markups": [
+              {
+                "markupType": "TourOperatorBase",
+                "priceWithoutMarkup": {
+                  "amount": 7603.0,
+                  "currency": "CHF"
+                },
+                "priceWithMarkup": {
+                  "amount": 7603.0,
+                  "currency": "CHF"
+                },
+                "totalMarkup": {
+                  "amount": 0,
+                  "currency": "CHF"
+                }
+              },
+              {
+                "markupType": "TourOperatorAgency",
+                "priceWithoutMarkup": {
+                  "amount": 7603.0,
+                  "currency": "CHF"
+                },
+                "priceWithMarkup": {
+                  "amount": 4738.0,
+                  "currency": "CHF"
+                },
+                "totalMarkup": {
+                  "amount": 1767.0,
+                  "currency": "CHF"
+                }
+              }
+            ],
+            "purchaseAmountExcludedFromMarkups": {
+              "amount": 0,
+              "currency": "CHF"
+            }
+          }
+        },
+        "productName": "Glacier Express Zermatt – St. Moritz",
+        "cancellationPeriods": [],
+        "startLocation": {
+          "countries": [
+            "CH"
+          ],
+          "city": "Zermatt"
+        },
+        "isAdhoc": false
+      }
+    },
+    {
+      "type": "component",
+      "id": "demo-06-ref-0016",
+      "attributes": {
+        "refundable": true,
+        "startDateTime": "2027-06-27T12:00:00.000+02:00",
+        "isOnRequest": false,
+        "componentVoucherUrl": "https://booking.example.invalid/demo-06/link-006",
+        "status": "Booked",
+        "remarks": "Synthetischer Beispieltext fuer Reiseunterlagen.",
+        "productRefId": "demo-06-ref-0036",
+        "moduleRefId": "demo-06-ref-0009",
+        "desc": "Synthetischer Beispieltext fuer Reiseunterlagen.",
+        "endDateTime": "2027-06-28T12:00:00.000+02:00",
+        "categoryName": "Dreibettzimmer Superior",
+        "productSupplier": "demo-06-ref-0002",
+        "price": {
+          "salesPrice": {
+            "amount": 8594.0,
+            "currency": "EUR",
+            "fx": {
+              "originalCurrency": "CHF",
+              "rate": 1.98
+            }
+          },
+          "netPrice": {
+            "amount": 3499.0,
+            "currency": "CHF"
+          },
+          "details": {
+            "supplierPurchasePrice": {
+              "amount": 3499.0,
+              "currency": "CHF"
+            },
+            "markups": [
+              {
+                "markupType": "TourOperatorBase",
+                "priceWithoutMarkup": {
+                  "amount": 3499.0,
+                  "currency": "CHF"
+                },
+                "priceWithMarkup": {
+                  "amount": 3499.0,
+                  "currency": "CHF"
+                },
+                "totalMarkup": {
+                  "amount": 0,
+                  "currency": "CHF"
+                }
+              },
+              {
+                "markupType": "TourOperatorAgency",
+                "priceWithoutMarkup": {
+                  "amount": 3499.0,
+                  "currency": "CHF"
+                },
+                "priceWithMarkup": {
+                  "amount": 769.0,
+                  "currency": "CHF"
+                },
+                "totalMarkup": {
+                  "amount": 2666.0,
+                  "currency": "CHF"
+                }
+              }
+            ],
+            "purchaseAmountExcludedFromMarkups": {
+              "amount": 0,
+              "currency": "CHF"
+            }
+          }
+        },
+        "productExternalRefId": "demo-06-opaque-0002",
+        "supplier": {
+          "id": "demo-06-ref-0033",
+          "bookingReference": "demo-06-ref-0037"
+        },
+        "productName": "Hotel Nolda",
+        "cancellationPeriods": [
+          {
+            "from": "2027-06-13",
+            "to": "2027-06-28",
+            "fee": {
+              "amount": 3499.0,
+              "currency": "CHF"
+            }
+          }
+        ],
+        "startLocation": {
+          "countries": [
+            "CH"
+          ],
+          "city": "St. Moritz"
+        },
+        "isAdhoc": false,
+        "room": {
+          "roomIndex": 1,
+          "desc": "Synthetischer Beispieltext fuer Reiseunterlagen.",
+          "numPax": 3,
+          "paxInfo": [
+            {
+              "firstName": "Demo06Person01",
+              "lastName": "ExampleFamily06",
+              "gender": "Male",
+              "birthDate": "1993-01-01",
+              "age": 34,
+              "nationality": "Swiss",
+              "nationalityCode": "CH",
+              "isMainContact": false,
+              "loyaltyProgramMemberships": [],
+              "tags": [
+                "demo-tag-06"
+              ],
+              "address": {},
+              "refId": "demo-06-ref-0003"
+            },
+            {
+              "firstName": "Demo06Person02",
+              "lastName": "ExampleFamily06",
+              "gender": "Female",
+              "birthDate": "1989-01-01",
+              "age": 38,
+              "nationality": "Swiss",
+              "nationalityCode": "CH",
+              "loyaltyProgramMemberships": [],
+              "tags": [
+                "demo-tag-06"
+              ],
+              "refId": "demo-06-ref-0004"
+            },
+            {
+              "firstName": "Demo06Person03",
+              "lastName": "ExampleFamily06",
+              "gender": "Female",
+              "birthDate": "1985-01-01",
+              "age": 42,
+              "nationality": "Swiss",
+              "nationalityCode": "CH",
+              "loyaltyProgramMemberships": [],
+              "tags": [
+                "demo-tag-06"
+              ],
+              "refId": "demo-06-ref-0005"
+            }
+          ]
+        },
+        "type": "accommodation",
+        "externallyPaidCharges": [
+          {
+            "name": "Kurtaxe",
+            "value": {
+              "amount": 7124.0,
+              "currency": "CHF"
+            },
+            "chargeType": "AdditionalFees"
+          }
+        ],
+        "voucherUrl": "https://booking.example.invalid/demo-06/link-005"
+      }
+    },
+    {
+      "type": "component",
+      "id": "demo-06-ref-0017",
+      "attributes": {
+        "refundable": true,
+        "startDateTime": "2027-06-28T07:17:00.000+02:00",
+        "supplier": {
+          "id": "demo-06-ref-0019",
+          "refId": "demo-06-ref-0020",
+          "name": "Example Supplier 06",
+          "externalReferences": [
+            {
+              "id": "demo-06-ref-0021",
+              "system": "demo-system"
+            }
+          ],
+          "email": "contact06@example.invalid"
+        },
+        "isOnRequest": false,
+        "endLocation": {
+          "countries": [
+            "IT"
+          ],
+          "city": ""
+        },
+        "status": "Open",
+        "type": "activity",
+        "productRefId": "demo-06-ref-0038",
+        "moduleRefId": "demo-06-ref-0009",
+        "desc": "Synthetischer Beispieltext fuer Reiseunterlagen.",
+        "endDateTime": "2027-06-28T09:32:00.000+02:00",
+        "categoryName": "Sitzplatzreservation",
+        "productSupplier": "demo-06-ref-0002",
+        "price": {
+          "salesPrice": {
+            "amount": 6305.0,
+            "currency": "EUR",
+            "fx": {
+              "originalCurrency": "CHF",
+              "rate": 1.98
+            }
+          },
+          "netPrice": {
+            "amount": 6481.0,
+            "currency": "CHF"
+          },
+          "details": {
+            "supplierPurchasePrice": {
+              "amount": 6481.0,
+              "currency": "CHF"
+            },
+            "markups": [
+              {
+                "markupType": "TourOperatorBase",
+                "priceWithoutMarkup": {
+                  "amount": 6481.0,
+                  "currency": "CHF"
+                },
+                "priceWithMarkup": {
+                  "amount": 6481.0,
+                  "currency": "CHF"
+                },
+                "totalMarkup": {
+                  "amount": 0,
+                  "currency": "CHF"
+                }
+              },
+              {
+                "markupType": "TourOperatorAgency",
+                "priceWithoutMarkup": {
+                  "amount": 6481.0,
+                  "currency": "CHF"
+                },
+                "priceWithMarkup": {
+                  "amount": 618.0,
+                  "currency": "CHF"
+                },
+                "totalMarkup": {
+                  "amount": 6905.0,
+                  "currency": "CHF"
+                }
+              }
+            ],
+            "purchaseAmountExcludedFromMarkups": {
+              "amount": 0,
+              "currency": "CHF"
+            }
+          }
+        },
+        "productName": "Bernina Express St. Moritz – Tirano",
+        "cancellationPeriods": [],
+        "startLocation": {
+          "countries": [
+            "CH"
+          ],
+          "city": "Saint Moritz"
+        },
+        "isAdhoc": false
+      }
+    },
+    {
+      "type": "component",
+      "id": "demo-06-ref-0018",
+      "attributes": {
+        "refundable": true,
+        "startDateTime": "2027-06-28T12:00:00.000+02:00",
+        "isOnRequest": false,
+        "componentVoucherUrl": "https://booking.example.invalid/demo-06/link-007",
+        "status": "Booked",
+        "remarks": "Synthetischer Beispieltext fuer Reiseunterlagen.",
+        "productRefId": "demo-06-ref-0039",
+        "moduleRefId": "demo-06-ref-0009",
+        "desc": "Synthetischer Beispieltext fuer Reiseunterlagen.",
+        "endDateTime": "2027-06-29T09:00:00.000+02:00",
+        "categoryName": "Dreibettzimmer",
+        "productSupplier": "demo-06-ref-0002",
+        "price": {
+          "salesPrice": {
+            "amount": 1777.0,
+            "currency": "EUR",
+            "fx": {
+              "originalCurrency": "CHF",
+              "rate": 1.98
+            }
+          },
+          "netPrice": {
+            "amount": 5123.0,
+            "currency": "CHF"
+          },
+          "details": {
+            "supplierPurchasePrice": {
+              "amount": 5123.0,
+              "currency": "CHF"
+            },
+            "markups": [
+              {
+                "markupType": "TourOperatorBase",
+                "priceWithoutMarkup": {
+                  "amount": 5123.0,
+                  "currency": "CHF"
+                },
+                "priceWithMarkup": {
+                  "amount": 5123.0,
+                  "currency": "CHF"
+                },
+                "totalMarkup": {
+                  "amount": 0,
+                  "currency": "CHF"
+                }
+              },
+              {
+                "markupType": "TourOperatorAgency",
+                "priceWithoutMarkup": {
+                  "amount": 5123.0,
+                  "currency": "CHF"
+                },
+                "priceWithMarkup": {
+                  "amount": 2498.0,
+                  "currency": "CHF"
+                },
+                "totalMarkup": {
+                  "amount": 8521.0,
+                  "currency": "CHF"
+                }
+              }
+            ],
+            "purchaseAmountExcludedFromMarkups": {
+              "amount": 0,
+              "currency": "CHF"
+            }
+          }
+        },
+        "productExternalRefId": "demo-06-opaque-0003",
+        "supplier": {
+          "id": "demo-06-ref-0033",
+          "bookingReference": "demo-06-ref-0040"
+        },
+        "productName": "Hotel Bernina",
+        "cancellationPeriods": [
+          {
+            "from": "2027-06-25",
+            "to": "2027-06-29",
+            "fee": {
+              "amount": 5123.0,
+              "currency": "CHF"
+            }
+          }
+        ],
+        "startLocation": {
+          "countries": [
+            "IT"
+          ],
+          "city": "Tirano"
+        },
+        "isAdhoc": false,
+        "room": {
+          "roomIndex": 1,
+          "desc": "Synthetischer Beispieltext fuer Reiseunterlagen.",
+          "numPax": 3,
+          "paxInfo": [
+            {
+              "firstName": "Demo06Person01",
+              "lastName": "ExampleFamily06",
+              "gender": "Male",
+              "birthDate": "1993-01-01",
+              "age": 34,
+              "nationality": "Swiss",
+              "nationalityCode": "CH",
+              "isMainContact": false,
+              "loyaltyProgramMemberships": [],
+              "tags": [
+                "demo-tag-06"
+              ],
+              "address": {},
+              "refId": "demo-06-ref-0003"
+            },
+            {
+              "firstName": "Demo06Person02",
+              "lastName": "ExampleFamily06",
+              "gender": "Female",
+              "birthDate": "1989-01-01",
+              "age": 38,
+              "nationality": "Swiss",
+              "nationalityCode": "CH",
+              "loyaltyProgramMemberships": [],
+              "tags": [
+                "demo-tag-06"
+              ],
+              "refId": "demo-06-ref-0004"
+            },
+            {
+              "firstName": "Demo06Person03",
+              "lastName": "ExampleFamily06",
+              "gender": "Female",
+              "birthDate": "1985-01-01",
+              "age": 42,
+              "nationality": "Swiss",
+              "nationalityCode": "CH",
+              "loyaltyProgramMemberships": [],
+              "tags": [
+                "demo-tag-06"
+              ],
+              "refId": "demo-06-ref-0005"
+            }
+          ]
+        },
+        "type": "accommodation",
+        "externallyPaidCharges": [
+          {
+            "name": "Kurtaxe",
+            "value": {
+              "amount": 7986.0,
+              "currency": "CHF"
+            },
+            "chargeType": "AdditionalFees"
+          }
+        ],
+        "voucherUrl": "https://booking.example.invalid/demo-06/link-005"
+      }
+    }
+  ]
+}

@@ -10,6 +10,10 @@ __pycache__/
 *.json
 !examples/nezasa/booking_example_01.json
 !examples/nezasa/booking_example_02.json
+!examples/nezasa/booking_example_03.json
+!examples/nezasa/booking_example_04.json
+!examples/nezasa/booking_example_05.json
+!examples/nezasa/booking_example_06.json
 !examples/content/control/current.json
 !examples/content/releases/demo-001/catalog.json
 !examples/content/releases/demo-001/mappings.json

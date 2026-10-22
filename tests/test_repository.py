@@ -89,7 +89,7 @@ class RepositoryIntegrityTests(unittest.TestCase):
 
     def test_booking_component_relationships_resolve_uniquely(self):
         fixtures = sorted((ROOT / "examples/nezasa").glob("booking_example_*.json"))
-        self.assertGreaterEqual(len(fixtures), 2, "Expected both published booking examples")
+        self.assertEqual(len(fixtures), 6, "Expected all six published booking examples")
         for fixture in fixtures:
             with self.subTest(fixture=fixture.name):
                 booking = self.read_json(fixture)
