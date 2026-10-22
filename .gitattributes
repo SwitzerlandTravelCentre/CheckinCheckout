@@ -1,0 +1,3 @@
+# Keep release JSON bytes stable for SHA-256 verification across platforms.
+*.json text eol=lf
+*.md text eol=lf
