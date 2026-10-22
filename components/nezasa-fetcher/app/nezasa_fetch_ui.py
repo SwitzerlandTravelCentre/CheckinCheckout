@@ -1,8 +1,8 @@
 """
 Nezasa Booking JSON Fetcher.
 
-Small GUI for travel agencies using Nezasa / TripBuilder:
-enter a Booking ID, fetch the confirmed booking via the Booking API, and save
+Development-only GUI for obtaining Nezasa / TripBuilder test data:
+enter a Booking ID, fetch booking data via the Booking API, and save
 the complete raw JSON response locally.
 
 JSON-to-Word generation is intentionally out of scope for this file.
@@ -14,6 +14,7 @@ import tkinter as tk
 import json
 import os
 import re
+import tempfile
 from pathlib import Path
 from tkinter import messagebox
 from typing import Any
@@ -32,8 +33,9 @@ def load_requests_modules():
         from requests.auth import HTTPBasicAuth
     except ImportError as exc:
         raise RuntimeError(
-            "Missing Python dependency 'requests'. Install it with:\n\n"
-            "py -m pip install -r requirements.txt"
+            "Missing Python dependency 'requests'.\n\n"
+            "Install the fetcher dependencies in the Python environment used to run "
+            "this app. See docs/DEVELOPMENT.md in the CheckinCheckout repository."
         ) from exc
 
     return requests, HTTPBasicAuth
@@ -132,19 +134,52 @@ def fetch_booking_json(
         )
 
     try:
-        return response.json()
+        booking_json = response.json()
     except ValueError as exc:
         raise RuntimeError(
             "The Booking API response was not valid JSON.\n\n"
             f"{response.text[:800]}"
         ) from exc
 
+    validate_booking_json(booking_json, booking_id)
+    return booking_json
+
+
+def validate_booking_json(payload: Any, expected_booking_id: str) -> None:
+    """Check the minimum booking envelope without changing the response."""
+    if not isinstance(payload, dict) or "errors" in payload:
+        raise RuntimeError("The API response is not a booking document.")
+    data = payload.get("data")
+    if (
+        not isinstance(data, dict)
+        or data.get("type") != "booking"
+        or not isinstance(data.get("id"), str)
+        or data["id"] != expected_booking_id
+        or not isinstance(data.get("attributes"), dict)
+    ):
+        raise RuntimeError("The API response does not match the requested booking.")
+    if "included" in payload and not isinstance(payload["included"], list):
+        raise RuntimeError("The booking document has an invalid included collection.")
+
 
 def save_booking_json(booking_json: dict[str, Any], output_path: Path) -> None:
     output_path.parent.mkdir(parents=True, exist_ok=True)
-    with output_path.open("w", encoding="utf-8") as file:
-        json.dump(booking_json, file, ensure_ascii=False, indent=2)
-        file.write("\n")
+    temporary_path = None
+    try:
+        # Same directory keeps the final replacement on the same filesystem.
+        with tempfile.NamedTemporaryFile(
+            mode="w", encoding="utf-8", newline="\n",
+            dir=output_path.parent, prefix=".booking-", suffix=".tmp", delete=False,
+        ) as file:
+            temporary_path = Path(file.name)
+            json.dump(booking_json, file, ensure_ascii=False, indent=2)
+            file.write("\n")
+            file.flush()
+            os.fsync(file.fileno())
+        os.replace(temporary_path, output_path)
+    finally:
+        if temporary_path is not None:
+            temporary_path.unlink(missing_ok=True)
 
 
 def fetch_and_save(
@@ -202,7 +237,7 @@ class NezasaFetchApp:
         distribution_channel = sanitize_distribution_channel(self.channel_entry.get())
         username = self.username_entry.get().strip()
         booking_id = sanitize_booking_id(self.booking_entry.get())
-        password = self.password_entry.get().strip()
+        password = self.password_entry.get()
 
         if not distribution_channel:
             messagebox.showerror("Error", "Please enter the Distribution Channel.")

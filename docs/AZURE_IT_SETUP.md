@@ -139,7 +139,7 @@ Die semantischen Tests benötigen den späteren Publisher / Anwendungsadapter; s
 
 ## Bestehender Nezasa-Fetcher
 
-Der [integrierte Desktop-Fetcher](FETCHER_INTEGRATION.md) nutzt separat Nezasa Booking API v1.13 mit Basic Auth. IT stellt API-Benutzer, freigegebenen Distribution Channel und HTTPS-Ausgang zu dessen tripbuilder.app-Host bereit. JSON wird lokal gespeichert; Azure ist noch nicht angebunden. Entra-Rechte ersetzen die Nezasa-Zugangsdaten nicht.
+Der [integrierte Desktop-Fetcher](FETCHER_INTEGRATION.md) nutzt separat Nezasa Booking API v1.13 mit Basic Auth. Die API-Funktion ist vom Nutzer bestätigt (S7). Dieser Fetcher dient nur der Entwicklung und speichert JSON-Testdaten lokal. Die finale Anwendung integriert den Abruf selbst und erzeugt direkt Word; IT muss ihren späteren Ausführungsort und Zugang berücksichtigen. Azure ist noch nicht angebunden. Entra-Rechte ersetzen die Nezasa-Zugangsdaten nicht.
 
 ## Übergabe von IT an Entwicklung
 

@@ -19,7 +19,7 @@ Buchungs-JSONs, Kundendaten, generierte DOCX/PDF und Secrets gehören nicht in d
 
 IDs sind dauerhaft, technisch und unabhängig von Anzeigenamen, etwa pkg-demo-classic, hint-demo-arrival und img-demo-lake. Produkt-, Hotel- oder Package-Namen sind keine Schlüssel.
 
-Dateipfade verwenden Kleinbuchstaben, Ziffern, Bindestriche und Schrägstriche. Keine absoluten Pfade, ".."-Segmente, SAS-Tokens oder beliebige externe URLs im Katalog. Pfade im Manifest und Bildkatalog sind relativ zur jeweiligen Release-Wurzel.
+Dateipfade verwenden Kleinbuchstaben, Ziffern, Bindestriche und Schrägstriche sowie Punkte für Dateiendungen. Keine absoluten Pfade, ".."-Segmente, SAS-Tokens oder beliebige externe URLs im Katalog. Pfade im Manifest und Bildkatalog sind relativ zur jeweiligen Release-Wurzel.
 
 JSON-Dateien: UTF-8, Content-Type application/json. Bilder: passender MIME-Type; zunächst JPEG/PNG. Keine ungeprüften aktiven Dateiformate. Bildquelle, Nutzungsrecht, gültige Einsatzgrenzen und Alternativtexte je Sprache im Katalog pflegen. Vor Veröffentlichung muss der Publisher eine echte Bilddatei samt Prüfsumme prüfen.
 
@@ -31,6 +31,16 @@ Ein Mapping-Schlüssel besteht aus:
 - sourceNamespace: Datenraum / Mandant. Vorgeschlagener Wert aus data.attributes.tourOperator; tatsächliche Eindeutigkeit mit Nezasa bestätigen.
 - referenceType: der genaue semantische Pfad, etwa booking.templateRefId oder booking.modules[].refId.
 - referenceValue: exakter String aus der Buchung; nicht über Name oder Teilstring vergleichen.
+
+referenceType ist ein semantischer Bezeichner, kein ausführbarer JSON-Pfad. Für die vorhandenen Beispiele ist die technische Entsprechung:
+
+| Bezeichner / Feld | JSON-Pfad in der Buchung |
+| --- | --- |
+| booking.templateRefId | data.attributes.templateRefId |
+| booking.modules[].refId | data.attributes.modules[].refId |
+| Vorgeschlagener sourceNamespace | data.attributes.tourOperator |
+
+Diese Zuordnung erklärt die Schreibweise; sie bestätigt noch keine fachliche Package-Semantik.
 
 Dazu gehört genau eine interne packageId. **Offen:** Welche Nezasa-Referenz das Package verbindlich identifiziert. Die Beispiele enthalten sowohl Template- als auch Modulreferenzen. Ihre fachliche Bedeutung und Kardinalität sind noch zu bestätigen; gleich aussehende IDs sind kein Beweis für das gleiche Package.
 
@@ -61,4 +71,4 @@ Pro Verarbeitungsvorgang einmal current.json laden, dann Manifest und alle Inhal
 
 IT stellt Storage, Netz, Identitäten, Rollen, Wiederherstellung und Monitoring bereit. Fachverantwortliche pflegen Inhalte und bestätigen Referenzbedeutung, Sprachregeln und Bildrechte. Entwicklung implementiert Abruf, Validierung, Mapping, Cache und Fehlerbehandlung. Ein technischer Publisher setzt den Freigabeablauf um; seine konkrete Oberfläche und technische Umsetzung sind noch offen.
 
-Siehe [synthetisches Beispiel](../examples/content/README.md). Die Beispieldateien zeigen den Vertragsentwurf und sind noch keine Schema-validierte Produktionsschnittstelle.
+Siehe [synthetisches Beispiel](../examples/content/README.md). Die Beispieldateien zeigen den Vertragsentwurf und sind noch keine Schema-validierte Produktionsschnittstelle. Die Offline-Tests prüfen Dateiintegrität und Referenzen dieses Beispiels; ein Produktionsvalidator fehlt. Das Bildobjekt ist noch nicht konkret spezifiziert und images ist leer. Die fiktiven Mappings sind unabhängig von den Buchungsfixtures. Siehe [D05–D06](OPEN_DECISIONS.md) für die fehlenden Grundlagen.

@@ -1,38 +1,39 @@
 # Check In Check Out
 
-Code der einzelnen Komponenten und gemeinsame Projektdokumentation für die Erstellung von Reiseunterlagen bei Switzerland Travel Centre.
+Aus Nezasa-Buchungen editierbare Word-Reiseunterlagen für Sales / Travel Agents erstellen. Dieses Repository enthält Entwicklungscode, bereinigte Testdaten und die dafür nötige Dokumentation.
 
-## Aktueller Arbeitsstand
+## Aktueller Stand · 22.10.2026
 
-Stand 22.10.2026: Der bestehende Python-/Tkinter-Fetcher aus NezasaToWord ist unter components/nezasa-fetcher integriert. Der Stack weiterer Komponenten ist noch offen. Die vorliegenden Quellen können veraltet sein; diese Dokumentation ist eine nachvollziehbare Arbeitsgrundlage, keine freigegebene Implementierungsspezifikation.
+| Bereich | Stand |
+| --- | --- |
+| MVP-Ziel | Direkter Nezasa-Abruf in der finalen Anwendung → strukturiertes DOCX → manuelle Finalisierung in Word. Termin: **Ende Dezember 2026**. |
+| Vorhandener Code | Python-/Tkinter-Fetcher für JSON-Testdaten, mit Offline-Tests. Die API funktioniert laut Nutzerbestätigung. |
+| Noch zu bauen | Finale Anwendung mit eigenem Abruf, Verarbeitung, Inhaltsintegration und DOCX-Erzeugung. Ihr Stack ist offen. |
+| Fetcher-Rolle | Ausschliesslich Entwicklung; erzeugt nur JSON und wird final nicht benötigt. |
+| Azure | STC-Inhaltsablage für Bilder, Hinweise und Querverweise angefordert. Konkreter Entwurf vorhanden, noch nicht bereitgestellt. |
+| Nächste fachliche Grundlage | Akzeptierte Word-Zielvorlage, Pflichtinhalte/Sprachen sowie Tages- und Statusregeln festlegen. |
 
-Der bisher beschriebene unmittelbare Fokus ist ein sauberer, stabil editierbarer DOCX-Export aus Nezasa für den operativen Einsatz durch Sales / Travel Agents. Die umfassendere Vision umfasst Anreicherung, Qualitätsprüfung, Personalisierung und weitere Ausgabekanäle. „Beyond PDF“ ist im gelieferten Kontext **on hold**.
+Die aktuelle Grundlage ist in [MVP](docs/MVP.md) konkretisiert; die Herkunft der Entscheidungen steht im [Quellenregister](docs/concepts/SOURCES_AND_DECISIONS.md).
 
-## JSON-Fetcher starten
+## Schnell einsteigen
 
-[Einrichtung und Integration](docs/FETCHER_INTEGRATION.md). Der vorhandene Fetcher exportiert Nezasa-Buchungen als JSON; Word-Erzeugung ist noch nicht implementiert. Ab Repository-Wurzel:
+1. [Entwicklungsstart](docs/DEVELOPMENT.md): Einrichtung, Tests, Code-Einstieg und Arbeitsablauf.
+2. [Beispielkatalog](examples/README.md): passende JSONs direkt öffnen; Grenzen der Testdaten erkennen.
+3. [Offene Entscheidungen](docs/OPEN_DECISIONS.md): sehen, was den nächsten Umsetzungsschritt tatsächlich blockiert.
 
-~~~powershell
-py -m venv .venv
-.\.venv\Scripts\python.exe -m pip install -r components/nezasa-fetcher/requirements.txt
-.\.venv\Scripts\python.exe components/nezasa-fetcher/app/nezasa_fetch_ui.py
-~~~
+| Aufgabe | Gezielt weiterlesen |
+| --- | --- |
+| Nezasa-JSON verstehen | [Buchungsbeispiele](examples/nezasa/README.md), [Fetcher-Verhalten](components/nezasa-fetcher/docs/TECHNICAL_SPECIFICATION.md) |
+| Inhalte / Package-Zuordnung integrieren | [Inhaltsvertrag – Entwurf](docs/CONTENT_STRUCTURE.md), [Inhaltsbeispiel](examples/content/README.md) |
+| Azure einrichten | [IT-Einrichtungsgrundlage](docs/AZURE_IT_SETUP.md) |
+| Mit einem AI-Coder arbeiten | [AGENTS.md](AGENTS.md) |
+| Fachlichen Hintergrund nachlesen | [Konzepte und Quellen](docs/concepts/README.md) |
+| Review-Ergebnis nachvollziehen | [Repository-Review](docs/reviews/2026-10-22.md) |
 
-## Einstieg für Entwickler
+## Testdaten sofort finden
 
-1. [Projektkontext](docs/PROJECT_CONTEXT.md): Problem, Begriffe, fachliche Leitplanken und Architekturvision.
-2. [Vorläufiger MVP-Rahmen](docs/MVP.md): Umfang, vorgeschlagene Abnahmeszenarien und technische Klärungen.
-3. [Quellen und offene Fragen](docs/SOURCES_AND_OPEN_QUESTIONS.md): Herkunft, Widersprüche und fehlende Entscheidungen.
-4. [Nezasa-Beispielbuchungen](examples/nezasa/README.md): zwei bereinigte JSON-Exporte mit fiktiven Preisen.
-5. [Azure-Basis für IT](docs/AZURE_IT_SETUP.md): Ressourcen, Zugriffsrollen, Betrieb und Abnahme.
-6. [Inhaltsstruktur](docs/CONTENT_STRUCTURE.md): Bilder, Hinweise und Package-Querverweise.
-7. [Fetcher-Integration](docs/FETCHER_INTEGRATION.md): Einrichtung, Abrufvertrag, Grenzen und Tests.
-8. [AGENTS.md](AGENTS.md): Arbeitsregeln für AI-Coder.
+- [Buchung 01](examples/nezasa/booking_example_01.json): 2 Reisende, 14 Komponenten.
+- [Buchung 02](examples/nezasa/booking_example_02.json): 4 Reisende, 23 Komponenten.
+- [Inhalts-Release](examples/content/README.md): synthetischer Katalog und Package-Mapping, getrennt von den Buchungsbeispielen.
 
-Neue Informationen werden in diese Dokumente eingearbeitet. Überholte Aussagen werden mit ihrer Ablösung nachvollziehbar gehalten; ungeklärte Angaben werden nicht zu Anforderungen hochgestuft.
-
-## Repository
-
-Quelle: https://github.com/SwitzerlandTravelCentre/CheckinCheckout
-
-Der bestehende Fetcher liegt als nachvollziehbare Quellkopie unter components/nezasa-fetcher. Die Aufteilung weiterer Komponenten wird mit ihrem Implementierungsumfang und ihren Schnittstellen festgelegt. Fachliche Schichten allein legen weder Verzeichnisstruktur noch Deployment-Struktur fest.
+Beide Buchungen enthalten auch offene Leistungen. Preise und personenbezogene Angaben sind synthetisch; die Dateien sind keine Referenz für kaufmännische Berechnungen. Reale Fetcher-Exporte und Zugangsdaten gehören nicht ins öffentliche Git.

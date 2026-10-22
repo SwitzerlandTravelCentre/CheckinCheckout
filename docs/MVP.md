@@ -1,72 +1,50 @@
-# Vorläufiger MVP-Rahmen
+# MVP: Umfang und Abnahme
 
-Stand: 22.10.2026. Dies ist eine aus S1/S2 abgeleitete Arbeitsgrundlage, keine bestätigte Sprintplanung oder freigegebene Spezifikation. Quellen und Klärungen: [Quellen und offene Fragen](SOURCES_AND_OPEN_QUESTIONS.md).
+Stand: 22.10.2026. Bestätigter Zielweg und Termin aus [S7](concepts/SOURCES_AND_DECISIONS.md); die fachlichen Details und Abnahmeszenarien unten sind noch abzustimmen.
 
-## Unmittelbares Ergebnis
+## Ergebnis
 
-Sales / Travel Agents können aus Nezasa-Buchungsdaten ein sinnvoll strukturiertes, Word-natives und stabil editierbares DOCX erhalten und im Tagesgeschäft finalisieren. Der operative Nutzen liegt in weniger Layoutreparatur und einfacherer Bearbeitung.
+Bis **Ende Dezember 2026** soll Sales / Travel Agents aus einer Nezasa-Buchung direkt ein sauber strukturiertes, bearbeitbares Word-Dokument erhalten. Die Anwendung integriert den Abruf selbst. Der separate Fetcher dient ausschliesslich der Beschaffung von JSON-Testdaten.
 
-Ob eine bestehende DOCX-Datei verbessert oder ein neues DOCX aus strukturierten Daten erzeugt wird, ist **nicht entschieden**. Die Quellen verwenden sowohl „Export enhancements“ als auch eine Erzeugung aus Buchungsdaten. Die Eingangsform JSON aus Nezasa ist inzwischen bestätigt (S4); der konkrete DOCX-Erzeugungsweg bleibt zu klären.
+Travel Docs erklären die gesamte Reise vor und während der Reise: Hotels, Leistungen, Tagesabläufe, Zeiten sowie relevante Hinweise und Reservierungsinformationen. Ergänzende Tickets und Voucher können zum Reisedossier gehören; deren automatische Beschaffung ist nicht als MVP-Pflicht beschlossen.
 
-## Beschriebener Umfang
+## Umfang
 
-| ID | Arbeitsanforderung | Herkunft und Status |
-| --- | --- | --- |
-| M01 | Nezasa als erste Quelle für Buchungsdaten verwenden. | S1/S2; JSON durch S4 bestätigt, Fetcher mit v1.13 / Basic Auth aus S6 integriert; Serververtrag und Tenant-Freigabe offen. |
-| M02 | Ein in Word bearbeitbares DOCX mit tragfähiger Struktur erzeugen. | S1 und S2; Zielvorlage und technische Definition von „Word-native“ offen. |
-| M03 | Die Darstellung des Reiseablaufs durch einfache Regeln verbessern. | S1 allgemein, S2 mit Reisetag-Beispiel; exakter MVP-Regelkatalog offen. |
-| M04 | Prüfung, Korrekturen und freie Ergänzungen durch Travel Agents ermöglichen. | S1 und S2; Word als Arbeitsfläche. |
-| M05 | Einfachen Weg von einer Buchungsreferenz zum Word-Dokument anbieten. | S2, S. 6: Buchungsnummer eingeben → Dokument erhalten; konkrete Oberfläche noch unbestätigt. |
-| M06 | Mehrere Basis-Templates unterstützen. | In S2 ausdrücklich optional; kein Pflichtumfang. |
-
-Kein aktiver Liefertermin ist aus den Quellen ableitbar: „Ende Juli“ in S1 widerspricht „Ende Februar“ in S2; ein eindeutiges Zieljahr fehlt.
-
-## Vorschlag für prüfbare Abnahmeszenarien
-
-Die folgenden Szenarien konkretisieren die Probleme für eine spätere Abstimmung. Sie sind **Vorschläge**, keine bereits genehmigten Kriterien.
-
-| Szenario | Vorgeschlagenes erwartetes Verhalten |
+| Bereich | Arbeitsgrundlage |
 | --- | --- |
-| Buchungsinhalt | Relevante gebuchte Hotels, Leistungen und Reisetage lassen sich gegen einen geprüften Quelldatensatz abgleichen; keine erfundenen Leistungen oder stillen Statusänderungen. Die genaue Auswahl relevanter Felder muss definiert werden. |
-| Normaler Textumbau | Einen Hinweis verlängern, Text ergänzen oder entfernen und anschliessend speichern / erneut öffnen, ohne beschädigte Tabellen oder unlesbare Überlagerungen. |
-| Seitenfluss | Mehrtägige Reisen und längere Leistungsbeschreibungen bleiben lesbar; normale Seitenumbrüche sind zulässig. |
-| Check-in / Check-out | Das im bestehenden Export beschriebene Problem ist reproduzierbar erfasst und behoben. Ob die Zeile entfernt, korrigiert oder bedingt angezeigt werden soll, muss fachlich entschieden werden. |
-| Reise A nach B | Ein abgestimmter Testfall zeigt den Transporttag nachvollziehbar, ohne ihn nur als Hotelaufenthalt in B darzustellen. |
-| Fehlende oder widersprüchliche Daten | Keine erfundenen Ersatzangaben; gewünschte Warnung, Blockierung oder Markierung wird vorab festgelegt. |
-| Menschliche Finalisierung | Travel Agent kann Inhalte fachlich prüfen, ändern und reisefertig speichern. |
-| Effizienz | Manuellen Finalisierungsaufwand mit der bisherigen Arbeitsweise an vergleichbaren Reisen messen. Die ca. 80 % bleiben bis dahin ein Nutzenziel. |
+| Buchungsquelle | Nezasa; API-Funktion durch Nutzer bestätigt. Produktionsadapter der finalen Anwendung noch zu bauen. |
+| Ausgabe | Neues, editierbares DOCX. Zielvorlage, Formatvorlagen und unterstützte Word-Umgebung offen. |
+| Verarbeitung | Gebuchte Leistungen und tatsächlichen Reiseablauf korrekt darstellen; Regelkatalog offen. |
+| Kontrolle | Travel Agent prüft, ergänzt und finalisiert in Word. |
+| Redaktionelle Inhalte | Azure als Quelle für Bilder, Hinweise und Querverweise angefordert; benötigte Inhaltsarten im ersten MVP noch festzulegen. |
+| Weitere Templates | Optionaler Konzeptvorschlag, keine Pflicht. |
+| Personalisierung / weitere Kanäle | Zukunftskontext; nicht aus der Vision in den MVP übernehmen. |
 
-Benötigt werden eine akzeptierte Zielvorlage, anonymisierte oder synthetische repräsentative Buchungen und fachliche Abnahme durch die vorgesehenen Nutzer.
+Stack, Oberfläche und Betriebsmodell der finalen Anwendung sind noch nicht beschlossen. Die aktuellen Implementierungen und Beispiele sind in [README](../README.md) verzeichnet.
 
-## Vorhandene Implementierung
+## Fachliche Leitplanken
 
-Der [integrierte Fetcher](FETCHER_INTEGRATION.md) aus S6 ruft die Booking API ab und speichert JSON lokal. Mapping, Azure-Inhaltsabruf und Word-/PDF-Erzeugung sind noch nicht implementiert. Ein Live-Zugriff wurde bei der Integration nicht getestet.
+- Gebucht, offen, inkludiert und bezahlt sind unterschiedliche Aussagen. Keine davon aus einer anderen ableiten.
+- Buchungsfakten und redaktionelle Ergänzungen unterscheidbar halten.
+- Fehlende Daten nicht durch erfundene Zeiten, Leistungen oder Reservierungen ersetzen.
+- Zimmer-/Reisendenzuordnungen erhalten; ähnliche Leistungen sind nicht automatisch Dubletten.
+- Der alte Nezasa-Word-Export zeigt Probleme, ist keine Zielvorlage.
+- Freie Änderungen in Word müssen praktikabel bleiben. Ein Rückimport in andere Kanäle ist nicht beschlossen.
 
-## Aktuelle Beispielbasis
+## Vorgeschlagene Abnahme
 
-S4 bestätigt JSON-Exporte aus Nezasa und liefert zwei konkrete Beispiele. Bereinigte Kopien liegen unter [examples/nezasa](../examples/nezasa/README.md). Struktur und Datentypen bleiben erhalten; Kundendaten, sensible Referenzen und Preise sind synthetisch. Die Exporte ersetzen keinen vollständigen API-Vertrag.
+| Fall | Nachweis nach fachlicher Konkretisierung |
+| --- | --- |
+| Inhalt | Relevante Hotels, Leistungen und Reisetage gegen einen geprüften Quelldatensatz abgleichen. |
+| Status / Lücken | Offene, stornierte oder unvollständige Leistungen sowie fehlende Angaben nach abgestimmter Regel kennzeichnen oder behandeln. |
+| Reisetag | Ein Fall A → B zeigt Transport und Übernachtung verständlich; Regeln für Zeitzonen und Nachtfahrten sind festgelegt. |
+| Check-in / Check-out | Problem am bisherigen Export reproduzieren und die fachlich gewünschte Darstellung nachweisen. |
+| Word-Bearbeitung | Hinweise verlängern, Text hinzufügen/entfernen, speichern und erneut öffnen; Tabellen, Absätze und Seitenfluss bleiben nutzbar. |
+| Operativer Ablauf | Ein Travel Agent kann das erzeugte Dokument prüfen und reisefertig finalisieren. |
+| Effizienz | Vergleichbare Reisen vor/nach Einführung bearbeiten; Zeit und Qualität dokumentieren. |
 
-## Hinweise aus dem historischen JSON-Beispiel
+Benötigte Entscheidungen mit Zuständigkeit und Auswirkung: [OPEN_DECISIONS](OPEN_DECISIONS.md).
 
-S2, S. 18-75 enthält einen nummerierten JSON-Abdruck. Er ist keine Schema-Dokumentation und keine direkt ausführbare Fixture.
+## Nutzenschätzung
 
-Beobachtete Strukturhinweise:
-
-- Eine Booking-Ressource mit Identität, Attributen und Komponentenbeziehungen; ein „included“-Bereich enthält Komponenten.
-- Reisezeitraum, Sprache, Module und Referenzen sowie Komponenten mit Typ, Status und Zeitangaben.
-- Beispielsweise Unterkunft, Aktivität, Basisleistung und Zusatzleistung; die vollständige Typenmenge ist nicht belegt.
-- Zimmer- und Reisendenzuordnung, Lieferantenreferenzen, Buchungsreferenzen und Voucher-Verweise.
-- Verschiedene Zeitdarstellungen: Kalenderdaten, UTC und explizite Offsets. Verbindliche Zeitzonen- und Tageszuordnung fehlen.
-- Gebuchte und offene Komponenten kommen im Beispiel vor. Ihre Sichtbarkeit und Formulierung im Kundendokument müssen geklärt werden.
-
-Folgerungen für die spätere Umsetzung, noch keine bestätigten API-Eigenschaften:
-
-- Beziehungsschlüssel und Zimmerzuordnung berücksichtigen; mehrere Zimmer desselben Hotels nicht ohne Regel als Dubletten behandeln.
-- Buchungsreferenz und API-ID nicht ohne Prüfung gleichsetzen.
-- Reisezeitraum, Hotelzeiten und Transportzeiten semantisch unterscheiden.
-- Die zwei maschinenlesbaren Beispiele aus S4 für die Mapping-Arbeit verwenden; den vollständigen und versionierten Datenvertrag weiterhin klären.
-- Rohdaten enthalten Personen-, Kontakt-, Preis- und potenziell zugangstragende Linkinformationen. Nur bewusst ausgewählte Daten in Kundenausgabe, Logs und Testmaterial übernehmen.
-
-## Noch nicht festgelegt
-
-Azure als STC-betriebene Inhaltsquelle für Bilder, Hinweise und JSON-Querverweise ist inzwischen bestätigt (S5). Siehe [IT-Basisstruktur](AZURE_IT_SETUP.md); ihre technischen Details sind Vorschläge. Der Fetcher verwendet Python/Tkinter und requests mit API v1.13 / Basic Auth (S6). Stack und Bibliotheken weiterer Komponenten, Anwendungs-Hosting, Datenbank, deren Authentifizierung und Schnittstellen, konkrete Berechtigungen, Aufbewahrung, Template-Format, DOCX-Styles, unterstützte Word-Versionen und Sprachen bleiben offen. Ob alle Inhaltsarten bereits im ersten MVP gebraucht werden, ist noch zu klären. Über den vorhandenen JSON-Fetcher hinaus ist keine fertige Gesamtanwendung implementiert.
+Aktuelle Einschätzung aus der Management-Antwort (S8): heute ca. 10–30 Minuten Nachbearbeitung, in Einzelfällen 45 Minuten; zunächst ungefähr **50 % weniger Aufwand** durch sauberes Word. Daraus ergeben sich rechnerisch meist 5–15 Minuten Ersparnis. Dies ist ungemessen und keine Abnahmegrenze. Die früher genannten bis zu 80 % bleiben im [Konzeptkontext](concepts/PROJECT_VISION.md).
