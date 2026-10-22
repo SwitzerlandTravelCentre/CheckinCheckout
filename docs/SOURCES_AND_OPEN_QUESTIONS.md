@@ -26,6 +26,8 @@ S4: Direkte Nutzerbestätigung vom 22.10.2026: Buchungen werden als JSON aus Nez
 
 S5: Direkte Nutzeranforderung vom 22.10.2026: Eine eigene Azure-Bereitstellung durch STC für Bilddaten, Hinweise und JSON mit Querverweisen (z. B. Referenz zu Package) wird benötigt. [IT-Einrichtungsgrundlage](AZURE_IT_SETUP.md) und [Inhaltsstruktur](CONTENT_STRUCTURE.md) dokumentieren den vorgeschlagenen Aufbau. Nur der Azure-Infrastrukturbedarf ist bestätigt; die konkrete Ressourcenauswahl und Datenverträge sind Vorschläge.
 
+S6: Nutzerangabe vom 22.10.2026: [NezasaToWord](https://github.com/SwitzerlandTravelCentre/NezasaToWord) ist der Fetcher für Aufbau / JSON-Export und soll integriert werden. main-Commit 2920216ffbdd647cf6e5f06caaec79b0cb45db3c geprüft und als unveränderte Quellkopie unter components/nezasa-fetcher übernommen. Siehe [Integration](FETCHER_INTEGRATION.md). Client-Verhalten aus Code belegt; Live-API und Tenant-Berechtigungen wurden nicht getestet.
+
 Der bestehende Reiseablauf im Anhang ist laut S2 ausdrücklich Status quo und **keine Benchmark oder Zielvorlage**. Das Call-Transkript wird in S2 als Hintergrund, nicht als konzeptionelle Referenz eingeordnet.
 
 Das Original-PDF und der rohe JSON-Abdruck wurden wegen enthaltener Personen- und Buchungsdaten nicht ins Repository kopiert. Die Quellenangabe ist ein Herkunftsnachweis; das Original ist für andere Entwickler nicht automatisch erreichbar.
@@ -47,9 +49,9 @@ Diese Liste dokumentiert fehlende Informationen. Sie verlangt keine vollständig
 
 | ID | Frage | Bedeutung |
 | --- | --- | --- |
-| Q01 | Was ist der heutige Projektstand? Gibt es bereits Code, Exporte, Templates oder einen Prototyp ausserhalb dieses bisher leeren Repositorys? | Verhindert doppelte Arbeit und falsche Ausgangsannahmen. |
+| Q01 | Was ist der heutige Projektstand? Der JSON-Fetcher ist integriert (S6). Gibt es weitere Komponenten, Templates oder Prototypen? | Verhindert doppelte Arbeit und falsche Ausgangsannahmen. |
 | Q02 | Soll der MVP ein vorhandenes Nezasa-DOCX reparieren oder aus strukturierten Buchungsdaten ein neues Dokument erzeugen? | Bestimmt den grundlegenden Implementierungsweg. |
-| Q03 | JSON aus Nezasa ist bestätigt und zwei Beispiele liegen vor (S4). Wie erfolgen Abruf, Identifikation und Berechtigung; welche API-Version gilt? | Grundlage des Datenadapters; noch keine API-Endpunkte bestätigt. |
+| Q03 | JSON aus Nezasa ist bestätigt und zwei Beispiele liegen vor (S4). S6 belegt einen Client mit GET /bookings/v1.13/{booking_id} und Basic Auth. Welche Zugänge / Channel sind freigegeben und entspricht dies dem aktuellen Serververtrag? | Grundlage des Datenadapters; noch keine API-Endpunkte bestätigt. |
 | Q04 | Zwei bereinigte JSON-Beispiele liegen vor (S4). Ein problematisches DOCX und eine akzeptierte Zielvorlage fehlen noch. | Basis für Mapping, Reproduktion und Abnahme. |
 | Q05 | Welche Inhalte müssen im MVP enthalten sein, in welchen Sprachen und für welche Reisearten? | Definiert vollständige Ausgabe und Testabdeckung. |
 | Q06 | Welche konkreten Regeln gelten für Tagesüberschriften, Übernachtungen, Transporte und Check-in / Check-out? | Verhindert Interpretation als fertige Fachlogik. |
@@ -75,5 +77,7 @@ Diese Liste dokumentiert fehlende Informationen. Sie verlangt keine vollständig
 - 22.10.2026: Eingangsform JSON aus Nezasa durch direkte Nutzerangabe bestätigt (S4). Zwei Beispiele für das öffentliche Repository strukturerhaltend bereinigt. Authentifizierung, Abrufmechanismus, API-Version und vollständiger Vertrag bleiben offen.
 
 - 22.10.2026: STC-bereitgestellte Azure-Infrastruktur als Quelle für Bilder, Hinweise und JSON-Querverweise angefordert (S5). Konkrete Ressourcen und Inhaltsverträge als Einrichtungsvorschlag dokumentiert; keine Bereitstellung erfolgt.
+
+- 22.10.2026: Bestehenden Fetcher aus NezasaToWord integriert (S6), mit Herkunftsnachweis und Offline-Tests. Keine Word- oder Azure-Anbindung hinzugefügt.
 
 Künftige Einträge sollen Datum, Entscheidung, Entscheidungsquelle, Begründung und gegebenenfalls abgelöste Aussage nennen. Neue Quellen ergänzen das Register; offene Punkte werden erst nach tatsächlicher Klärung geschlossen.

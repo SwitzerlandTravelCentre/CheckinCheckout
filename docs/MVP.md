@@ -12,7 +12,7 @@ Ob eine bestehende DOCX-Datei verbessert oder ein neues DOCX aus strukturierten 
 
 | ID | Arbeitsanforderung | Herkunft und Status |
 | --- | --- | --- |
-| M01 | Nezasa als erste Quelle für Buchungsdaten verwenden. | S1/S2; JSON durch S4 bestätigt, Zugriff und versionierter Datenvertrag offen. |
+| M01 | Nezasa als erste Quelle für Buchungsdaten verwenden. | S1/S2; JSON durch S4 bestätigt, Fetcher mit v1.13 / Basic Auth aus S6 integriert; Serververtrag und Tenant-Freigabe offen. |
 | M02 | Ein in Word bearbeitbares DOCX mit tragfähiger Struktur erzeugen. | S1 und S2; Zielvorlage und technische Definition von „Word-native“ offen. |
 | M03 | Die Darstellung des Reiseablaufs durch einfache Regeln verbessern. | S1 allgemein, S2 mit Reisetag-Beispiel; exakter MVP-Regelkatalog offen. |
 | M04 | Prüfung, Korrekturen und freie Ergänzungen durch Travel Agents ermöglichen. | S1 und S2; Word als Arbeitsfläche. |
@@ -37,6 +37,10 @@ Die folgenden Szenarien konkretisieren die Probleme für eine spätere Abstimmun
 | Effizienz | Manuellen Finalisierungsaufwand mit der bisherigen Arbeitsweise an vergleichbaren Reisen messen. Die ca. 80 % bleiben bis dahin ein Nutzenziel. |
 
 Benötigt werden eine akzeptierte Zielvorlage, anonymisierte oder synthetische repräsentative Buchungen und fachliche Abnahme durch die vorgesehenen Nutzer.
+
+## Vorhandene Implementierung
+
+Der [integrierte Fetcher](FETCHER_INTEGRATION.md) aus S6 ruft die Booking API ab und speichert JSON lokal. Mapping, Azure-Inhaltsabruf und Word-/PDF-Erzeugung sind noch nicht implementiert. Ein Live-Zugriff wurde bei der Integration nicht getestet.
 
 ## Aktuelle Beispielbasis
 
@@ -65,4 +69,4 @@ Folgerungen für die spätere Umsetzung, noch keine bestätigten API-Eigenschaft
 
 ## Noch nicht festgelegt
 
-Azure als STC-betriebene Inhaltsquelle für Bilder, Hinweise und JSON-Querverweise ist inzwischen bestätigt (S5). Siehe [IT-Basisstruktur](AZURE_IT_SETUP.md); ihre technischen Details sind Vorschläge. Stack, Bibliotheken, Anwendungs-Hosting, Datenbank, Authentifizierung, API-Endpunkte, konkrete Berechtigungen, Aufbewahrung, Template-Format, DOCX-Styles, unterstützte Word-Versionen und Sprachen bleiben offen. Ob alle Inhaltsarten bereits im ersten MVP gebraucht werden, ist noch zu klären. Aus dieser Dokumentation lässt sich keine vorhandene Integration oder fertige Software ableiten.
+Azure als STC-betriebene Inhaltsquelle für Bilder, Hinweise und JSON-Querverweise ist inzwischen bestätigt (S5). Siehe [IT-Basisstruktur](AZURE_IT_SETUP.md); ihre technischen Details sind Vorschläge. Der Fetcher verwendet Python/Tkinter und requests mit API v1.13 / Basic Auth (S6). Stack und Bibliotheken weiterer Komponenten, Anwendungs-Hosting, Datenbank, deren Authentifizierung und Schnittstellen, konkrete Berechtigungen, Aufbewahrung, Template-Format, DOCX-Styles, unterstützte Word-Versionen und Sprachen bleiben offen. Ob alle Inhaltsarten bereits im ersten MVP gebraucht werden, ist noch zu klären. Über den vorhandenen JSON-Fetcher hinaus ist keine fertige Gesamtanwendung implementiert.

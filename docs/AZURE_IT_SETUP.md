@@ -137,6 +137,10 @@ Konkrete Alarmgrenzen und Budgets nach Volumen und Betriebszeit festlegen. Infra
 
 Die semantischen Tests benötigen den späteren Publisher / Anwendungsadapter; sie sind nicht allein durch Azure-Konfiguration erfüllt.
 
+## Bestehender Nezasa-Fetcher
+
+Der [integrierte Desktop-Fetcher](FETCHER_INTEGRATION.md) nutzt separat Nezasa Booking API v1.13 mit Basic Auth. IT stellt API-Benutzer, freigegebenen Distribution Channel und HTTPS-Ausgang zu dessen tripbuilder.app-Host bereit. JSON wird lokal gespeichert; Azure ist noch nicht angebunden. Entra-Rechte ersetzen die Nezasa-Zugangsdaten nicht.
+
 ## Übergabe von IT an Entwicklung
 
 IT liefert pro Umgebung: Subscription-/Tenant-ID, Resource-Group-Name, Region, Storage-Endpoint, Container-Namen, Identitätsreferenzen, RBAC-Scopes, Netz-/DNS-Anleitung, Betriebs- und Alarmkontakte sowie dokumentierte Restore-Methode. Diese Details gehören in die interne STC-Betriebsdokumentation; Secrets und interne Infrastrukturdetails nicht im öffentlichen Git hinterlegen.

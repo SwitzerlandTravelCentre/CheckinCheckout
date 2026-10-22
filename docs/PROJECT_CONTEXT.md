@@ -1,6 +1,6 @@
 # Projektkontext
 
-Stand: 22.10.2026. Quellen: S1, S2, S4 und S5 aus [Quellen und offene Fragen](SOURCES_AND_OPEN_QUESTIONS.md). Alle Aussagen sind aus dem gelieferten Kontext konsolidiert; ihre heutige Gültigkeit muss bei Bedarf bestätigt werden.
+Stand: 22.10.2026. Quellen: S1, S2, S4, S5 und S6 aus [Quellen und offene Fragen](SOURCES_AND_OPEN_QUESTIONS.md). Alle Aussagen sind aus dem gelieferten Kontext konsolidiert; ihre heutige Gültigkeit muss bei Bedarf bestätigt werden.
 
 ## Problem und Nutzen
 
@@ -18,7 +18,7 @@ Ziel ist ein sauberer DOCX-Export mit grundlegenden Struktur- und Darstellungsre
 | Reisedossier | Travel Docs zusammen mit ergänzenden Tickets, Vouchern, Reservierungen und weiteren Bestätigungen. |
 | Travel Agent | Prüft, ergänzt, korrigiert und finalisiert die Unterlagen. Aktiver Bearbeiter im Human-in-the-loop-Prozess. |
 | Sales | Vorgesehene operative Nutzergruppe des MVP. Genaue Rollen und Berechtigungen sind offen. |
-| Nezasa | Buchungssystem und vorgesehene erste Datenquelle. Aktueller Datenzugriff ist nicht spezifiziert. |
+| Nezasa | Buchungssystem und vorgesehene erste Datenquelle. Bestehender Fetcher mit Booking API v1.13 / Basic Auth übernommen (S6); Tenant-Freigabe bleibt zu prüfen. |
 | Beyond PDF | Breitere, derzeit zurückgestellte Vision eines zentralen Systems für konsistente Unterlagen über B2B, B2C, Groups und weitere Beteiligte. |
 
 Kunden sollen erkennen können, welche Hotels und Leistungen gebucht sind, welche Abläufe und Zeiten gelten und was zusätzlich zu buchen oder zu reservieren ist. Aussagen zu inkludierten, bezahlten und nicht gebuchten Leistungen dürfen nicht gleichgesetzt werden.
@@ -40,7 +40,7 @@ Dies ist ein fachliches Regelbeispiel. Prioritäten bei mehreren Transporten, Ru
 
 ## Bestätigte Eingangsform
 
-Am 22.10.2026 bestätigt der Nutzer: Buchungen werden als JSON aus Nezasa bezogen (S4). Zwei strukturerhaltend bereinigte Exporte liegen unter [examples/nezasa](../examples/nezasa/README.md). Technischer Abruf und versionierter API-Vertrag bleiben offen.
+Am 22.10.2026 bestätigt der Nutzer: Buchungen werden als JSON aus Nezasa bezogen (S4). Zwei strukturerhaltend bereinigte Exporte liegen unter [examples/nezasa](../examples/nezasa/README.md). S6 ergänzt den vorhandenen [Fetcher](FETCHER_INTEGRATION.md) mit GET /bookings/v1.13/{booking_id} und Basic Auth. Aktueller Serververtrag und tatsächliche Berechtigungen bleiben unabhängig zu bestätigen.
 
 ## Bestätigter Infrastrukturbedarf
 

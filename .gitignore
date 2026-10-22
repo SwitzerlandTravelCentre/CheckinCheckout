@@ -1,0 +1,28 @@
+# Credentials and local Python environments
+.env
+*.env
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+
+# Raw data and generated documents: allow only reviewed JSON examples.
+*.json
+!examples/nezasa/booking_example_01.json
+!examples/nezasa/booking_example_02.json
+!examples/content/control/current.json
+!examples/content/releases/demo-001/catalog.json
+!examples/content/releases/demo-001/mappings.json
+!examples/content/releases/demo-001/manifest.json
+*.csv
+*.tsv
+*.xlsx
+*.xls
+*.doc
+*.docx
+*.pdf
+*.zip
+/data/
+/exports/
+/output/
+/output_docs/
