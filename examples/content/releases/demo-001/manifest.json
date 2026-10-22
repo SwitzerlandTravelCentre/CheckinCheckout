@@ -1,0 +1,16 @@
+{
+  "schemaVersion": "1.0",
+  "releaseId": "demo-001",
+  "files": [
+    {
+      "path": "catalog.json",
+      "contentType": "application/json",
+      "sha256": "624f0a819d645b2b044310bd1b7d788eb3f0dd8a59aa82e780ee524584e56b5e"
+    },
+    {
+      "path": "mappings.json",
+      "contentType": "application/json",
+      "sha256": "314707b171bfcda0b7bd96b224151caf58984f3a8adfdf00d6e1e2c34031f043"
+    }
+  ]
+}

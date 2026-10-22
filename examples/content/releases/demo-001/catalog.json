@@ -1,0 +1,35 @@
+{
+  "schemaVersion": "1.0",
+  "releaseId": "demo-001",
+  "packages": [
+    {
+      "id": "pkg-demo-classic",
+      "displayName": {
+        "de": "Beispiel-Zugreise",
+        "en": "Example rail journey"
+      },
+      "hintIds": [
+        "hint-demo-arrival"
+      ],
+      "imageIds": []
+    }
+  ],
+  "hints": [
+    {
+      "id": "hint-demo-arrival",
+      "type": "orientation",
+      "required": false,
+      "localized": {
+        "de": {
+          "title": "Hinweis zur Anreise",
+          "body": "Dies ist ein synthetischer Beispielhinweis. Verbindliche Reisezeiten stehen in den Buchungsdaten."
+        },
+        "en": {
+          "title": "Arrival information",
+          "body": "This is synthetic example content. Confirmed travel times come from the booking data."
+        }
+      }
+    }
+  ],
+  "images": []
+}

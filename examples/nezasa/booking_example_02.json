@@ -1,0 +1,2983 @@
+{
+  "data": {
+    "type": "booking",
+    "id": "demo-02-booking-0001",
+    "attributes": {
+      "tourOperator": "stcflex",
+      "refId": "demo-02-booking-0001",
+      "travelAgencyRefId": "stcflex",
+      "travelAgentExternalReferences": [],
+      "travelAgencyShortName": "Switzerland Travel Centre",
+      "startDate": "2026-04-21",
+      "endDate": "2026-04-27",
+      "pax": {
+        "contact": {
+          "firstName": "Testperson01",
+          "lastName": "Mustergast01",
+          "gender": "Female",
+          "countryCode": "DE",
+          "city": "Musterstadt",
+          "postalCode": "00000",
+          "street1": "Beispielstrasse 1",
+          "phone": "+000000000000",
+          "email": "guest01@example.invalid"
+        },
+        "paxInfo": [
+          {
+            "firstName": "Testperson01",
+            "lastName": "Mustergast01",
+            "gender": "Female",
+            "birthDate": "1953-01-01",
+            "age": 73,
+            "nationality": "Deutschland",
+            "nationalityCode": "DE",
+            "isMainContact": true,
+            "loyaltyProgramMemberships": [],
+            "tags": [
+              "SwissRailwaysReductionType.Foreigner"
+            ],
+            "address": {},
+            "refId": "pax-1"
+          },
+          {
+            "firstName": "Testperson02",
+            "lastName": "Mustergast02",
+            "gender": "Male",
+            "birthDate": "1956-01-01",
+            "age": 70,
+            "nationality": "Deutschland",
+            "nationalityCode": "DE",
+            "loyaltyProgramMemberships": [],
+            "tags": [
+              "SwissRailwaysReductionType.Foreigner"
+            ],
+            "refId": "pax-2"
+          },
+          {
+            "firstName": "Testperson03",
+            "lastName": "Mustergast03",
+            "gender": "Female",
+            "birthDate": "1959-01-01",
+            "age": 67,
+            "nationality": "Deutschland",
+            "nationalityCode": "DE",
+            "loyaltyProgramMemberships": [],
+            "tags": [
+              "SwissRailwaysReductionType.Foreigner"
+            ],
+            "refId": "pax-3"
+          },
+          {
+            "firstName": "Testperson04",
+            "lastName": "Mustergast04",
+            "gender": "Male",
+            "birthDate": "1962-01-01",
+            "age": 64,
+            "nationality": "Deutschland",
+            "nationalityCode": "DE",
+            "loyaltyProgramMemberships": [],
+            "tags": [
+              "SwissRailwaysReductionType.Foreigner"
+            ],
+            "refId": "pax-4"
+          }
+        ]
+      },
+      "lang": "de",
+      "distributionChannelShortName": "stc-ch",
+      "optIns": [],
+      "templateRefId": "t0019083",
+      "templateTags": [
+        "gtt_rhb",
+        "b2b_gttos"
+      ],
+      "templateExternalReferences": [],
+      "travelAgency": "stcflex",
+      "travelAgencyRefs": [],
+      "bookingType": "Booking",
+      "bookingClient": "Nezasa",
+      "caseId": "demo-02-reference-0002",
+      "externalCaseId": "demo-02-reference-0002",
+      "modules": [
+        {
+          "refId": "m0026127",
+          "alias": "Grand Train Tour of Switzerland – Klassiker",
+          "startDate": "2026-04-21",
+          "endDate": "2026-04-27",
+          "tags": [],
+          "remarks": ""
+        }
+      ],
+      "alias": "Grand Train Tour of Switzerland – Klassiker",
+      "url": "https://booking.example.invalid/go/synthetic-access-token",
+      "price": {
+        "salesPrice": {
+          "amount": 937,
+          "currency": "CHF"
+        },
+        "unroundedSalesPrice": {
+          "amount": 937,
+          "currency": "CHF"
+        },
+        "customerSalesPrice": {
+          "amount": 937,
+          "currency": "CHF"
+        },
+        "unroundedCustomerSalesPrice": {
+          "amount": 937,
+          "currency": "CHF"
+        },
+        "netPrices": [
+          {
+            "amount": 208.0,
+            "currency": "CHF"
+          }
+        ],
+        "netPriceConsolidated": {
+          "amount": 208.0,
+          "currency": "CHF"
+        },
+        "promoCode": {
+          "amount": 7884,
+          "currency": "Synthetic example offer",
+          "calculationMethod": "Synthetic example offer",
+          "percentage": 517
+        }
+      },
+      "surcharges": [],
+      "startCode": "ZRH",
+      "countryCodes": [
+        "CH"
+      ],
+      "bookingState": "BookingCompleted",
+      "purchaseCancellationFees": [
+        {
+          "from": "2026-01-22",
+          "to": "2026-03-21",
+          "cost": [
+            {
+              "amount": 0,
+              "currency": "CHF"
+            }
+          ]
+        },
+        {
+          "from": "2026-03-22",
+          "to": "2026-04-01",
+          "cost": [
+            {
+              "amount": 4595,
+              "currency": "CHF"
+            }
+          ]
+        },
+        {
+          "from": "2026-04-02",
+          "to": "2026-04-09",
+          "cost": [
+            {
+              "amount": 9478,
+              "currency": "CHF"
+            }
+          ]
+        },
+        {
+          "from": "2026-04-10",
+          "to": "2026-04-20",
+          "cost": [
+            {
+              "amount": 2782.0,
+              "currency": "CHF"
+            }
+          ]
+        },
+        {
+          "from": "2026-04-21",
+          "to": "2026-04-21",
+          "cost": [
+            {
+              "amount": 4251.0,
+              "currency": "CHF"
+            }
+          ]
+        }
+      ],
+      "payment": {
+        "coveredAmount": {
+          "amount": 937,
+          "currency": "CHF"
+        },
+        "uncoveredAmount": {
+          "amount": 0,
+          "currency": "CHF"
+        },
+        "transactions": [
+          {
+            "transactionRefId": "demo-02-payment-0040",
+            "externalRefId": "demo-02-payment-0040",
+            "status": "Closed",
+            "amount": {
+              "currency": "CHF",
+              "value": "937.00",
+              "amount": "937.00"
+            },
+            "transactionType": "Payment",
+            "paymentMethod": "Datatrans",
+            "paymentServiceProviderPaymentMethod": "AMX",
+            "paymentServiceProviderId": "demo-02-payment-0040",
+            "created": "2026-01-21T10:50:17.964Z",
+            "valuta": "2026-01-21T10:50:23.732Z"
+          }
+        ],
+        "downPayment": {
+          "amount": 937,
+          "currency": "CHF"
+        }
+      },
+      "created": "2026-01-21T10:19:06.856Z",
+      "modified": "2026-01-22T08:28:41.073Z",
+      "firstBooked": "2026-01-21T10:50:23.236Z",
+      "lastBooked": "2026-01-21T10:50:23.236Z",
+      "distributionChannel": "stc-ch",
+      "includedItems": "package",
+      "promoCode": {
+        "code": "DEMO-OFFER",
+        "title": "Synthetic example offer"
+      },
+      "tourType": "Individual",
+      "urls": {
+        "b2cPlanner": "https://booking.example.invalid/de-ch/buchen?nz-lang=de&nz-url=%2Fitineraries%2Fdemo-02-booking-0001"
+      },
+      "uniqueServices": {
+        "accommodations": 6,
+        "activities": 5,
+        "baseServices": 2,
+        "upsellItems": 4
+      }
+    },
+    "relationships": {
+      "components": {
+        "data": [
+          {
+            "type": "component",
+            "id": "demo-02-component-0003"
+          },
+          {
+            "type": "component",
+            "id": "demo-02-component-0005"
+          },
+          {
+            "type": "component",
+            "id": "demo-02-component-0007"
+          },
+          {
+            "type": "component",
+            "id": "demo-02-component-0009"
+          },
+          {
+            "type": "component",
+            "id": "demo-02-component-0011"
+          },
+          {
+            "type": "component",
+            "id": "demo-02-component-0013"
+          },
+          {
+            "type": "component",
+            "id": "demo-02-component-0014"
+          },
+          {
+            "type": "component",
+            "id": "demo-02-component-0015"
+          },
+          {
+            "type": "component",
+            "id": "demo-02-component-0017"
+          },
+          {
+            "type": "component",
+            "id": "demo-02-component-0018"
+          },
+          {
+            "type": "component",
+            "id": "demo-02-component-0020"
+          },
+          {
+            "type": "component",
+            "id": "demo-02-component-0022"
+          },
+          {
+            "type": "component",
+            "id": "demo-02-component-0023"
+          },
+          {
+            "type": "component",
+            "id": "demo-02-component-0025"
+          },
+          {
+            "type": "component",
+            "id": "demo-02-component-0026"
+          },
+          {
+            "type": "component",
+            "id": "demo-02-component-0028"
+          },
+          {
+            "type": "component",
+            "id": "demo-02-component-0030"
+          },
+          {
+            "type": "component",
+            "id": "demo-02-component-0031"
+          },
+          {
+            "type": "component",
+            "id": "demo-02-component-0032"
+          },
+          {
+            "type": "component",
+            "id": "demo-02-component-0034"
+          },
+          {
+            "type": "component",
+            "id": "demo-02-component-0035"
+          },
+          {
+            "type": "component",
+            "id": "demo-02-component-0037"
+          },
+          {
+            "type": "component",
+            "id": "demo-02-component-0039"
+          }
+        ]
+      }
+    }
+  },
+  "included": [
+    {
+      "type": "component",
+      "id": "demo-02-component-0003",
+      "attributes": {
+        "desc": "FLEX OPTION",
+        "supplier": {
+          "id": "61604afe1900008534220ba1",
+          "name": "Switzerland Travel Centre",
+          "externalReferences": [
+            {
+              "id": "STCG",
+              "system": "Midoco"
+            }
+          ],
+          "email": "supplier@example.invalid",
+          "bookingReference": "demo-02-supplier-booking-0004"
+        },
+        "isOnRequest": false,
+        "status": "Booked",
+        "type": "upsell-item",
+        "productRefId": "5fb620e5250000443d9affa4",
+        "productSupplier": "stcflex",
+        "price": {
+          "salesPrice": {
+            "amount": 6105,
+            "currency": "CHF"
+          },
+          "netPrice": {
+            "amount": 6105,
+            "currency": "CHF"
+          },
+          "details": {
+            "supplierPurchasePrice": {
+              "amount": 6105,
+              "currency": "CHF"
+            },
+            "markups": [
+              {
+                "markupType": "TourOperatorBase",
+                "priceWithoutMarkup": {
+                  "amount": 6105,
+                  "currency": "CHF"
+                },
+                "priceWithMarkup": {
+                  "amount": 6105,
+                  "currency": "CHF"
+                },
+                "totalMarkup": {
+                  "amount": 0,
+                  "currency": "CHF"
+                }
+              },
+              {
+                "markupType": "TourOperatorAgency",
+                "priceWithoutMarkup": {
+                  "amount": 6105,
+                  "currency": "CHF"
+                },
+                "priceWithMarkup": {
+                  "amount": 6105,
+                  "currency": "CHF"
+                },
+                "totalMarkup": {
+                  "amount": 0,
+                  "currency": "CHF"
+                }
+              }
+            ],
+            "purchaseAmountExcludedFromMarkups": {
+              "amount": 0,
+              "currency": "CHF"
+            }
+          }
+        },
+        "productName": "FLEX OPTION",
+        "cancellationPeriods": [],
+        "isAdhoc": false
+      }
+    },
+    {
+      "type": "component",
+      "id": "demo-02-component-0005",
+      "attributes": {
+        "desc": "Mittagessen Glacier Express",
+        "supplier": {
+          "id": "616048c4300000f0d41fd44f",
+          "name": "Rhätische Bahn AG ",
+          "externalReferences": [
+            {
+              "id": "RHB",
+              "system": "Midoco"
+            }
+          ],
+          "email": "supplier@example.invalid",
+          "bookingReference": "demo-02-supplier-booking-0006"
+        },
+        "isOnRequest": false,
+        "status": "Booked",
+        "type": "upsell-item",
+        "productRefId": "5d47f8620100000d9c6bc897",
+        "productSupplier": "stcflex",
+        "price": {
+          "salesPrice": {
+            "amount": 1164,
+            "currency": "CHF"
+          },
+          "netPrice": {
+            "amount": 8835.0,
+            "currency": "CHF"
+          },
+          "details": {
+            "supplierPurchasePrice": {
+              "amount": 8835.0,
+              "currency": "CHF"
+            },
+            "markups": [
+              {
+                "markupType": "TourOperatorBase",
+                "priceWithoutMarkup": {
+                  "amount": 8835.0,
+                  "currency": "CHF"
+                },
+                "priceWithMarkup": {
+                  "amount": 8835.0,
+                  "currency": "CHF"
+                },
+                "totalMarkup": {
+                  "amount": 0,
+                  "currency": "CHF"
+                }
+              },
+              {
+                "markupType": "TourOperatorAgency",
+                "priceWithoutMarkup": {
+                  "amount": 8835.0,
+                  "currency": "CHF"
+                },
+                "priceWithMarkup": {
+                  "amount": 4093.0,
+                  "currency": "CHF"
+                },
+                "totalMarkup": {
+                  "amount": 7272.0,
+                  "currency": "CHF"
+                }
+              }
+            ],
+            "purchaseAmountExcludedFromMarkups": {
+              "amount": 0,
+              "currency": "CHF"
+            }
+          }
+        },
+        "productName": "Mittagessen Glacier Express",
+        "cancellationPeriods": [],
+        "isAdhoc": false
+      }
+    },
+    {
+      "type": "component",
+      "id": "demo-02-component-0007",
+      "attributes": {
+        "desc": "Verpflegung GoldenPass Express",
+        "supplier": {
+          "id": "6220c8d33600008e5bcc2e77",
+          "name": "Golden Pass MOB",
+          "externalReferences": [
+            {
+              "id": "RAGP",
+              "system": "Midoco"
+            }
+          ],
+          "email": "supplier@example.invalid",
+          "bookingReference": "demo-02-supplier-booking-0008"
+        },
+        "isOnRequest": false,
+        "status": "Booked",
+        "type": "upsell-item",
+        "productRefId": "67176dec3a0000179747e317",
+        "productSupplier": "stcflex",
+        "price": {
+          "salesPrice": {
+            "amount": 6670,
+            "currency": "CHF"
+          },
+          "netPrice": {
+            "amount": 8171.0,
+            "currency": "CHF"
+          },
+          "details": {
+            "supplierPurchasePrice": {
+              "amount": 8171.0,
+              "currency": "CHF"
+            },
+            "markups": [
+              {
+                "markupType": "TourOperatorBase",
+                "priceWithoutMarkup": {
+                  "amount": 8171.0,
+                  "currency": "CHF"
+                },
+                "priceWithMarkup": {
+                  "amount": 8171.0,
+                  "currency": "CHF"
+                },
+                "totalMarkup": {
+                  "amount": 0,
+                  "currency": "CHF"
+                }
+              },
+              {
+                "markupType": "TourOperatorAgency",
+                "priceWithoutMarkup": {
+                  "amount": 8171.0,
+                  "currency": "CHF"
+                },
+                "priceWithMarkup": {
+                  "amount": 8171.0,
+                  "currency": "CHF"
+                },
+                "totalMarkup": {
+                  "amount": 0,
+                  "currency": "CHF"
+                }
+              }
+            ],
+            "purchaseAmountExcludedFromMarkups": {
+              "amount": 0,
+              "currency": "CHF"
+            }
+          }
+        },
+        "productName": "Verpflegung GoldenPass Express",
+        "cancellationPeriods": [],
+        "isAdhoc": false
+      }
+    },
+    {
+      "type": "component",
+      "id": "demo-02-component-0009",
+      "attributes": {
+        "desc": "Gepäcktransport SBB – Klassiker",
+        "supplier": {
+          "id": "62a81e2f330000992cdf21c7",
+          "name": "SBB Luggage transport",
+          "externalReferences": [
+            {
+              "id": "SBBGE",
+              "system": "Midoco"
+            }
+          ],
+          "email": "supplier@example.invalid",
+          "bookingReference": "demo-02-supplier-booking-0010"
+        },
+        "isOnRequest": false,
+        "status": "Booked",
+        "type": "upsell-item",
+        "productRefId": "6399808e160000592be46537",
+        "productSupplier": "stcflex",
+        "price": {
+          "salesPrice": {
+            "amount": 3780,
+            "currency": "CHF"
+          },
+          "netPrice": {
+            "amount": 2079.0,
+            "currency": "CHF"
+          },
+          "details": {
+            "supplierPurchasePrice": {
+              "amount": 2079.0,
+              "currency": "CHF"
+            },
+            "markups": [
+              {
+                "markupType": "TourOperatorBase",
+                "priceWithoutMarkup": {
+                  "amount": 2079.0,
+                  "currency": "CHF"
+                },
+                "priceWithMarkup": {
+                  "amount": 2079.0,
+                  "currency": "CHF"
+                },
+                "totalMarkup": {
+                  "amount": 0,
+                  "currency": "CHF"
+                }
+              },
+              {
+                "markupType": "TourOperatorAgency",
+                "priceWithoutMarkup": {
+                  "amount": 2079.0,
+                  "currency": "CHF"
+                },
+                "priceWithMarkup": {
+                  "amount": 3694.0,
+                  "currency": "CHF"
+                },
+                "totalMarkup": {
+                  "amount": 1607.0,
+                  "currency": "CHF"
+                }
+              }
+            ],
+            "purchaseAmountExcludedFromMarkups": {
+              "amount": 0,
+              "currency": "CHF"
+            }
+          }
+        },
+        "productName": "Gepäcktransport SBB – Klassiker",
+        "cancellationPeriods": [],
+        "isAdhoc": false
+      }
+    },
+    {
+      "type": "component",
+      "id": "demo-02-component-0011",
+      "attributes": {
+        "refundable": true,
+        "startDateTime": "2026-04-21T00:00:00.000Z",
+        "endDateTime": "2026-04-27T23:59:59.999Z",
+        "isOnRequest": false,
+        "componentVoucherUrl": "https://booking.example.invalid/itineraries/demo-02-booking-0001/components/demo-02-component-0011/tickets.pdf",
+        "status": "Booked",
+        "type": "baseService",
+        "productRefId": "6362918a16000066bbf70511",
+        "voucherUrl": "https://booking.example.invalid/itineraries/demo-02-booking-0001/components/demo-02-component-0011/tickets.pdf",
+        "moduleRefId": "m0026127",
+        "desc": "TO Bahnticket GTToS Klassiker; 4x SHFC, 2. Klasse",
+        "productSupplier": "stcflex",
+        "price": {
+          "salesPrice": {
+            "amount": 4161,
+            "currency": "CHF"
+          },
+          "netPrice": {
+            "amount": 3776,
+            "currency": "CHF"
+          },
+          "details": {
+            "supplierPurchasePrice": {
+              "amount": 3776,
+              "currency": "CHF"
+            },
+            "markups": [
+              {
+                "markupType": "TourOperatorBase",
+                "priceWithoutMarkup": {
+                  "amount": 3776,
+                  "currency": "CHF"
+                },
+                "priceWithMarkup": {
+                  "amount": 3776,
+                  "currency": "CHF"
+                },
+                "totalMarkup": {
+                  "amount": 0,
+                  "currency": "CHF"
+                }
+              },
+              {
+                "markupType": "TourOperatorAgency",
+                "priceWithoutMarkup": {
+                  "amount": 3776,
+                  "currency": "CHF"
+                },
+                "priceWithMarkup": {
+                  "amount": 7128.0,
+                  "currency": "CHF"
+                },
+                "totalMarkup": {
+                  "amount": 750.0,
+                  "currency": "CHF"
+                }
+              }
+            ],
+            "purchaseAmountExcludedFromMarkups": {
+              "amount": 0,
+              "currency": "CHF"
+            }
+          }
+        },
+        "productExternalRefId": "4",
+        "supplier": {
+          "id": "Sbb",
+          "bookingReference": "demo-02-supplier-booking-0012"
+        },
+        "productName": "TO Bahnticket GTToS Klassiker; 4x SHFC",
+        "cancellationPeriods": [],
+        "isAdhoc": false
+      }
+    },
+    {
+      "type": "component",
+      "id": "demo-02-component-0013",
+      "attributes": {
+        "refundable": true,
+        "startDateTime": "2026-04-21T00:00:00.000Z",
+        "endDateTime": "2026-04-27T23:59:59.999Z",
+        "supplier": {
+          "id": "632d7c8a3e0000dd62d530b8",
+          "name": "Switzerland Travel Centre (SCP)",
+          "externalReferences": [
+            {
+              "id": "SCP",
+              "system": "Midoco"
+            }
+          ],
+          "email": "supplier@example.invalid"
+        },
+        "isOnRequest": false,
+        "status": "Open",
+        "type": "baseService",
+        "productRefId": "68789945490000c9f1018823",
+        "moduleRefId": "m0026127",
+        "desc": "Digital Swiss Coupon Pass, mit über 100 vielseitigen 2-für-1-Gutscheinen",
+        "productSupplier": "stcflex",
+        "price": {
+          "salesPrice": {
+            "amount": 3720,
+            "currency": "CHF"
+          },
+          "netPrice": {
+            "amount": 9536,
+            "currency": "CHF"
+          },
+          "details": {
+            "supplierPurchasePrice": {
+              "amount": 9536,
+              "currency": "CHF"
+            },
+            "markups": [
+              {
+                "markupType": "TourOperatorBase",
+                "priceWithoutMarkup": {
+                  "amount": 9536,
+                  "currency": "CHF"
+                },
+                "priceWithMarkup": {
+                  "amount": 9536,
+                  "currency": "CHF"
+                },
+                "totalMarkup": {
+                  "amount": 0,
+                  "currency": "CHF"
+                }
+              },
+              {
+                "markupType": "TourOperatorAgency",
+                "priceWithoutMarkup": {
+                  "amount": 9536,
+                  "currency": "CHF"
+                },
+                "priceWithMarkup": {
+                  "amount": 6963.0,
+                  "currency": "CHF"
+                },
+                "totalMarkup": {
+                  "amount": 6893.0,
+                  "currency": "CHF"
+                }
+              }
+            ],
+            "purchaseAmountExcludedFromMarkups": {
+              "amount": 0,
+              "currency": "CHF"
+            }
+          }
+        },
+        "productName": "Digital Swiss Coupon Pass",
+        "cancellationPeriods": [],
+        "isAdhoc": false
+      }
+    },
+    {
+      "type": "component",
+      "id": "demo-02-component-0014",
+      "attributes": {
+        "refundable": true,
+        "startDateTime": "2026-04-21T07:06:00.000+02:00",
+        "supplier": {
+          "id": "612f4724260000b19e84f3b4",
+          "name": "Schweizerische Bundesbahnen SBB AG",
+          "externalReferences": [
+            {
+              "id": "SBB",
+              "system": "Midoco"
+            }
+          ],
+          "email": "supplier@example.invalid"
+        },
+        "isOnRequest": false,
+        "endLocation": {
+          "countries": [
+            "CH"
+          ],
+          "city": "Interlaken"
+        },
+        "status": "Open",
+        "type": "activity",
+        "productRefId": "6135ff052600009fb6a0a4cb",
+        "moduleRefId": "m0026127",
+        "desc": "Luzern-Interlaken Express ab Luzern, Fahrt ohne Sitzplatzreservation",
+        "endDateTime": "2026-04-21T08:54:00.000+02:00",
+        "categoryName": "Fahrt ohne Sitzplatzreservation",
+        "productSupplier": "stcflex",
+        "price": {
+          "salesPrice": {
+            "amount": 0,
+            "currency": "CHF"
+          },
+          "netPrice": {
+            "amount": 0,
+            "currency": "CHF"
+          },
+          "details": {
+            "supplierPurchasePrice": {
+              "amount": 0,
+              "currency": "CHF"
+            },
+            "markups": [
+              {
+                "markupType": "TourOperatorBase",
+                "priceWithoutMarkup": {
+                  "amount": 0,
+                  "currency": "CHF"
+                },
+                "priceWithMarkup": {
+                  "amount": 0,
+                  "currency": "CHF"
+                },
+                "totalMarkup": {
+                  "amount": 0,
+                  "currency": "CHF"
+                }
+              },
+              {
+                "markupType": "TourOperatorAgency",
+                "priceWithoutMarkup": {
+                  "amount": 0,
+                  "currency": "CHF"
+                },
+                "priceWithMarkup": {
+                  "amount": 0,
+                  "currency": "CHF"
+                },
+                "totalMarkup": {
+                  "amount": 0,
+                  "currency": "CHF"
+                }
+              }
+            ],
+            "purchaseAmountExcludedFromMarkups": {
+              "amount": 0,
+              "currency": "CHF"
+            }
+          }
+        },
+        "productName": "Luzern-Interlaken Express ab Luzern",
+        "cancellationPeriods": [],
+        "startLocation": {
+          "countries": [
+            "CH"
+          ],
+          "city": "Lucerne"
+        },
+        "isAdhoc": false
+      }
+    },
+    {
+      "type": "component",
+      "id": "demo-02-component-0015",
+      "attributes": {
+        "refundable": true,
+        "startDateTime": "2026-04-21T12:00:00.000+02:00",
+        "isOnRequest": false,
+        "componentVoucherUrl": "https://booking.example.invalid/itineraries/demo-02-booking-0001/components/demo-02-component-0015/generated-vouchers.pdf",
+        "status": "Booked",
+        "remarks": "Das neu gebaute 3-Sterne-Hotel verfügt über 94 Hotelzimmer und Suiten, 21 Apartments, ein Frühstücksrestaurant und eine Lobbybar.",
+        "productRefId": "p_g_10m7reyn",
+        "moduleRefId": "m0026127",
+        "desc": "Essential by Dorint Interlaken, Essential Room 14m2",
+        "endDateTime": "2026-04-22T12:00:00.000+02:00",
+        "categoryName": "Essential Room 14m2",
+        "productSupplier": "stcflex",
+        "price": {
+          "salesPrice": {
+            "amount": 2730,
+            "currency": "CHF"
+          },
+          "netPrice": {
+            "amount": 4030.0,
+            "currency": "CHF"
+          },
+          "details": {
+            "supplierPurchasePrice": {
+              "amount": 4030.0,
+              "currency": "CHF"
+            },
+            "markups": [
+              {
+                "markupType": "TourOperatorBase",
+                "priceWithoutMarkup": {
+                  "amount": 4030.0,
+                  "currency": "CHF"
+                },
+                "priceWithMarkup": {
+                  "amount": 4030.0,
+                  "currency": "CHF"
+                },
+                "totalMarkup": {
+                  "amount": 0,
+                  "currency": "CHF"
+                }
+              },
+              {
+                "markupType": "TourOperatorAgency",
+                "priceWithoutMarkup": {
+                  "amount": 4030.0,
+                  "currency": "CHF"
+                },
+                "priceWithMarkup": {
+                  "amount": 5286.0,
+                  "currency": "CHF"
+                },
+                "totalMarkup": {
+                  "amount": 4888.0,
+                  "currency": "CHF"
+                }
+              }
+            ],
+            "purchaseAmountExcludedFromMarkups": {
+              "amount": 0,
+              "currency": "CHF"
+            }
+          }
+        },
+        "productExternalRefId": "60!~|b3!~|c386853!~|e468240!~|h79567!~|u2!~|u0!~|zJA!~|jJT!~|uio!~|mITQ!~|j0!~|y1398!~|z06414!~|w5!~|i1!~|l8!~|n51396945!~|yAXC!~|aJJS!~|qTYP!~|wZWF!~|I421!~|M4!~|Axmqgt!~|FUGA!~|C!~|I9!~|G!~|V!~|y4#T7J!~|GI8M!~|XB4K!~|S14|33!~|EWvzpkckfm Rjan 09v8!~|HXitpctbnv Gccq 15k7!~|C0!~|e3#G5A!~|DK4S!~|VT1P!~|Z21|65!~|BDlaayouln Bwev 92i8!~|BGbqmsphzm Tzoa 31c3!~|C3!~|Z3,601,5634077545!~|T4!~|TPLA#80745!~|Y4!~|M0!~|F5!~|M0!~|BGMS#52341!~|H1!~|G3!~|O4!~|J936!~|V2##!~|D1!~|D2!~|C7!~|P348!~|Wl5m81f27-20h4-9c18-00h3-s987982n9h44!~|I4!~|Y2!~|O2!~|P157!~|N5#!~|E2!~|T5!~|U3!~|fDT!~|iQexzhvtbhe!~|n4!~|h!~|n!~|t!~|z8!~|r!~|",
+        "supplier": {
+          "id": "STC",
+          "bookingReference": "demo-02-supplier-booking-0016"
+        },
+        "productName": "Essential by Dorint Interlaken",
+        "cancellationPeriods": [
+          {
+            "from": "2026-03-22",
+            "to": "2026-04-22",
+            "fee": {
+              "amount": 4030.0,
+              "currency": "CHF"
+            }
+          }
+        ],
+        "startLocation": {
+          "countries": [
+            "CH"
+          ],
+          "city": "Interlaken"
+        },
+        "isAdhoc": false,
+        "room": {
+          "roomIndex": 2,
+          "desc": "Essential Room 14m2",
+          "numPax": 2,
+          "paxInfo": [
+            {
+              "firstName": "Testperson01",
+              "lastName": "Mustergast01",
+              "gender": "Female",
+              "birthDate": "1953-01-01",
+              "age": 73,
+              "nationality": "Deutschland",
+              "nationalityCode": "DE",
+              "isMainContact": true,
+              "loyaltyProgramMemberships": [],
+              "tags": [
+                "SwissRailwaysReductionType.Foreigner"
+              ],
+              "address": {},
+              "refId": "pax-1"
+            },
+            {
+              "firstName": "Testperson02",
+              "lastName": "Mustergast02",
+              "gender": "Male",
+              "birthDate": "1956-01-01",
+              "age": 70,
+              "nationality": "Deutschland",
+              "nationalityCode": "DE",
+              "loyaltyProgramMemberships": [],
+              "tags": [
+                "SwissRailwaysReductionType.Foreigner"
+              ],
+              "refId": "pax-2"
+            }
+          ]
+        },
+        "type": "accommodation",
+        "externallyPaidCharges": [],
+        "voucherUrl": "https://booking.example.invalid/itineraries/demo-02-booking-0001/generated-vouchers.pdf"
+      }
+    },
+    {
+      "type": "component",
+      "id": "demo-02-component-0017",
+      "attributes": {
+        "refundable": true,
+        "startDateTime": "2026-04-21T12:00:00.000+02:00",
+        "isOnRequest": false,
+        "componentVoucherUrl": "https://booking.example.invalid/itineraries/demo-02-booking-0001/components/demo-02-component-0017/generated-vouchers.pdf",
+        "status": "Booked",
+        "remarks": "Das neu gebaute 3-Sterne-Hotel verfügt über 94 Hotelzimmer und Suiten, 21 Apartments, ein Frühstücksrestaurant und eine Lobbybar.",
+        "productRefId": "p_g_10m7reyn",
+        "moduleRefId": "m0026127",
+        "desc": "Essential by Dorint Interlaken, Essential Room 14m2",
+        "endDateTime": "2026-04-22T12:00:00.000+02:00",
+        "categoryName": "Essential Room 14m2",
+        "productSupplier": "stcflex",
+        "price": {
+          "salesPrice": {
+            "amount": 2730,
+            "currency": "CHF"
+          },
+          "netPrice": {
+            "amount": 4030.0,
+            "currency": "CHF"
+          },
+          "details": {
+            "supplierPurchasePrice": {
+              "amount": 4030.0,
+              "currency": "CHF"
+            },
+            "markups": [
+              {
+                "markupType": "TourOperatorBase",
+                "priceWithoutMarkup": {
+                  "amount": 4030.0,
+                  "currency": "CHF"
+                },
+                "priceWithMarkup": {
+                  "amount": 4030.0,
+                  "currency": "CHF"
+                },
+                "totalMarkup": {
+                  "amount": 0,
+                  "currency": "CHF"
+                }
+              },
+              {
+                "markupType": "TourOperatorAgency",
+                "priceWithoutMarkup": {
+                  "amount": 4030.0,
+                  "currency": "CHF"
+                },
+                "priceWithMarkup": {
+                  "amount": 5286.0,
+                  "currency": "CHF"
+                },
+                "totalMarkup": {
+                  "amount": 4888.0,
+                  "currency": "CHF"
+                }
+              }
+            ],
+            "purchaseAmountExcludedFromMarkups": {
+              "amount": 0,
+              "currency": "CHF"
+            }
+          }
+        },
+        "productExternalRefId": "98!~|n5!~|w236253!~|f447869!~|u77223!~|y9!~|c4!~|dWV!~|oBN!~|fzw!~|fJVZ!~|a7!~|e5369!~|q51956!~|q8!~|t3!~|p0!~|l39882882!~|dIMT!~|jVDL!~|hGLL!~|zXQE!~|I607!~|E6!~|Vfheiz!~|QLDU!~|E!~|R0!~|Y!~|G!~|j8#L4H!~|LE9U!~|DE8X!~|B89|87!~|DOixpazhqe Sfsr 70i2!~|ATwklpfpjc Ndnt 62s1!~|P2!~|q6#G7H!~|WS7U!~|WE0V!~|Q35|39!~|XPipefmden Xwgo 98w4!~|CBlaeqgydq Zzxu 01j8!~|C2!~|X2,112,2352811865!~|W4!~|RERR#31864!~|O3!~|K1!~|A0!~|K8!~|UGCC#85480!~|O4!~|O9!~|L6!~|O101!~|N3##!~|Q8!~|A6!~|R1!~|O734!~|Yl8g22b04-39r7-7n08-50i4-v919424f9s95!~|E3!~|H2!~|D0!~|G597!~|O6#!~|A8!~|U6!~|I0!~|iNF!~|iEugkcbfkdo!~|x2!~|a!~|g!~|m!~|a8!~|h!~|",
+        "supplier": {
+          "id": "STC",
+          "bookingReference": "demo-02-supplier-booking-0016"
+        },
+        "productName": "Essential by Dorint Interlaken",
+        "cancellationPeriods": [
+          {
+            "from": "2026-03-22",
+            "to": "2026-04-22",
+            "fee": {
+              "amount": 4030.0,
+              "currency": "CHF"
+            }
+          }
+        ],
+        "startLocation": {
+          "countries": [
+            "CH"
+          ],
+          "city": "Interlaken"
+        },
+        "isAdhoc": false,
+        "room": {
+          "roomIndex": 1,
+          "desc": "Essential Room 14m2",
+          "numPax": 2,
+          "paxInfo": [
+            {
+              "firstName": "Testperson03",
+              "lastName": "Mustergast03",
+              "gender": "Female",
+              "birthDate": "1959-01-01",
+              "age": 67,
+              "nationality": "Deutschland",
+              "nationalityCode": "DE",
+              "loyaltyProgramMemberships": [],
+              "tags": [
+                "SwissRailwaysReductionType.Foreigner"
+              ],
+              "refId": "pax-3"
+            },
+            {
+              "firstName": "Testperson04",
+              "lastName": "Mustergast04",
+              "gender": "Male",
+              "birthDate": "1962-01-01",
+              "age": 64,
+              "nationality": "Deutschland",
+              "nationalityCode": "DE",
+              "loyaltyProgramMemberships": [],
+              "tags": [
+                "SwissRailwaysReductionType.Foreigner"
+              ],
+              "refId": "pax-4"
+            }
+          ]
+        },
+        "type": "accommodation",
+        "externallyPaidCharges": [
+          {
+            "name": "Kurtaxe",
+            "value": {
+              "amount": 1323,
+              "currency": "CHF"
+            },
+            "chargeType": "AdditionalFees"
+          },
+          {
+            "name": "Kurtaxe",
+            "value": {
+              "amount": 1323,
+              "currency": "CHF"
+            },
+            "chargeType": "AdditionalFees"
+          }
+        ],
+        "voucherUrl": "https://booking.example.invalid/itineraries/demo-02-booking-0001/generated-vouchers.pdf"
+      }
+    },
+    {
+      "type": "component",
+      "id": "demo-02-component-0018",
+      "attributes": {
+        "refundable": true,
+        "startDateTime": "2026-04-22T09:07:00.000+02:00",
+        "supplier": {
+          "id": "6220c8d33600008e5bcc2e77",
+          "name": "Golden Pass MOB",
+          "externalReferences": [
+            {
+              "id": "RAGP",
+              "system": "Midoco"
+            }
+          ],
+          "email": "supplier@example.invalid",
+          "bookingReference": "demo-02-supplier-booking-0019"
+        },
+        "isOnRequest": false,
+        "endLocation": {
+          "countries": [
+            "CH"
+          ],
+          "city": "Montreux"
+        },
+        "status": "Booked",
+        "type": "activity",
+        "productRefId": "6295b10c180000bd40430c7d",
+        "moduleRefId": "m0026127",
+        "desc": "GoldenPass Express Interlaken – Montreux, Sitzplatzreservation",
+        "endDateTime": "2026-04-22T12:27:00.000+02:00",
+        "categoryName": "Sitzplatzreservation",
+        "productSupplier": "stcflex",
+        "price": {
+          "salesPrice": {
+            "amount": 6215,
+            "currency": "CHF"
+          },
+          "netPrice": {
+            "amount": 2535,
+            "currency": "CHF"
+          },
+          "details": {
+            "supplierPurchasePrice": {
+              "amount": 2535,
+              "currency": "CHF"
+            },
+            "markups": [
+              {
+                "markupType": "TourOperatorBase",
+                "priceWithoutMarkup": {
+                  "amount": 2535,
+                  "currency": "CHF"
+                },
+                "priceWithMarkup": {
+                  "amount": 2535,
+                  "currency": "CHF"
+                },
+                "totalMarkup": {
+                  "amount": 0,
+                  "currency": "CHF"
+                }
+              },
+              {
+                "markupType": "TourOperatorAgency",
+                "priceWithoutMarkup": {
+                  "amount": 2535,
+                  "currency": "CHF"
+                },
+                "priceWithMarkup": {
+                  "amount": 9795.0,
+                  "currency": "CHF"
+                },
+                "totalMarkup": {
+                  "amount": 3863.0,
+                  "currency": "CHF"
+                }
+              }
+            ],
+            "purchaseAmountExcludedFromMarkups": {
+              "amount": 0,
+              "currency": "CHF"
+            }
+          }
+        },
+        "productName": "GoldenPass Express Interlaken – Montreux",
+        "cancellationPeriods": [],
+        "startLocation": {
+          "countries": [
+            "CH"
+          ],
+          "city": "Interlaken"
+        },
+        "isAdhoc": false
+      }
+    },
+    {
+      "type": "component",
+      "id": "demo-02-component-0020",
+      "attributes": {
+        "refundable": true,
+        "startDateTime": "2026-04-22T12:00:00.000+02:00",
+        "isOnRequest": false,
+        "componentVoucherUrl": "https://booking.example.invalid/itineraries/demo-02-booking-0001/components/demo-02-component-0020/generated-vouchers.pdf",
+        "status": "Booked",
+        "remarks": "Im Zentrum von Montreux, direkt gegenüber dem Casino Barrière und nur 200 m vom Ufer des Genfer Sees entfernt, erwartet das Hotel Helvetie mit einem herrlichen Panoramablick von der Terrasse auf der 6. Etage.\nDas im Jahre 1865 eröffnete Helvetie besticht durch seinen altertümlichen Charme. Die Zimmer bieten hohe Decken und sind mit antiken Möbeln ausgestattet.\nKostenfreie WLAN-Internetverbindung steht im gesamten Hotel zur Verfügung.\n\nWir verschönern unser Hotel. An Werktagen finden Bauarbeiten statt.",
+        "productRefId": "p_g_w1q4m0l9",
+        "moduleRefId": "m0026127",
+        "desc": "J5 Hotels Helvetie Montreux, Doppel- Oder Zweibettzimmer",
+        "endDateTime": "2026-04-23T12:00:00.000+02:00",
+        "categoryName": "Doppel- Oder Zweibettzimmer",
+        "productSupplier": "stcflex",
+        "price": {
+          "salesPrice": {
+            "amount": 1437,
+            "currency": "CHF"
+          },
+          "netPrice": {
+            "amount": 4738,
+            "currency": "CHF"
+          },
+          "details": {
+            "supplierPurchasePrice": {
+              "amount": 4738,
+              "currency": "CHF"
+            },
+            "markups": [
+              {
+                "markupType": "TourOperatorBase",
+                "priceWithoutMarkup": {
+                  "amount": 4738,
+                  "currency": "CHF"
+                },
+                "priceWithMarkup": {
+                  "amount": 4738,
+                  "currency": "CHF"
+                },
+                "totalMarkup": {
+                  "amount": 0,
+                  "currency": "CHF"
+                }
+              },
+              {
+                "markupType": "TourOperatorAgency",
+                "priceWithoutMarkup": {
+                  "amount": 4738,
+                  "currency": "CHF"
+                },
+                "priceWithMarkup": {
+                  "amount": 1326.0,
+                  "currency": "CHF"
+                },
+                "totalMarkup": {
+                  "amount": 6514.0,
+                  "currency": "CHF"
+                }
+              }
+            ],
+            "purchaseAmountExcludedFromMarkups": {
+              "amount": 0,
+              "currency": "CHF"
+            }
+          }
+        },
+        "productExternalRefId": "93!~|g5!~|e801021!~|g253965!~|d29757!~|p8!~|r1!~|lLN!~|eXA!~|mcd!~|lZZR!~|m5!~|r0399!~|v44951!~|k7!~|q8!~|c5!~|x83301559!~|lWCC!~|eOUD!~|eJIG!~|xDZT!~|S914!~|S7!~|Jrlclu!~|BBUO!~|O!~|E3!~|O!~|A!~|p4#LE!~|BJK!~|LIJ!~|P54|69!~|JOupcro- sbgc Lxanksoplfxkrh!~|MMvozte- qjql Hbxnpctyzfhtxf!~|A3!~|f2#DS!~|HBO!~|YPP!~|V90|74!~|SMxqhdi- npag Kuagakyrjaxohs!~|RGzuvfp- fqes Zjwyvdmjlkwffg!~|S8!~|E4,489,3802276545!~|L2!~|MWTP#39395!~|N3!~|F1!~|M2!~|F3!~|IIAJ#18935!~|L3!~|P5!~|V1!~|Y937!~|A7##!~|S6!~|R3!~|S2!~|F766!~|A9415x446-m2re-4u3h-zwts-l37n2603m118!~|R4!~|S8!~|M5!~|P572!~|I9#!~|K1!~|H1!~|X3!~|mQM!~|pImxsuwvgzd!~|h2!~|j!~|r!~|d!~|v0!~|m!~|",
+        "supplier": {
+          "id": "STC",
+          "bookingReference": "demo-02-supplier-booking-0021"
+        },
+        "productName": "J5 Hotels Helvetie Montreux",
+        "cancellationPeriods": [
+          {
+            "from": "2026-04-21",
+            "to": "2026-04-23",
+            "fee": {
+              "amount": 4738,
+              "currency": "CHF"
+            }
+          }
+        ],
+        "startLocation": {
+          "countries": [
+            "CH"
+          ],
+          "city": "Montreux"
+        },
+        "isAdhoc": false,
+        "room": {
+          "roomIndex": 2,
+          "desc": "Doppel- Oder Zweibettzimmer",
+          "numPax": 2,
+          "paxInfo": [
+            {
+              "firstName": "Testperson01",
+              "lastName": "Mustergast01",
+              "gender": "Female",
+              "birthDate": "1953-01-01",
+              "age": 73,
+              "nationality": "Deutschland",
+              "nationalityCode": "DE",
+              "isMainContact": true,
+              "loyaltyProgramMemberships": [],
+              "tags": [
+                "SwissRailwaysReductionType.Foreigner"
+              ],
+              "address": {},
+              "refId": "pax-1"
+            },
+            {
+              "firstName": "Testperson02",
+              "lastName": "Mustergast02",
+              "gender": "Male",
+              "birthDate": "1956-01-01",
+              "age": 70,
+              "nationality": "Deutschland",
+              "nationalityCode": "DE",
+              "loyaltyProgramMemberships": [],
+              "tags": [
+                "SwissRailwaysReductionType.Foreigner"
+              ],
+              "refId": "pax-2"
+            }
+          ]
+        },
+        "type": "accommodation",
+        "externallyPaidCharges": [],
+        "voucherUrl": "https://booking.example.invalid/itineraries/demo-02-booking-0001/generated-vouchers.pdf"
+      }
+    },
+    {
+      "type": "component",
+      "id": "demo-02-component-0022",
+      "attributes": {
+        "refundable": true,
+        "startDateTime": "2026-04-22T12:00:00.000+02:00",
+        "isOnRequest": false,
+        "componentVoucherUrl": "https://booking.example.invalid/itineraries/demo-02-booking-0001/components/demo-02-component-0022/generated-vouchers.pdf",
+        "status": "Booked",
+        "remarks": "Im Zentrum von Montreux, direkt gegenüber dem Casino Barrière und nur 200 m vom Ufer des Genfer Sees entfernt, erwartet das Hotel Helvetie mit einem herrlichen Panoramablick von der Terrasse auf der 6. Etage.\nDas im Jahre 1865 eröffnete Helvetie besticht durch seinen altertümlichen Charme. Die Zimmer bieten hohe Decken und sind mit antiken Möbeln ausgestattet.\nKostenfreie WLAN-Internetverbindung steht im gesamten Hotel zur Verfügung.\n\nWir verschönern unser Hotel. An Werktagen finden Bauarbeiten statt.",
+        "productRefId": "p_g_w1q4m0l9",
+        "moduleRefId": "m0026127",
+        "desc": "J5 Hotels Helvetie Montreux, Doppel- Oder Zweibettzimmer",
+        "endDateTime": "2026-04-23T12:00:00.000+02:00",
+        "categoryName": "Doppel- Oder Zweibettzimmer",
+        "productSupplier": "stcflex",
+        "price": {
+          "salesPrice": {
+            "amount": 1437,
+            "currency": "CHF"
+          },
+          "netPrice": {
+            "amount": 4738,
+            "currency": "CHF"
+          },
+          "details": {
+            "supplierPurchasePrice": {
+              "amount": 4738,
+              "currency": "CHF"
+            },
+            "markups": [
+              {
+                "markupType": "TourOperatorBase",
+                "priceWithoutMarkup": {
+                  "amount": 4738,
+                  "currency": "CHF"
+                },
+                "priceWithMarkup": {
+                  "amount": 4738,
+                  "currency": "CHF"
+                },
+                "totalMarkup": {
+                  "amount": 0,
+                  "currency": "CHF"
+                }
+              },
+              {
+                "markupType": "TourOperatorAgency",
+                "priceWithoutMarkup": {
+                  "amount": 4738,
+                  "currency": "CHF"
+                },
+                "priceWithMarkup": {
+                  "amount": 1326.0,
+                  "currency": "CHF"
+                },
+                "totalMarkup": {
+                  "amount": 6514.0,
+                  "currency": "CHF"
+                }
+              }
+            ],
+            "purchaseAmountExcludedFromMarkups": {
+              "amount": 0,
+              "currency": "CHF"
+            }
+          }
+        },
+        "productExternalRefId": "26!~|k8!~|f797959!~|y003963!~|g11111!~|t5!~|m9!~|vWI!~|cXR!~|nlw!~|oHHU!~|c8!~|k6994!~|m68764!~|p6!~|t1!~|j9!~|a81824516!~|lFCT!~|pPKS!~|qQSR!~|xEUG!~|Y984!~|I0!~|Hyojap!~|SPHJ!~|T!~|P7!~|G!~|D!~|i5#CE!~|IFS!~|FAG!~|U90|71!~|TMkdhvr- yzde Omhfyowwukmvtn!~|VAcwogp- hwzh Zeoosmofftbxec!~|S3!~|d5#DS!~|TYJ!~|QEO!~|C07|71!~|ZSpunzt- jjtu Qgoscjaknulcdq!~|YAjlnoc- oaal Pmxojejrqefwpi!~|B0!~|O5,171,5723750017!~|L8!~|NNRW#94264!~|S7!~|J2!~|F6!~|L6!~|EMXK#78564!~|I0!~|J2!~|A9!~|Y236!~|P3##!~|H3!~|B6!~|D8!~|D006!~|I9107d920-q5ua-6e9t-yfax-i01p9293h086!~|Z9!~|Q1!~|R9!~|L730!~|E8#!~|I0!~|Q4!~|B8!~|mHA!~|kDafbpscuut!~|f2!~|v!~|y!~|r!~|s8!~|i!~|",
+        "supplier": {
+          "id": "STC",
+          "bookingReference": "demo-02-supplier-booking-0021"
+        },
+        "productName": "J5 Hotels Helvetie Montreux",
+        "cancellationPeriods": [
+          {
+            "from": "2026-04-21",
+            "to": "2026-04-23",
+            "fee": {
+              "amount": 4738,
+              "currency": "CHF"
+            }
+          }
+        ],
+        "startLocation": {
+          "countries": [
+            "CH"
+          ],
+          "city": "Montreux"
+        },
+        "isAdhoc": false,
+        "room": {
+          "roomIndex": 1,
+          "desc": "Doppel- Oder Zweibettzimmer",
+          "numPax": 2,
+          "paxInfo": [
+            {
+              "firstName": "Testperson03",
+              "lastName": "Mustergast03",
+              "gender": "Female",
+              "birthDate": "1959-01-01",
+              "age": 67,
+              "nationality": "Deutschland",
+              "nationalityCode": "DE",
+              "loyaltyProgramMemberships": [],
+              "tags": [
+                "SwissRailwaysReductionType.Foreigner"
+              ],
+              "refId": "pax-3"
+            },
+            {
+              "firstName": "Testperson04",
+              "lastName": "Mustergast04",
+              "gender": "Male",
+              "birthDate": "1962-01-01",
+              "age": 64,
+              "nationality": "Deutschland",
+              "nationalityCode": "DE",
+              "loyaltyProgramMemberships": [],
+              "tags": [
+                "SwissRailwaysReductionType.Foreigner"
+              ],
+              "refId": "pax-4"
+            }
+          ]
+        },
+        "type": "accommodation",
+        "externallyPaidCharges": [
+          {
+            "name": "Kurtaxe",
+            "value": {
+              "amount": 4624,
+              "currency": "CHF"
+            },
+            "chargeType": "AdditionalFees"
+          },
+          {
+            "name": "Kurtaxe",
+            "value": {
+              "amount": 4624,
+              "currency": "CHF"
+            },
+            "chargeType": "AdditionalFees"
+          }
+        ],
+        "voucherUrl": "https://booking.example.invalid/itineraries/demo-02-booking-0001/generated-vouchers.pdf"
+      }
+    },
+    {
+      "type": "component",
+      "id": "demo-02-component-0023",
+      "attributes": {
+        "refundable": true,
+        "startDateTime": "2026-04-23T12:00:00.000+02:00",
+        "isOnRequest": false,
+        "componentVoucherUrl": "https://booking.example.invalid/itineraries/demo-02-booking-0001/components/demo-02-component-0023/generated-vouchers.pdf",
+        "status": "Booked",
+        "remarks": "Ankommen und zuhause sein\nDas Excelsior, ein familiär geführter Kleinbetrieb mit vielen Stammgästen. \nDas liebevoll renovierte Hotel ist sehr zentral und ruhig gelegen. Die Bushaltestelle zu allen Bergbahnen befindet sich vor dem Hotel.\nUnsere sonnigen Zimmer zur Südseite haben einen phantastischen Blick auf den alten Dorfkern und auf ’s Matterhorn. \nAlle Zimmer sind mit Bad oder Dusche/WC, Föhn, Handtuchwärmer, Telefon und Minibar ausgestattet. Internet-Corner und kostenloses Wireless.\nDie Bar mit Gartenterrasse und das à la carte Restaurant La Ferme laden zum verweilen ein.",
+        "productRefId": "p_g_e1yvvkr1",
+        "moduleRefId": "m0026127",
+        "desc": "Excelsior, Grosses Doppelzimmer Süd",
+        "endDateTime": "2026-04-24T12:00:00.000+02:00",
+        "categoryName": "Grosses Doppelzimmer Süd",
+        "productSupplier": "stcflex",
+        "price": {
+          "salesPrice": {
+            "amount": 231,
+            "currency": "CHF"
+          },
+          "netPrice": {
+            "amount": 159,
+            "currency": "CHF"
+          },
+          "details": {
+            "supplierPurchasePrice": {
+              "amount": 159,
+              "currency": "CHF"
+            },
+            "markups": [
+              {
+                "markupType": "TourOperatorBase",
+                "priceWithoutMarkup": {
+                  "amount": 159,
+                  "currency": "CHF"
+                },
+                "priceWithMarkup": {
+                  "amount": 159,
+                  "currency": "CHF"
+                },
+                "totalMarkup": {
+                  "amount": 0,
+                  "currency": "CHF"
+                }
+              },
+              {
+                "markupType": "TourOperatorAgency",
+                "priceWithoutMarkup": {
+                  "amount": 159,
+                  "currency": "CHF"
+                },
+                "priceWithMarkup": {
+                  "amount": 7270.0,
+                  "currency": "CHF"
+                },
+                "totalMarkup": {
+                  "amount": 5168.0,
+                  "currency": "CHF"
+                }
+              }
+            ],
+            "purchaseAmountExcludedFromMarkups": {
+              "amount": 0,
+              "currency": "CHF"
+            }
+          }
+        },
+        "productExternalRefId": "47!~|p6!~|j526183!~|l299275!~|q99602!~|w4!~|f2!~|iQK!~|hJE!~|qmk!~|pRKU!~|o3!~|p9433!~|k97858!~|x9!~|c4!~|d5!~|m67445079!~|xMQO!~|mVLJ!~|pQOO!~|tAHA!~|W014!~|P8!~|Nyrgiz!~|YOYJ!~|E!~|E8!~|Q!~|X!~|e2#J3E!~|FI5G!~|SV4E!~|G68|61!~|PTtrvnvh Jpvxxbvjeklv Eüj!~|SVvustse Gqntqhxutyly Hüd!~|M7!~|o5#U3H!~|WC9D!~|SN3T!~|D13|82!~|ZCylzqmd Gbqmljbkxriq Uük!~|KQalwdyj Yycrclnavcbn Hüm!~|T8!~|J1,063,9349675891!~|L9!~|VEUA#812086!~|D5!~|N7!~|Z2!~|K2!~|ADIQ#693259!~|Y5!~|Y8!~|I1!~|E590!~|T8##!~|I3!~|R7!~|J9!~|V603!~|Zfaf5390g-qw25-76o4-z1b6-8p72o6ehhn9o!~|L1!~|C9!~|U4!~|A662!~|P3#!~|D8!~|Q4!~|H9!~|uUB!~|pTqqyoscndg!~|w7!~|k!~|k!~|i!~|j9!~|i!~|",
+        "supplier": {
+          "id": "STC",
+          "bookingReference": "demo-02-supplier-booking-0024"
+        },
+        "productName": "Excelsior",
+        "cancellationPeriods": [
+          {
+            "from": "2026-04-02",
+            "to": "2026-04-24",
+            "fee": {
+              "amount": 159,
+              "currency": "CHF"
+            }
+          }
+        ],
+        "startLocation": {
+          "countries": [
+            "CH"
+          ],
+          "city": "Zermatt"
+        },
+        "isAdhoc": false,
+        "room": {
+          "roomIndex": 2,
+          "desc": "Grosses Doppelzimmer Süd",
+          "numPax": 2,
+          "paxInfo": [
+            {
+              "firstName": "Testperson01",
+              "lastName": "Mustergast01",
+              "gender": "Female",
+              "birthDate": "1953-01-01",
+              "age": 73,
+              "nationality": "Deutschland",
+              "nationalityCode": "DE",
+              "isMainContact": true,
+              "loyaltyProgramMemberships": [],
+              "tags": [
+                "SwissRailwaysReductionType.Foreigner"
+              ],
+              "address": {},
+              "refId": "pax-1"
+            },
+            {
+              "firstName": "Testperson02",
+              "lastName": "Mustergast02",
+              "gender": "Male",
+              "birthDate": "1956-01-01",
+              "age": 70,
+              "nationality": "Deutschland",
+              "nationalityCode": "DE",
+              "loyaltyProgramMemberships": [],
+              "tags": [
+                "SwissRailwaysReductionType.Foreigner"
+              ],
+              "refId": "pax-2"
+            }
+          ]
+        },
+        "type": "accommodation",
+        "externallyPaidCharges": [],
+        "voucherUrl": "https://booking.example.invalid/itineraries/demo-02-booking-0001/generated-vouchers.pdf"
+      }
+    },
+    {
+      "type": "component",
+      "id": "demo-02-component-0025",
+      "attributes": {
+        "refundable": true,
+        "startDateTime": "2026-04-23T12:00:00.000+02:00",
+        "isOnRequest": false,
+        "componentVoucherUrl": "https://booking.example.invalid/itineraries/demo-02-booking-0001/components/demo-02-component-0025/generated-vouchers.pdf",
+        "status": "Booked",
+        "remarks": "Ankommen und zuhause sein\nDas Excelsior, ein familiär geführter Kleinbetrieb mit vielen Stammgästen. \nDas liebevoll renovierte Hotel ist sehr zentral und ruhig gelegen. Die Bushaltestelle zu allen Bergbahnen befindet sich vor dem Hotel.\nUnsere sonnigen Zimmer zur Südseite haben einen phantastischen Blick auf den alten Dorfkern und auf ’s Matterhorn. \nAlle Zimmer sind mit Bad oder Dusche/WC, Föhn, Handtuchwärmer, Telefon und Minibar ausgestattet. Internet-Corner und kostenloses Wireless.\nDie Bar mit Gartenterrasse und das à la carte Restaurant La Ferme laden zum verweilen ein.",
+        "productRefId": "p_g_e1yvvkr1",
+        "moduleRefId": "m0026127",
+        "desc": "Excelsior, Grosses Doppelzimmer Süd",
+        "endDateTime": "2026-04-24T12:00:00.000+02:00",
+        "categoryName": "Grosses Doppelzimmer Süd",
+        "productSupplier": "stcflex",
+        "price": {
+          "salesPrice": {
+            "amount": 231,
+            "currency": "CHF"
+          },
+          "netPrice": {
+            "amount": 159,
+            "currency": "CHF"
+          },
+          "details": {
+            "supplierPurchasePrice": {
+              "amount": 159,
+              "currency": "CHF"
+            },
+            "markups": [
+              {
+                "markupType": "TourOperatorBase",
+                "priceWithoutMarkup": {
+                  "amount": 159,
+                  "currency": "CHF"
+                },
+                "priceWithMarkup": {
+                  "amount": 159,
+                  "currency": "CHF"
+                },
+                "totalMarkup": {
+                  "amount": 0,
+                  "currency": "CHF"
+                }
+              },
+              {
+                "markupType": "TourOperatorAgency",
+                "priceWithoutMarkup": {
+                  "amount": 159,
+                  "currency": "CHF"
+                },
+                "priceWithMarkup": {
+                  "amount": 7270.0,
+                  "currency": "CHF"
+                },
+                "totalMarkup": {
+                  "amount": 5168.0,
+                  "currency": "CHF"
+                }
+              }
+            ],
+            "purchaseAmountExcludedFromMarkups": {
+              "amount": 0,
+              "currency": "CHF"
+            }
+          }
+        },
+        "productExternalRefId": "06!~|s4!~|h267661!~|z480002!~|e79156!~|l4!~|r2!~|rAH!~|cSS!~|nfm!~|fKDB!~|h4!~|j2679!~|t15727!~|n6!~|d4!~|x9!~|r99713840!~|rWHK!~|qXBR!~|vMQK!~|aKCG!~|Z091!~|V8!~|Jdiuqb!~|SVYM!~|G!~|L1!~|Q!~|L!~|s4#J4J!~|FS6B!~|KY3E!~|F31|52!~|DMjlmnkg Crqwirpjrntc Eüz!~|RStrtcfc Ogscwphxxnun Püm!~|Y7!~|q6#X7W!~|RH4N!~|XC3N!~|U85|41!~|HZlrgfna Lddcmrbhxzit Vüw!~|UKttsrvp Kavnzmdfxdnb Küy!~|X1!~|L2,289,7358152874!~|V0!~|PZZD#684333!~|J0!~|U6!~|P3!~|Y4!~|APES#306699!~|B7!~|Q2!~|M8!~|Y458!~|I0##!~|X6!~|S7!~|G0!~|J860!~|Gaoi9491k-lt28-52s2-i1f3-7n46g9dydv6z!~|J3!~|N3!~|B6!~|V163!~|O9#!~|O1!~|I5!~|Y8!~|aRY!~|rBkxkehyito!~|a4!~|h!~|j!~|v!~|y5!~|s!~|",
+        "supplier": {
+          "id": "STC",
+          "bookingReference": "demo-02-supplier-booking-0024"
+        },
+        "productName": "Excelsior",
+        "cancellationPeriods": [
+          {
+            "from": "2026-04-02",
+            "to": "2026-04-24",
+            "fee": {
+              "amount": 159,
+              "currency": "CHF"
+            }
+          }
+        ],
+        "startLocation": {
+          "countries": [
+            "CH"
+          ],
+          "city": "Zermatt"
+        },
+        "isAdhoc": false,
+        "room": {
+          "roomIndex": 1,
+          "desc": "Grosses Doppelzimmer Süd",
+          "numPax": 2,
+          "paxInfo": [
+            {
+              "firstName": "Testperson03",
+              "lastName": "Mustergast03",
+              "gender": "Female",
+              "birthDate": "1959-01-01",
+              "age": 67,
+              "nationality": "Deutschland",
+              "nationalityCode": "DE",
+              "loyaltyProgramMemberships": [],
+              "tags": [
+                "SwissRailwaysReductionType.Foreigner"
+              ],
+              "refId": "pax-3"
+            },
+            {
+              "firstName": "Testperson04",
+              "lastName": "Mustergast04",
+              "gender": "Male",
+              "birthDate": "1962-01-01",
+              "age": 64,
+              "nationality": "Deutschland",
+              "nationalityCode": "DE",
+              "loyaltyProgramMemberships": [],
+              "tags": [
+                "SwissRailwaysReductionType.Foreigner"
+              ],
+              "refId": "pax-4"
+            }
+          ]
+        },
+        "type": "accommodation",
+        "externallyPaidCharges": [
+          {
+            "name": "Kurtaxe",
+            "value": {
+              "amount": 9360,
+              "currency": "CHF"
+            },
+            "chargeType": "AdditionalFees"
+          },
+          {
+            "name": "Kurtaxe",
+            "value": {
+              "amount": 9360,
+              "currency": "CHF"
+            },
+            "chargeType": "AdditionalFees"
+          }
+        ],
+        "voucherUrl": "https://booking.example.invalid/itineraries/demo-02-booking-0001/generated-vouchers.pdf"
+      }
+    },
+    {
+      "type": "component",
+      "id": "demo-02-component-0026",
+      "attributes": {
+        "refundable": true,
+        "startDateTime": "2026-04-24T08:52:00.000+02:00",
+        "supplier": {
+          "id": "616048c4300000f0d41fd44f",
+          "name": "Rhätische Bahn AG ",
+          "externalReferences": [
+            {
+              "id": "RHB",
+              "system": "Midoco"
+            }
+          ],
+          "email": "supplier@example.invalid",
+          "bookingReference": "demo-02-supplier-booking-0027"
+        },
+        "isOnRequest": false,
+        "endLocation": {
+          "countries": [
+            "CH"
+          ],
+          "city": "Saint Moritz"
+        },
+        "status": "Booked",
+        "type": "activity",
+        "productRefId": "67b3328a38000041bba121e1",
+        "moduleRefId": "m0026127",
+        "desc": "GTToS Glacier Express Zermatt – St. Moritz, Sitzplatzreservation",
+        "endDateTime": "2026-04-24T16:37:00.000+02:00",
+        "categoryName": "Sitzplatzreservation",
+        "productSupplier": "stcflex",
+        "price": {
+          "salesPrice": {
+            "amount": 9198,
+            "currency": "CHF"
+          },
+          "netPrice": {
+            "amount": 7984.0,
+            "currency": "CHF"
+          },
+          "details": {
+            "supplierPurchasePrice": {
+              "amount": 7984.0,
+              "currency": "CHF"
+            },
+            "markups": [
+              {
+                "markupType": "TourOperatorBase",
+                "priceWithoutMarkup": {
+                  "amount": 7984.0,
+                  "currency": "CHF"
+                },
+                "priceWithMarkup": {
+                  "amount": 7984.0,
+                  "currency": "CHF"
+                },
+                "totalMarkup": {
+                  "amount": 0,
+                  "currency": "CHF"
+                }
+              },
+              {
+                "markupType": "TourOperatorAgency",
+                "priceWithoutMarkup": {
+                  "amount": 7984.0,
+                  "currency": "CHF"
+                },
+                "priceWithMarkup": {
+                  "amount": 1390.0,
+                  "currency": "CHF"
+                },
+                "totalMarkup": {
+                  "amount": 4757.0,
+                  "currency": "CHF"
+                }
+              }
+            ],
+            "purchaseAmountExcludedFromMarkups": {
+              "amount": 0,
+              "currency": "CHF"
+            }
+          }
+        },
+        "productName": "GTToS Glacier Express Zermatt – St. Moritz",
+        "cancellationPeriods": [],
+        "startLocation": {
+          "countries": [
+            "CH"
+          ],
+          "city": "Zermatt"
+        },
+        "isAdhoc": false
+      }
+    },
+    {
+      "type": "component",
+      "id": "demo-02-component-0028",
+      "attributes": {
+        "refundable": true,
+        "startDateTime": "2026-04-24T12:00:00.000+02:00",
+        "isOnRequest": false,
+        "componentVoucherUrl": "https://booking.example.invalid/itineraries/demo-02-booking-0001/components/demo-02-component-0028/generated-vouchers.pdf",
+        "status": "Booked",
+        "remarks": "Das Hotel Nolda liegt an zentraler Lage in St. Moritz Bad. Es befindet sich unmittelbar neben der Signalbahn, welche zum St. Moritzer Skigebiet Corviglia/Marguns führt. Innerhalb von 3 Gehminuten erreichen die Gäste eine zentrale Bushaltestelle, Post und Einkaufsmöglichkeiten. Auch die abendlichen Kurkonzerte finden im nahe gelegenen Heilbad-Zentrum St. Moritz statt. Das am jungen Inn gelegene Hotel Nolda ist idealer Ausgangspunkt für Wanderungen oder Ausflüg mit den Langlaufskiern. Im Winter können Sie mit den Abfahrts-Skiern bis vor das Hotel fahren! Das Haus bietet 98 Betten, alle Zimmer sind mit Bad/ Dusche, Minibar, Radio, Telefon, TV und Wireless-Internetanschluss ausgestattet.\nCheck-In nach 14.00 Uhr Check out vor Mittag.",
+        "productRefId": "p_g_vnkpvoy1",
+        "moduleRefId": "m0026127",
+        "desc": "Hotel Nolda, Budget Doppelzimmer",
+        "endDateTime": "2026-04-25T12:00:00.000+02:00",
+        "categoryName": "Budget Doppelzimmer",
+        "productSupplier": "stcflex",
+        "price": {
+          "salesPrice": {
+            "amount": 9035,
+            "currency": "CHF"
+          },
+          "netPrice": {
+            "amount": 7443.0,
+            "currency": "CHF"
+          },
+          "details": {
+            "supplierPurchasePrice": {
+              "amount": 7443.0,
+              "currency": "CHF"
+            },
+            "markups": [
+              {
+                "markupType": "TourOperatorBase",
+                "priceWithoutMarkup": {
+                  "amount": 7443.0,
+                  "currency": "CHF"
+                },
+                "priceWithMarkup": {
+                  "amount": 7443.0,
+                  "currency": "CHF"
+                },
+                "totalMarkup": {
+                  "amount": 0,
+                  "currency": "CHF"
+                }
+              },
+              {
+                "markupType": "TourOperatorAgency",
+                "priceWithoutMarkup": {
+                  "amount": 7443.0,
+                  "currency": "CHF"
+                },
+                "priceWithMarkup": {
+                  "amount": 967.0,
+                  "currency": "CHF"
+                },
+                "totalMarkup": {
+                  "amount": 5795.0,
+                  "currency": "CHF"
+                }
+              }
+            ],
+            "purchaseAmountExcludedFromMarkups": {
+              "amount": 0,
+              "currency": "CHF"
+            }
+          }
+        },
+        "productExternalRefId": "59!~|i8!~|z278158!~|t158667!~|k75364!~|z5!~|o1!~|hMN!~|bHO!~|eke!~|rUTC!~|v5!~|h5243!~|g31136!~|m1!~|l9!~|w9!~|g94495195!~|nXGU!~|xVBQ!~|rVRA!~|kBKK!~|H562.9!~|Z4!~|Tqkkyz!~|DJGX!~|T!~|N5!~|P!~|C!~|j5#GYT!~|GNOT!~|FIDF!~|U13|36!~|NLmvnyh Kdnfiqqdxrex!~|ULkvjfz Nfymyzqykvec!~|P7!~|s3#EDQ!~|RJLO!~|EVVB!~|Q85|27!~|LIzhamm Hqlhexkadqbb!~|GRrpsad Vclqjmiiytyh!~|H5!~|X7,178.09,5336048568!~|E5!~|MVYX#09697!~|A5!~|H2!~|L9!~|H1!~|NJDX#98707!~|C0!~|P6!~|T4!~|D463!~|M2##!~|M1!~|L3!~|G1!~|X637!~|Z5374qja1-3183-6261-26qo-89w089727o21!~|Y3!~|T0!~|S8!~|E611!~|L0#!~|B9!~|D3!~|L9!~|mTN!~|bQvbmcpmcjx!~|b9!~|n!~|p!~|a!~|p7!~|v!~|",
+        "supplier": {
+          "id": "STC",
+          "bookingReference": "demo-02-supplier-booking-0029"
+        },
+        "productName": "Hotel Nolda",
+        "cancellationPeriods": [
+          {
+            "from": "2026-04-10",
+            "to": "2026-04-25",
+            "fee": {
+              "amount": 7443.0,
+              "currency": "CHF"
+            }
+          }
+        ],
+        "startLocation": {
+          "countries": [
+            "CH"
+          ],
+          "city": "St. Moritz"
+        },
+        "isAdhoc": false,
+        "room": {
+          "roomIndex": 1,
+          "desc": "Budget Doppelzimmer",
+          "numPax": 2,
+          "paxInfo": [
+            {
+              "firstName": "Testperson01",
+              "lastName": "Mustergast01",
+              "gender": "Female",
+              "birthDate": "1953-01-01",
+              "age": 73,
+              "nationality": "Deutschland",
+              "nationalityCode": "DE",
+              "isMainContact": true,
+              "loyaltyProgramMemberships": [],
+              "tags": [
+                "SwissRailwaysReductionType.Foreigner"
+              ],
+              "address": {},
+              "refId": "pax-1"
+            },
+            {
+              "firstName": "Testperson02",
+              "lastName": "Mustergast02",
+              "gender": "Male",
+              "birthDate": "1956-01-01",
+              "age": 70,
+              "nationality": "Deutschland",
+              "nationalityCode": "DE",
+              "loyaltyProgramMemberships": [],
+              "tags": [
+                "SwissRailwaysReductionType.Foreigner"
+              ],
+              "refId": "pax-2"
+            }
+          ]
+        },
+        "type": "accommodation",
+        "externallyPaidCharges": [
+          {
+            "name": "Kurtaxe",
+            "value": {
+              "amount": 4039.0,
+              "currency": "CHF"
+            },
+            "chargeType": "AdditionalFees"
+          },
+          {
+            "name": "Kurtaxe",
+            "value": {
+              "amount": 4039.0,
+              "currency": "CHF"
+            },
+            "chargeType": "AdditionalFees"
+          }
+        ],
+        "voucherUrl": "https://booking.example.invalid/itineraries/demo-02-booking-0001/generated-vouchers.pdf"
+      }
+    },
+    {
+      "type": "component",
+      "id": "demo-02-component-0030",
+      "attributes": {
+        "refundable": true,
+        "startDateTime": "2026-04-24T12:00:00.000+02:00",
+        "isOnRequest": false,
+        "componentVoucherUrl": "https://booking.example.invalid/itineraries/demo-02-booking-0001/components/demo-02-component-0030/generated-vouchers.pdf",
+        "status": "Booked",
+        "remarks": "Das Hotel Nolda liegt an zentraler Lage in St. Moritz Bad. Es befindet sich unmittelbar neben der Signalbahn, welche zum St. Moritzer Skigebiet Corviglia/Marguns führt. Innerhalb von 3 Gehminuten erreichen die Gäste eine zentrale Bushaltestelle, Post und Einkaufsmöglichkeiten. Auch die abendlichen Kurkonzerte finden im nahe gelegenen Heilbad-Zentrum St. Moritz statt. Das am jungen Inn gelegene Hotel Nolda ist idealer Ausgangspunkt für Wanderungen oder Ausflüg mit den Langlaufskiern. Im Winter können Sie mit den Abfahrts-Skiern bis vor das Hotel fahren! Das Haus bietet 98 Betten, alle Zimmer sind mit Bad/ Dusche, Minibar, Radio, Telefon, TV und Wireless-Internetanschluss ausgestattet.\nCheck-In nach 14.00 Uhr Check out vor Mittag.",
+        "productRefId": "p_g_vnkpvoy1",
+        "moduleRefId": "m0026127",
+        "desc": "Hotel Nolda, Budget Doppelzimmer",
+        "endDateTime": "2026-04-25T12:00:00.000+02:00",
+        "categoryName": "Budget Doppelzimmer",
+        "productSupplier": "stcflex",
+        "price": {
+          "salesPrice": {
+            "amount": 9035,
+            "currency": "CHF"
+          },
+          "netPrice": {
+            "amount": 7443.0,
+            "currency": "CHF"
+          },
+          "details": {
+            "supplierPurchasePrice": {
+              "amount": 7443.0,
+              "currency": "CHF"
+            },
+            "markups": [
+              {
+                "markupType": "TourOperatorBase",
+                "priceWithoutMarkup": {
+                  "amount": 7443.0,
+                  "currency": "CHF"
+                },
+                "priceWithMarkup": {
+                  "amount": 7443.0,
+                  "currency": "CHF"
+                },
+                "totalMarkup": {
+                  "amount": 0,
+                  "currency": "CHF"
+                }
+              },
+              {
+                "markupType": "TourOperatorAgency",
+                "priceWithoutMarkup": {
+                  "amount": 7443.0,
+                  "currency": "CHF"
+                },
+                "priceWithMarkup": {
+                  "amount": 967.0,
+                  "currency": "CHF"
+                },
+                "totalMarkup": {
+                  "amount": 5795.0,
+                  "currency": "CHF"
+                }
+              }
+            ],
+            "purchaseAmountExcludedFromMarkups": {
+              "amount": 0,
+              "currency": "CHF"
+            }
+          }
+        },
+        "productExternalRefId": "93!~|a6!~|g427362!~|f203560!~|j47017!~|a8!~|i8!~|mAZ!~|iLY!~|ajh!~|jGYF!~|i2!~|a9113!~|d48832!~|w9!~|p5!~|y0!~|m28373395!~|cDKR!~|fNEY!~|ePPT!~|qBWP!~|K920.6!~|M7!~|Jbabyl!~|EIJU!~|H!~|H1!~|Y!~|T!~|f7#KQW!~|AIOQ!~|MNDK!~|A62|90!~|DSpivhx Frknatwedawq!~|KWbemyn Zivizxdzgvxn!~|O6!~|s1#NTV!~|LFQW!~|JAIX!~|R21|32!~|UPdbenj Avsbkrqqxlld!~|FXpprlr Oxihehqdvgnj!~|U3!~|C3,395.07,1649226246!~|M1!~|PJZX#23568!~|H8!~|I0!~|E3!~|S2!~|XINJ#10568!~|I0!~|G7!~|Q0!~|W259!~|T6##!~|R6!~|Y7!~|O9!~|N560!~|U9644wph5-9970-9519-47dt-09s111265s55!~|Z0!~|V2!~|P0!~|V129!~|I1#!~|Q0!~|S1!~|Z6!~|mJG!~|mJcymnjtbjq!~|b3!~|y!~|x!~|q!~|q3!~|s!~|",
+        "supplier": {
+          "id": "STC",
+          "bookingReference": "demo-02-supplier-booking-0029"
+        },
+        "productName": "Hotel Nolda",
+        "cancellationPeriods": [
+          {
+            "from": "2026-04-10",
+            "to": "2026-04-25",
+            "fee": {
+              "amount": 7443.0,
+              "currency": "CHF"
+            }
+          }
+        ],
+        "startLocation": {
+          "countries": [
+            "CH"
+          ],
+          "city": "St. Moritz"
+        },
+        "isAdhoc": false,
+        "room": {
+          "roomIndex": 2,
+          "desc": "Budget Doppelzimmer",
+          "numPax": 2,
+          "paxInfo": [
+            {
+              "firstName": "Testperson03",
+              "lastName": "Mustergast03",
+              "gender": "Female",
+              "birthDate": "1959-01-01",
+              "age": 67,
+              "nationality": "Deutschland",
+              "nationalityCode": "DE",
+              "loyaltyProgramMemberships": [],
+              "tags": [
+                "SwissRailwaysReductionType.Foreigner"
+              ],
+              "refId": "pax-3"
+            },
+            {
+              "firstName": "Testperson04",
+              "lastName": "Mustergast04",
+              "gender": "Male",
+              "birthDate": "1962-01-01",
+              "age": 64,
+              "nationality": "Deutschland",
+              "nationalityCode": "DE",
+              "loyaltyProgramMemberships": [],
+              "tags": [
+                "SwissRailwaysReductionType.Foreigner"
+              ],
+              "refId": "pax-4"
+            }
+          ]
+        },
+        "type": "accommodation",
+        "externallyPaidCharges": [],
+        "voucherUrl": "https://booking.example.invalid/itineraries/demo-02-booking-0001/generated-vouchers.pdf"
+      }
+    },
+    {
+      "type": "component",
+      "id": "demo-02-component-0031",
+      "attributes": {
+        "refundable": true,
+        "startDateTime": "2026-04-25T07:17:00.000+02:00",
+        "supplier": {
+          "id": "616048c4300000f0d41fd44f",
+          "name": "Rhätische Bahn AG ",
+          "externalReferences": [
+            {
+              "id": "RHB",
+              "system": "Midoco"
+            }
+          ],
+          "email": "supplier@example.invalid",
+          "bookingReference": ""
+        },
+        "isOnRequest": false,
+        "endLocation": {
+          "countries": [
+            "CH"
+          ],
+          "city": "Lugano"
+        },
+        "status": "Booked",
+        "type": "activity",
+        "productRefId": "67b3345c1e0000e50910fdba",
+        "moduleRefId": "m0026127",
+        "desc": "GTToS Bernina Express St. Moritz – Lugano, Sitzplatzreservation",
+        "endDateTime": "2026-04-25T15:30:00.000+02:00",
+        "categoryName": "Sitzplatzreservation",
+        "productSupplier": "stcflex",
+        "price": {
+          "salesPrice": {
+            "amount": 2108,
+            "currency": "CHF"
+          },
+          "netPrice": {
+            "amount": 8063.0,
+            "currency": "CHF"
+          },
+          "details": {
+            "supplierPurchasePrice": {
+              "amount": 8063.0,
+              "currency": "CHF"
+            },
+            "markups": [
+              {
+                "markupType": "TourOperatorBase",
+                "priceWithoutMarkup": {
+                  "amount": 8063.0,
+                  "currency": "CHF"
+                },
+                "priceWithMarkup": {
+                  "amount": 8063.0,
+                  "currency": "CHF"
+                },
+                "totalMarkup": {
+                  "amount": 0,
+                  "currency": "CHF"
+                }
+              },
+              {
+                "markupType": "TourOperatorAgency",
+                "priceWithoutMarkup": {
+                  "amount": 8063.0,
+                  "currency": "CHF"
+                },
+                "priceWithMarkup": {
+                  "amount": 7649.0,
+                  "currency": "CHF"
+                },
+                "totalMarkup": {
+                  "amount": 4916.0,
+                  "currency": "CHF"
+                }
+              }
+            ],
+            "purchaseAmountExcludedFromMarkups": {
+              "amount": 0,
+              "currency": "CHF"
+            }
+          }
+        },
+        "productName": "GTToS Bernina Express St. Moritz – Lugano",
+        "cancellationPeriods": [],
+        "startLocation": {
+          "countries": [
+            "CH"
+          ],
+          "city": "St. Moritz"
+        },
+        "isAdhoc": false
+      }
+    },
+    {
+      "type": "component",
+      "id": "demo-02-component-0032",
+      "attributes": {
+        "refundable": true,
+        "startDateTime": "2026-04-25T12:00:00.000+02:00",
+        "isOnRequest": false,
+        "componentVoucherUrl": "https://booking.example.invalid/itineraries/demo-02-booking-0001/components/demo-02-component-0032/generated-vouchers.pdf",
+        "status": "Booked",
+        "remarks": "Das traditionsreiche Hotel Zurigo*** ist seit 1951 ein Familienbetrieb. Es befindet sich in einem historischen Gebäude im Zentrum von Lugano mit einem nach Süden gerichteten Garten und es verfügt über eine Tiefgarage mit 30 Parkplätzen. Gegenüber des Hotels befindet sich die Bus-, Postauto Haltestelle, Publibike und in unmittelbarer Nähe der Luganersee, das Kongresszentrum, der Parco Villa Ciani, die Universität, das Casinò, Banken und Museen. Einen 2 Minuten langen Spaziergang bringt Sie zur Piazza Riforma und Via Nassa mit vielen Restaurants und Boutiques. Standard und Superior Zimmer, alle mit Dusche/WC, direkter Telefonlinie, Kabel-TV mit 80 Kanälen, Radio, Minibar, Safe und Internet Wireless gratis. Die Superior Zimmer sind alle mit Klimaanlagen. Ein Lift bringt die Gäste direkt von der Tiefgarage zu den Zimmern. Das Hotel verfügt über eine Video-Überwachung. Lizenznummer:228",
+        "productRefId": "p_g_n86jkk49",
+        "moduleRefId": "m0026127",
+        "desc": "Hotel Zurigo, Doppelzimmer Comfort Innenhof",
+        "endDateTime": "2026-04-26T12:00:00.000+02:00",
+        "categoryName": "Doppelzimmer Comfort Innenhof",
+        "productSupplier": "stcflex",
+        "price": {
+          "salesPrice": {
+            "amount": 5497,
+            "currency": "CHF"
+          },
+          "netPrice": {
+            "amount": 9969.0,
+            "currency": "CHF"
+          },
+          "details": {
+            "supplierPurchasePrice": {
+              "amount": 9969.0,
+              "currency": "CHF"
+            },
+            "markups": [
+              {
+                "markupType": "TourOperatorBase",
+                "priceWithoutMarkup": {
+                  "amount": 9969.0,
+                  "currency": "CHF"
+                },
+                "priceWithMarkup": {
+                  "amount": 9969.0,
+                  "currency": "CHF"
+                },
+                "totalMarkup": {
+                  "amount": 0,
+                  "currency": "CHF"
+                }
+              },
+              {
+                "markupType": "TourOperatorAgency",
+                "priceWithoutMarkup": {
+                  "amount": 9969.0,
+                  "currency": "CHF"
+                },
+                "priceWithMarkup": {
+                  "amount": 6302.0,
+                  "currency": "CHF"
+                },
+                "totalMarkup": {
+                  "amount": 2410.0,
+                  "currency": "CHF"
+                }
+              }
+            ],
+            "purchaseAmountExcludedFromMarkups": {
+              "amount": 0,
+              "currency": "CHF"
+            }
+          }
+        },
+        "productExternalRefId": "82!~|y2!~|v603052!~|a152658!~|b66075!~|d3!~|r6!~|mRA!~|oSO!~|pnz!~|jOYM!~|f7!~|b1772!~|t14345!~|h6!~|d6!~|t1!~|u33057163!~|eZVF!~|rAUN!~|iJLK!~|vCXI!~|D692!~|U7!~|Fqzwmb!~|DSMD!~|Y!~|D0!~|Q!~|U!~|p9#CPA!~|PGYD!~|UFSW!~|W50|92!~|KEjfwvvnijpqh Gmicyrd Cvyslhbv!~|HKvkwrfmciudl Mhiwlkf Dnaybqei!~|N3!~|k4#IJB!~|DPIC!~|REMS!~|S51|42!~|ANquygutjqznj Errnftu Veigflst!~|VJaphxawuqtfv Skstswm Cxntblnv!~|H7!~|B2,127,3156150163!~|B0!~|ARIK#88496!~|N9!~|D4!~|C4!~|U0!~|NIPI#40335!~|K9!~|E5!~|Z5!~|Y652!~|V2##!~|D2!~|E1!~|V7!~|V329!~|Mm033f1jt-n305-1867-t84z-2pm9prr3n53o!~|B5!~|Y7!~|C8!~|M220!~|U9#!~|C5!~|X6!~|F8!~|jJT!~|jWujlyaqsyf!~|c0!~|q!~|u!~|y!~|y9!~|f!~|",
+        "supplier": {
+          "id": "STC",
+          "bookingReference": "demo-02-supplier-booking-0033"
+        },
+        "productName": "Hotel Zurigo",
+        "cancellationPeriods": [
+          {
+            "from": "2026-04-24",
+            "to": "2026-04-26",
+            "fee": {
+              "amount": 9969.0,
+              "currency": "CHF"
+            }
+          }
+        ],
+        "startLocation": {
+          "countries": [
+            "CH"
+          ],
+          "city": "Lugano"
+        },
+        "isAdhoc": false,
+        "room": {
+          "roomIndex": 2,
+          "desc": "Doppelzimmer Comfort Innenhof",
+          "numPax": 2,
+          "paxInfo": [
+            {
+              "firstName": "Testperson01",
+              "lastName": "Mustergast01",
+              "gender": "Female",
+              "birthDate": "1953-01-01",
+              "age": 73,
+              "nationality": "Deutschland",
+              "nationalityCode": "DE",
+              "isMainContact": true,
+              "loyaltyProgramMemberships": [],
+              "tags": [
+                "SwissRailwaysReductionType.Foreigner"
+              ],
+              "address": {},
+              "refId": "pax-1"
+            },
+            {
+              "firstName": "Testperson02",
+              "lastName": "Mustergast02",
+              "gender": "Male",
+              "birthDate": "1956-01-01",
+              "age": 70,
+              "nationality": "Deutschland",
+              "nationalityCode": "DE",
+              "loyaltyProgramMemberships": [],
+              "tags": [
+                "SwissRailwaysReductionType.Foreigner"
+              ],
+              "refId": "pax-2"
+            }
+          ]
+        },
+        "type": "accommodation",
+        "externallyPaidCharges": [],
+        "voucherUrl": "https://booking.example.invalid/itineraries/demo-02-booking-0001/generated-vouchers.pdf"
+      }
+    },
+    {
+      "type": "component",
+      "id": "demo-02-component-0034",
+      "attributes": {
+        "refundable": true,
+        "startDateTime": "2026-04-25T12:00:00.000+02:00",
+        "isOnRequest": false,
+        "componentVoucherUrl": "https://booking.example.invalid/itineraries/demo-02-booking-0001/components/demo-02-component-0034/generated-vouchers.pdf",
+        "status": "Booked",
+        "remarks": "Das traditionsreiche Hotel Zurigo*** ist seit 1951 ein Familienbetrieb. Es befindet sich in einem historischen Gebäude im Zentrum von Lugano mit einem nach Süden gerichteten Garten und es verfügt über eine Tiefgarage mit 30 Parkplätzen. Gegenüber des Hotels befindet sich die Bus-, Postauto Haltestelle, Publibike und in unmittelbarer Nähe der Luganersee, das Kongresszentrum, der Parco Villa Ciani, die Universität, das Casinò, Banken und Museen. Einen 2 Minuten langen Spaziergang bringt Sie zur Piazza Riforma und Via Nassa mit vielen Restaurants und Boutiques. Standard und Superior Zimmer, alle mit Dusche/WC, direkter Telefonlinie, Kabel-TV mit 80 Kanälen, Radio, Minibar, Safe und Internet Wireless gratis. Die Superior Zimmer sind alle mit Klimaanlagen. Ein Lift bringt die Gäste direkt von der Tiefgarage zu den Zimmern. Das Hotel verfügt über eine Video-Überwachung. Lizenznummer:228",
+        "productRefId": "p_g_n86jkk49",
+        "moduleRefId": "m0026127",
+        "desc": "Hotel Zurigo, Doppelzimmer Comfort Innenhof",
+        "endDateTime": "2026-04-26T12:00:00.000+02:00",
+        "categoryName": "Doppelzimmer Comfort Innenhof",
+        "productSupplier": "stcflex",
+        "price": {
+          "salesPrice": {
+            "amount": 5497,
+            "currency": "CHF"
+          },
+          "netPrice": {
+            "amount": 9969.0,
+            "currency": "CHF"
+          },
+          "details": {
+            "supplierPurchasePrice": {
+              "amount": 9969.0,
+              "currency": "CHF"
+            },
+            "markups": [
+              {
+                "markupType": "TourOperatorBase",
+                "priceWithoutMarkup": {
+                  "amount": 9969.0,
+                  "currency": "CHF"
+                },
+                "priceWithMarkup": {
+                  "amount": 9969.0,
+                  "currency": "CHF"
+                },
+                "totalMarkup": {
+                  "amount": 0,
+                  "currency": "CHF"
+                }
+              },
+              {
+                "markupType": "TourOperatorAgency",
+                "priceWithoutMarkup": {
+                  "amount": 9969.0,
+                  "currency": "CHF"
+                },
+                "priceWithMarkup": {
+                  "amount": 6302.0,
+                  "currency": "CHF"
+                },
+                "totalMarkup": {
+                  "amount": 2410.0,
+                  "currency": "CHF"
+                }
+              }
+            ],
+            "purchaseAmountExcludedFromMarkups": {
+              "amount": 0,
+              "currency": "CHF"
+            }
+          }
+        },
+        "productExternalRefId": "90!~|x3!~|v582478!~|g072197!~|y10690!~|n9!~|r3!~|aWS!~|gRD!~|jie!~|cRGC!~|j2!~|l1360!~|e05724!~|q7!~|n3!~|b1!~|h26223216!~|kTYG!~|bKKP!~|cBEE!~|bMYM!~|A920!~|Q4!~|Esawfi!~|ODCZ!~|Z!~|W7!~|L!~|D!~|h1#RWX!~|YMAK!~|QKET!~|J64|87!~|DGkndcmmtovup Npjmive Jsixpljb!~|NNwvpdxbhumil Aghdxvg Pykqgmjw!~|D3!~|l0#AWZ!~|RGJP!~|JFOG!~|J04|50!~|LUoxjvdvmehtp Nmcobco Iwoznvxb!~|WCnecutixpglu Aqjukmf Wistutzx!~|I3!~|X0,496,3562688743!~|M0!~|XPGD#08824!~|B8!~|S4!~|I8!~|B1!~|UGEY#97780!~|P4!~|X2!~|U4!~|P769!~|P7##!~|O2!~|N6!~|W8!~|P138!~|Ex888a3wm-u170-0628-h62m-0gs0vsx7t64z!~|I6!~|N2!~|S5!~|E591!~|E8#!~|F7!~|P2!~|U4!~|qQX!~|qLlqozanlqf!~|a6!~|x!~|t!~|y!~|v5!~|h!~|",
+        "supplier": {
+          "id": "STC",
+          "bookingReference": "demo-02-supplier-booking-0033"
+        },
+        "productName": "Hotel Zurigo",
+        "cancellationPeriods": [
+          {
+            "from": "2026-04-24",
+            "to": "2026-04-26",
+            "fee": {
+              "amount": 9969.0,
+              "currency": "CHF"
+            }
+          }
+        ],
+        "startLocation": {
+          "countries": [
+            "CH"
+          ],
+          "city": "Lugano"
+        },
+        "isAdhoc": false,
+        "room": {
+          "roomIndex": 1,
+          "desc": "Doppelzimmer Comfort Innenhof",
+          "numPax": 2,
+          "paxInfo": [
+            {
+              "firstName": "Testperson03",
+              "lastName": "Mustergast03",
+              "gender": "Female",
+              "birthDate": "1959-01-01",
+              "age": 67,
+              "nationality": "Deutschland",
+              "nationalityCode": "DE",
+              "loyaltyProgramMemberships": [],
+              "tags": [
+                "SwissRailwaysReductionType.Foreigner"
+              ],
+              "refId": "pax-3"
+            },
+            {
+              "firstName": "Testperson04",
+              "lastName": "Mustergast04",
+              "gender": "Male",
+              "birthDate": "1962-01-01",
+              "age": 64,
+              "nationality": "Deutschland",
+              "nationalityCode": "DE",
+              "loyaltyProgramMemberships": [],
+              "tags": [
+                "SwissRailwaysReductionType.Foreigner"
+              ],
+              "refId": "pax-4"
+            }
+          ]
+        },
+        "type": "accommodation",
+        "externallyPaidCharges": [
+          {
+            "name": "Kurtaxe",
+            "value": {
+              "amount": 2813,
+              "currency": "CHF"
+            },
+            "chargeType": "AdditionalFees"
+          },
+          {
+            "name": "Kurtaxe",
+            "value": {
+              "amount": 2813,
+              "currency": "CHF"
+            },
+            "chargeType": "AdditionalFees"
+          }
+        ],
+        "voucherUrl": "https://booking.example.invalid/itineraries/demo-02-booking-0001/generated-vouchers.pdf"
+      }
+    },
+    {
+      "type": "component",
+      "id": "demo-02-component-0035",
+      "attributes": {
+        "refundable": true,
+        "startDateTime": "2026-04-26T07:18:00.000+02:00",
+        "supplier": {
+          "id": "612f4724260000b19e84f3b4",
+          "name": "Schweizerische Bundesbahnen SBB AG",
+          "externalReferences": [
+            {
+              "id": "SBB",
+              "system": "Midoco"
+            }
+          ],
+          "email": "supplier@example.invalid",
+          "bookingReference": "demo-02-supplier-booking-0036"
+        },
+        "isOnRequest": false,
+        "endLocation": {
+          "countries": [
+            "CH"
+          ],
+          "city": "Lucerne"
+        },
+        "status": "Booked",
+        "type": "activity",
+        "productRefId": "5d1f1710010000d2e0b0a8bd",
+        "moduleRefId": "m0026127",
+        "desc": "Gotthard Panorama Express Lugano – Lucerne, Sitzplatzreservation",
+        "endDateTime": "2026-04-26T12:47:00.000+02:00",
+        "categoryName": "Sitzplatzreservation",
+        "productSupplier": "stcflex",
+        "price": {
+          "salesPrice": {
+            "amount": 6625,
+            "currency": "CHF"
+          },
+          "netPrice": {
+            "amount": 7392.0,
+            "currency": "CHF"
+          },
+          "details": {
+            "supplierPurchasePrice": {
+              "amount": 7392.0,
+              "currency": "CHF"
+            },
+            "markups": [
+              {
+                "markupType": "TourOperatorBase",
+                "priceWithoutMarkup": {
+                  "amount": 7392.0,
+                  "currency": "CHF"
+                },
+                "priceWithMarkup": {
+                  "amount": 7392.0,
+                  "currency": "CHF"
+                },
+                "totalMarkup": {
+                  "amount": 0,
+                  "currency": "CHF"
+                }
+              },
+              {
+                "markupType": "TourOperatorAgency",
+                "priceWithoutMarkup": {
+                  "amount": 7392.0,
+                  "currency": "CHF"
+                },
+                "priceWithMarkup": {
+                  "amount": 1568.0,
+                  "currency": "CHF"
+                },
+                "totalMarkup": {
+                  "amount": 5184.0,
+                  "currency": "CHF"
+                }
+              }
+            ],
+            "purchaseAmountExcludedFromMarkups": {
+              "amount": 0,
+              "currency": "CHF"
+            }
+          }
+        },
+        "productName": "Gotthard Panorama Express Lugano – Lucerne",
+        "cancellationPeriods": [],
+        "startLocation": {
+          "countries": [
+            "CH"
+          ],
+          "city": "Lugano"
+        },
+        "isAdhoc": false
+      }
+    },
+    {
+      "type": "component",
+      "id": "demo-02-component-0037",
+      "attributes": {
+        "refundable": true,
+        "startDateTime": "2026-04-26T12:00:00.000+02:00",
+        "isOnRequest": false,
+        "componentVoucherUrl": "https://booking.example.invalid/itineraries/demo-02-booking-0001/components/demo-02-component-0037/generated-vouchers.pdf",
+        "status": "Booked",
+        "remarks": "Das Ambassador Self Check in Hotel, das sich im \"Löwencenter\" befindet, liegt an einem der lebendigsten Plätze Luzerns. Altstadt, Löwendenkmal, Vierwaldstättersee, Panorama: Alles liegt nah. Die Zimmer des Dreistern-Hotels sind ausgestattet mit Bad/WC oder Dusche/WC, W-LAN (kostenfrei), Radio, TV und Minibar.",
+        "productRefId": "p_g_414r6ql9",
+        "moduleRefId": "m0026127",
+        "desc": "Ambassador, Doppel / Twin Standard",
+        "endDateTime": "2026-04-27T12:00:00.000+02:00",
+        "categoryName": "Doppel / Twin Standard",
+        "productSupplier": "stcflex",
+        "price": {
+          "salesPrice": {
+            "amount": 377,
+            "currency": "CHF"
+          },
+          "netPrice": {
+            "amount": 8605.0,
+            "currency": "CHF"
+          },
+          "details": {
+            "supplierPurchasePrice": {
+              "amount": 8605.0,
+              "currency": "CHF"
+            },
+            "markups": [
+              {
+                "markupType": "TourOperatorBase",
+                "priceWithoutMarkup": {
+                  "amount": 8605.0,
+                  "currency": "CHF"
+                },
+                "priceWithMarkup": {
+                  "amount": 8605.0,
+                  "currency": "CHF"
+                },
+                "totalMarkup": {
+                  "amount": 0,
+                  "currency": "CHF"
+                }
+              },
+              {
+                "markupType": "TourOperatorAgency",
+                "priceWithoutMarkup": {
+                  "amount": 8605.0,
+                  "currency": "CHF"
+                },
+                "priceWithMarkup": {
+                  "amount": 7284.0,
+                  "currency": "CHF"
+                },
+                "totalMarkup": {
+                  "amount": 6326.0,
+                  "currency": "CHF"
+                }
+              }
+            ],
+            "purchaseAmountExcludedFromMarkups": {
+              "amount": 0,
+              "currency": "CHF"
+            }
+          }
+        },
+        "productExternalRefId": "61!~|c2!~|m532172!~|q598837!~|s00524!~|t3!~|f5!~|rGG!~|nYI!~|fmi!~|bWHK!~|r7!~|v0035!~|x67482!~|k4!~|x2!~|s3!~|i16623074!~|mMJG!~|cASU!~|oECE!~|sJPU!~|J572.2!~|U9!~|Vzepda!~|SJTR!~|T!~|F7!~|L!~|A!~|b4#6RCTvw!~|C3WINhk!~|K0ZMYnc!~|B77|66!~|CRnbdxc / Vlyg Pfpwgqtn!~|DYsupxq / Siun Dvpxbssh!~|T3!~|d9#9SAOww!~|J1IZUdy!~|T8ITNnk!~|J49|61!~|VHvfqtm / Dlgg Irthgngi!~|VCqtlbe / Jpdo Volbkyme!~|N3!~|H1,598.30,3002345899!~|B1!~|UZNS#68284!~|L2!~|A2!~|C7!~|W7!~|FTAU#16767!~|Z7!~|I6!~|J8!~|O077!~|Y3##!~|Q9!~|D0!~|T2!~|V587!~|Gwr89t4dj-4t9y-6268-781r-77m65ajprmzz!~|R5!~|T1!~|J5!~|I942!~|Z3#!~|A3!~|S7!~|K6!~|wLG!~|qWfezsgemgi!~|l9!~|k!~|t!~|e!~|c4!~|b!~|",
+        "supplier": {
+          "id": "STC",
+          "bookingReference": "demo-02-supplier-booking-0038"
+        },
+        "productName": "Ambassador",
+        "cancellationPeriods": [
+          {
+            "from": "2026-04-24",
+            "to": "2026-04-27",
+            "fee": {
+              "amount": 8605.0,
+              "currency": "CHF"
+            }
+          }
+        ],
+        "startLocation": {
+          "countries": [
+            "CH"
+          ],
+          "city": "Luzern"
+        },
+        "isAdhoc": false,
+        "room": {
+          "roomIndex": 1,
+          "desc": "Doppel / Twin Standard",
+          "numPax": 2,
+          "paxInfo": [
+            {
+              "firstName": "Testperson01",
+              "lastName": "Mustergast01",
+              "gender": "Female",
+              "birthDate": "1953-01-01",
+              "age": 73,
+              "nationality": "Deutschland",
+              "nationalityCode": "DE",
+              "isMainContact": true,
+              "loyaltyProgramMemberships": [],
+              "tags": [
+                "SwissRailwaysReductionType.Foreigner"
+              ],
+              "address": {},
+              "refId": "pax-1"
+            },
+            {
+              "firstName": "Testperson02",
+              "lastName": "Mustergast02",
+              "gender": "Male",
+              "birthDate": "1956-01-01",
+              "age": 70,
+              "nationality": "Deutschland",
+              "nationalityCode": "DE",
+              "loyaltyProgramMemberships": [],
+              "tags": [
+                "SwissRailwaysReductionType.Foreigner"
+              ],
+              "refId": "pax-2"
+            }
+          ]
+        },
+        "type": "accommodation",
+        "externallyPaidCharges": [],
+        "voucherUrl": "https://booking.example.invalid/itineraries/demo-02-booking-0001/generated-vouchers.pdf"
+      }
+    },
+    {
+      "type": "component",
+      "id": "demo-02-component-0039",
+      "attributes": {
+        "refundable": true,
+        "startDateTime": "2026-04-26T12:00:00.000+02:00",
+        "isOnRequest": false,
+        "componentVoucherUrl": "https://booking.example.invalid/itineraries/demo-02-booking-0001/components/demo-02-component-0039/generated-vouchers.pdf",
+        "status": "Booked",
+        "remarks": "Das Ambassador Self Check in Hotel, das sich im \"Löwencenter\" befindet, liegt an einem der lebendigsten Plätze Luzerns. Altstadt, Löwendenkmal, Vierwaldstättersee, Panorama: Alles liegt nah. Die Zimmer des Dreistern-Hotels sind ausgestattet mit Bad/WC oder Dusche/WC, W-LAN (kostenfrei), Radio, TV und Minibar.",
+        "productRefId": "p_g_414r6ql9",
+        "moduleRefId": "m0026127",
+        "desc": "Ambassador, Doppel / Twin Standard",
+        "endDateTime": "2026-04-27T12:00:00.000+02:00",
+        "categoryName": "Doppel / Twin Standard",
+        "productSupplier": "stcflex",
+        "price": {
+          "salesPrice": {
+            "amount": 377,
+            "currency": "CHF"
+          },
+          "netPrice": {
+            "amount": 8605.0,
+            "currency": "CHF"
+          },
+          "details": {
+            "supplierPurchasePrice": {
+              "amount": 8605.0,
+              "currency": "CHF"
+            },
+            "markups": [
+              {
+                "markupType": "TourOperatorBase",
+                "priceWithoutMarkup": {
+                  "amount": 8605.0,
+                  "currency": "CHF"
+                },
+                "priceWithMarkup": {
+                  "amount": 8605.0,
+                  "currency": "CHF"
+                },
+                "totalMarkup": {
+                  "amount": 0,
+                  "currency": "CHF"
+                }
+              },
+              {
+                "markupType": "TourOperatorAgency",
+                "priceWithoutMarkup": {
+                  "amount": 8605.0,
+                  "currency": "CHF"
+                },
+                "priceWithMarkup": {
+                  "amount": 7284.0,
+                  "currency": "CHF"
+                },
+                "totalMarkup": {
+                  "amount": 6326.0,
+                  "currency": "CHF"
+                }
+              }
+            ],
+            "purchaseAmountExcludedFromMarkups": {
+              "amount": 0,
+              "currency": "CHF"
+            }
+          }
+        },
+        "productExternalRefId": "52!~|y7!~|n846878!~|c345847!~|n06503!~|q3!~|p8!~|rEL!~|nFL!~|ibf!~|oJCB!~|f4!~|b7514!~|u30513!~|o4!~|j3!~|j3!~|v47944545!~|aZXA!~|kHCU!~|bEON!~|hHPV!~|M430.3!~|L1!~|Njrcax!~|WASU!~|O!~|W5!~|S!~|K!~|i0#3SLHrv!~|N9GIFxi!~|R1FXUav!~|W94|57!~|YUudnjk / Cklc Nbwcdjyg!~|TIznanj / Uppz Alwrbrry!~|T9!~|e9#5TBCmi!~|G3XGIhr!~|J3UPIsc!~|K48|17!~|ILvbkul / Lnvk Kyandkxv!~|PXkhvsx / Jkre Jzgrehbd!~|F3!~|N0,581.26,1931229569!~|W7!~|ZWAX#31472!~|Y6!~|T7!~|B4!~|G4!~|TNYQ#75189!~|Q0!~|I9!~|I0!~|X909!~|I3##!~|A5!~|Y1!~|E6!~|O491!~|Nls42d7bc-0o1x-5283-042c-12s09hhzmcfm!~|Q5!~|S7!~|B6!~|R700!~|T4#!~|F3!~|K1!~|C5!~|eVS!~|cBgmzearpha!~|i8!~|v!~|f!~|s!~|z9!~|t!~|",
+        "supplier": {
+          "id": "STC",
+          "bookingReference": "demo-02-supplier-booking-0038"
+        },
+        "productName": "Ambassador",
+        "cancellationPeriods": [
+          {
+            "from": "2026-04-24",
+            "to": "2026-04-27",
+            "fee": {
+              "amount": 8605.0,
+              "currency": "CHF"
+            }
+          }
+        ],
+        "startLocation": {
+          "countries": [
+            "CH"
+          ],
+          "city": "Luzern"
+        },
+        "isAdhoc": false,
+        "room": {
+          "roomIndex": 2,
+          "desc": "Doppel / Twin Standard",
+          "numPax": 2,
+          "paxInfo": [
+            {
+              "firstName": "Testperson03",
+              "lastName": "Mustergast03",
+              "gender": "Female",
+              "birthDate": "1959-01-01",
+              "age": 67,
+              "nationality": "Deutschland",
+              "nationalityCode": "DE",
+              "loyaltyProgramMemberships": [],
+              "tags": [
+                "SwissRailwaysReductionType.Foreigner"
+              ],
+              "refId": "pax-3"
+            },
+            {
+              "firstName": "Testperson04",
+              "lastName": "Mustergast04",
+              "gender": "Male",
+              "birthDate": "1962-01-01",
+              "age": 64,
+              "nationality": "Deutschland",
+              "nationalityCode": "DE",
+              "loyaltyProgramMemberships": [],
+              "tags": [
+                "SwissRailwaysReductionType.Foreigner"
+              ],
+              "refId": "pax-4"
+            }
+          ]
+        },
+        "type": "accommodation",
+        "externallyPaidCharges": [],
+        "voucherUrl": "https://booking.example.invalid/itineraries/demo-02-booking-0001/generated-vouchers.pdf"
+      }
+    }
+  ]
+}

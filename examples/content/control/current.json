@@ -1,0 +1,6 @@
+{
+  "schemaVersion": "1.0",
+  "releaseId": "demo-001",
+  "manifestPath": "releases/demo-001/manifest.json",
+  "manifestSha256": "f1aaa9327c1939fd95ffc50533ef60b645eb31b4698e8be0cc7dece3029604d2"
+}

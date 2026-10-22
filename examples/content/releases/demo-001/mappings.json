@@ -1,0 +1,13 @@
+{
+  "schemaVersion": "1.0",
+  "releaseId": "demo-001",
+  "mappings": [
+    {
+      "sourceSystem": "nezasa",
+      "sourceNamespace": "demo-tour-operator",
+      "referenceType": "booking.modules[].refId",
+      "referenceValue": "demo-module-001",
+      "packageId": "pkg-demo-classic"
+    }
+  ]
+}
