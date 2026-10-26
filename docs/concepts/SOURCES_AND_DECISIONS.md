@@ -1,6 +1,6 @@
 # Quellen und Entscheidungsverlauf
 
-Aufgenommen / zuletzt abgeglichen: 22.10.2026. Aktuelle Nutzerentscheidungen haben Vorrang vor älteren Dokumenten. Aktueller Stand: [README](../../README.md); offene Implementierungsentscheidungen: [OPEN_DECISIONS](../OPEN_DECISIONS.md).
+Aufgenommen: 22.10.2026. Zuletzt abgeglichen: 26.10.2026. Aktuelle Nutzerentscheidungen haben Vorrang vor älteren Dokumenten. Aktueller Stand: [README](../../README.md); offene Implementierungsentscheidungen: [OPEN_DECISIONS](../OPEN_DECISIONS.md).
 
 **Kennzeichnung:** Nutzerentscheidung = bestätigter Scope; Quellenmaterial = Kontext mit möglichem Altersrisiko; Vorschlag = noch abzustimmen; Codebeobachtung = implementiertes Verhalten, keine Garantie über alle Serverantworten.
 
@@ -20,6 +20,18 @@ Aufgenommen / zuletzt abgeglichen: 22.10.2026. Aktuelle Nutzerentscheidungen hab
 
 S10: Am 22.10.2026 liefert der Nutzer vier weitere Buchungs-JSONs und beauftragt Anonymisierung, fiktive Preise und Veröffentlichung als Beispiele. Sie sind als Beispiele 03–06 ergänzt; bestehende Beispiele unverändert. Der [Beispielkatalog](../../examples/nezasa/README.md) dokumentiert Abdeckung, synthetisierte Inhalte und Prüfungen.
 
+S11: Anwendungsentwicklung, IT-Bereitstellung und fachliche Abnahme sind getrennte Rollen. Die Bereitstellung der Infrastruktur ist nicht bestätigt. Personen- und Dienstleisternamen werden in der öffentlichen Dokumentation nicht geführt.
+
+S12: Managementunterlagen sind auf Nutzeranweisung vom 23.10.2026 vertraulich und von der Veröffentlichung ausgeschlossen. Öffentliche Entwicklungsdokumente enthalten keine internen Vertrags-, Kosten-, Personal- oder Abstimmungsdetails.
+
+S13: Ergänzter Entwicklungsstand: Export-Prototypen und interne Tests sind laut Nutzerangaben vorhanden; ein aktueller Template-Export liegt vor. Anwendungscode und Template-Datei sind hier nicht abgelegt. Eine operative Abnahme ist nicht bestätigt. Der Hinweis korrigiert die frühere pauschale Aussage, die Anwendung sei noch vollständig zu bauen; die Original-Artefakte wurden nicht technisch geprüft.
+
+S14 (26.10.2026, Nutzerentscheidung): Nezasa bleibt die zentrale Datei. Azure enthält nur ausdrücklich abgegrenzte redaktionelle Ergänzungen; keine zweite Pflege von Buchungsfakten. Allgemeine Anreisehinweise gehören zu Preparation. Basisinhalte und gezielte Produkt-/Saison-/Anreisevarianten vermeiden Doppelpflege. Drittquellen können später einzelne Ergänzungsfelder übernehmen; keine manuelle Spiegelung ihrer Inhalte auf Azure. Begründung: geringer Pflegeaufwand und austauschbare Inhaltsquellen. Ersetzt den zuvor offenen allgemeinen Inhaltsumfang aus S5; konkrete Betriebs- und Freigabefragen bleiben offen.
+
+S15 (26.10.2026, Nutzerentscheidung): Grand Tour ist die Autoreise ohne Züge, Grand Train Tour enthält GEX und BEX. Hero-Priorität: GEX, BEX, GoldenPass; ohne Zug Auto-/Skimotiv für diese Reisearten, sonst Zermatt, Luzern, neutrales Schweiz-Bild. Saisonversion vor Standard desselben Motivs; Anreisegebiet verändert keine Bilder. Gotthard nach GoldenPass bleibt eine vorläufige Einordnung. Details und Grenzen im [Inhaltskonzept](../CONTENT_STRUCTURE.md).
+
+S16 (26.10.2026, Nutzerentscheidung): Öffentliche Updates enthalten nur konzeptionelle Informationen ohne Personen- oder Dienstleisternamen. Managementunterlagen, lokale Upload-Pakete, interne Kommunikation und vertrauliche Details werden nicht veröffentlicht.
+
 S8 verweist auf einen [Arbeitsprozess in Confluence](https://switzerlandtravelcentre.atlassian.net/wiki/x/AgDlIQ) und SharePoint. Das sind Nutzerangaben zu Ablageorten; die Inhalte wurden nicht geprüft.
 
 S2s bisheriger Reiseablauf ist ausdrücklich keine Benchmark/Zielvorlage. Der historische JSON-Abdruck mit Reisezeitraum 2024 ist keine direkt ausführbare Fixture. Für Entwicklung die maschinenlesbaren Beispiele aus S4 verwenden.
@@ -36,7 +48,7 @@ S2s bisheriger Reiseablauf ist ausdrücklich keine Benchmark/Zielvorlage. Der hi
 | C06: Quellenalter | Dokumentdatum beweist keine Aktualität; aktive Fixtures und aktuelle Entscheidungen vorziehen. |
 | 80 % vs. 50 % | Älteres langfristiges Ziel vs. aktuelle erste Schätzung; weder gemessen noch Abnahmegrenze. |
 | Word im Upstream „on hold“ | Betrifft frühere Fetcher-Experimente, nicht den CheckinCheckout-MVP. |
-| API unbestätigt / kein Anwendungscode | Durch Integration (S6) und Nutzerbestätigung (S7) überholt. Finales Produkt weiterhin nicht implementiert. |
+| API unbestätigt / kein Anwendungscode | Durch Integration (S6) und Nutzerbestätigung (S7) überholt. S13 ergänzt: Export-Prototypen und überarbeitete Versionen sind laut Projektangaben vorhanden. Anwendungscode fehlt in diesem Repository; eine operative Abnahme ist noch nicht bestätigt. |
 
 ## Herkunft der aktuellen Entscheidungen
 

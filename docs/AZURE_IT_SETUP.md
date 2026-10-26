@@ -1,6 +1,6 @@
 # Azure-Grundstruktur für IT-Support
 
-Stand: 22.10.2026. Technischer Einrichtungsvorschlag für das Projekt Check In Check Out.
+Stand: 26.10.2026. Technischer Einrichtungsvorschlag für das Projekt Check In Check Out.
 
 ## Auftrag und Status
 
@@ -9,6 +9,12 @@ Stand: 22.10.2026. Technischer Einrichtungsvorschlag für das Projekt Check In C
 **Vorschlag dieses Dokuments:** Azure Blob Storage als gemeinsame Inhaltsablage mit getrennten Umgebungen, kontrollierter Veröffentlichung und lesendem Anwendungszugriff. Dies ist eine konkrete Basis zur Einrichtung durch IT, aber noch keine produktiv bereitgestellte Infrastruktur. Anwendungs-Hosting und Nezasa-Anbindung werden damit nicht festgelegt.
 
 Die fachliche Ablagestruktur und der vorgeschlagene JSON-Vertrag stehen in [CONTENT_STRUCTURE.md](CONTENT_STRUCTURE.md). Synthetische Beispiele liegen unter [examples/content](../examples/content/README.md).
+
+## Begrenzter Inhaltsumfang
+
+Nezasa ist die zentrale Buchungsquelle. Diese Ablage enthält nur redaktionelle Ergänzungen und notwendige Auswahlmetadaten: keine Kunden, Preise, gebuchten Leistungen oder separat gepflegten Reiseabläufe. Für die Inhaltsablage ist keine zusätzliche Datenbank und kein KI-Dienst erforderlich.
+
+Die Anwendung liest einen freigegebenen Datenstand und nur die benötigten Ergänzungen. Technische Schemas und Tests können beim Consumer bleiben; Versionsverweise und Prüfsummen werden automatisch erzeugt. Spätere Drittquellen werden je Ergänzungsfeld in der Anwendung angebunden, ohne ihre Inhalte manuell auf Azure zu spiegeln. Die bestehenden Ressourcen- und Netzwerkabschnitte bleiben ein IT-Entwurf, keine bestätigte Bereitstellung.
 
 ## Ressourcen pro Umgebung
 

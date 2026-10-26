@@ -16,7 +16,10 @@ Lies [README](README.md) und [Entwicklungsstart](docs/DEVELOPMENT.md). Öffne da
 - Der Fetcher liefert nur JSON-Testdaten. Die finale Anwendung integriert den Abruf selbst und erzeugt direkt Word; baue sie nicht stillschweigend als Erweiterung der Desktop-GUI.
 - Buchungsfakten erhalten. Gesamtbuchungsstatus nicht auf alle Leistungen übertragen; keine Zeiten, Leistungen, Zahlungen oder Reservierungen erfinden.
 - Nezasa-Beispiele unverändert lassen: Schlüssel, Reihenfolge, Container, Datentypen und bereinigte Werte gehören zur Testbasis. Metadaten in Begleitdokumenten führen.
+- Vertrauliche Managementunterlagen unter docs/management/ bleiben ausschliesslich lokal. Niemals stagen, committen, pushen oder anderweitig veröffentlichen; auch nicht mit git add -f. Interne Vertrags-, Kosten-, Personal- und Abstimmungsdetails daraus nicht in öffentliche Dokumente übernehmen. Vor Commit/Push prüfen, dass weder dieser Ordner noch Kopien seiner vertraulichen Inhalte enthalten sind.
 - Keine Rohbuchungen, Kundendaten, Zugangsdaten, zugangstragenden Links oder generierten Kundendokumente ins öffentliche Git. Neue Fixtures separat bereinigen und explizit freigeben.
+- Öffentliche Updates beschreiben Konzepte und Rollen ohne Personen-/Dienstleisternamen oder interne Kontaktdaten.
+- Nezasa ist die Hauptquelle; Azure ergänzt nur die in CONTENT_STRUCTURE.md genannten Variablen. Fehlende Buchungsfakten nicht auf Azure nachpflegen.
 - Azure-Struktur und Inhaltsvertrag sind Entwürfe. Synthetische Package-Referenzen nicht als reale Zuordnungen behandeln.
 - Offene Fragen blockieren nur die davon abhängige Arbeit. Unabhängige, reversible Umsetzung fortsetzen.
 

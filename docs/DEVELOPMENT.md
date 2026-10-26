@@ -34,7 +34,7 @@ Channel, API-Benutzer, Buchungs-ID und Passwort werden in der GUI eingegeben. Be
 | [docs/AZURE_IT_SETUP.md](AZURE_IT_SETUP.md) | Technische IT-Einrichtungsgrundlage, keine vorhandene Bereitstellung. |
 | [docs/concepts/](concepts/README.md) | Hintergrund, Quellen und frühere Aussagen; bei Bedarf lesen. |
 
-Die finale Anwendung hat noch keinen Codeordner. Neue Komponenten erst mit einer konkreten Aufgabe und Schnittstelle anlegen; die fachlichen Schichten sind keine Vorgabe für mehrere Services.
+Der vorhandene Lösungsstand mit Export-Prototypen und internen Tests ist laut Projektverlauf vorhanden (S13); sein Anwendungscode ist nicht in diesem Repository enthalten. Neue Komponenten erst mit einer konkreten Aufgabe und Schnittstelle anlegen; die fachlichen Schichten sind keine Vorgabe für mehrere Services.
 
 ## Zwei Arbeitsabläufe
 
@@ -52,15 +52,16 @@ Ein manueller JSON-Export ist kein notwendiger Produktionsschritt. Der bestehend
 - Zuerst eine [Beispielbuchung](../examples/nezasa/README.md) wählen. Komponenten über die Ressourcenbeziehungen auflösen; mehrere Zimmer im selben Hotel nicht automatisch zusammenfassen.
 - Gesamtstatus und Leistungsstatus getrennt behandeln. Alle sechs Beispiele enthalten Booked und Open; Deutsch, Englisch und Französisch sowie Kinder und Zahlungstransaktionen sind abgedeckt.
 - Kalenderdaten, Zeitstempel und Zeitzonen nicht ungeprüft gleichsetzen. Tageszuordnung und Darstellung brauchen abgestimmte Regeln.
-- Erweiterte Inhalte getrennt von den Quelldaten verarbeiten; keine Fixtures durch Anreicherung umschreiben.
+- Nezasa bleibt die zentrale Quelle. Nur freigegebene Ergänzungsfelder aus Azure oder Drittquellen setzen; keine Fixtures durch Anreicherung umschreiben.
+- Quellen pro Ergänzungsfeld austauschbar halten. Keine manuelle Spiegelung von Drittanbieterdaten auf Azure; Fallbacks ausdrücklich definieren.
 - Das [Inhaltsbeispiel](../examples/content/README.md) demonstriert nur den vorgeschlagenen Release-Vertrag. Es ist nicht mit den Buchungsbeispielen verknüpft.
-- Es gibt noch kein Ziel-DOCX, keine Bildfixture, keinen vollständigen Nezasa-Schemavertrag und keinen produktiven Publisher.
+- Im Repository liegt noch kein freigegebenes Ziel-DOCX. Die aktuelle Word-Inhaltsvorlage für die fachliche Prüfung heranziehen; die Datei ist hier nicht abgelegt. Bildfixture, vollständiger Nezasa-Schemavertrag und produktiver Publisher fehlen ebenfalls.
 
 ## Nächste sinnvolle Umsetzung
 
-1. Sales liefert eine akzeptierte Zielvorlage und bestätigt Pflichtinhalte sowie Status-/Tagesregeln ([D01–D03](OPEN_DECISIONS.md)).
+1. Sales prüft die aktuelle Word-Inhaltsvorlage, gibt die Zielvorlage frei und bestätigt Pflichtinhalte sowie Status-/Tagesregeln ([D01–D03](OPEN_DECISIONS.md)).
 2. Einen kleinen, repräsentativen Reiseablauf als überprüfbaren Input/Output-Fall definieren.
-3. Stack und Laufzeit für die finale Anwendung wählen ([D04](OPEN_DECISIONS.md)); ersten Weg vom Abruf zum DOCX umsetzen.
+3. Vorhandenen Lösungsstand und Laufzeit technisch klären ([D04](OPEN_DECISIONS.md)); den Weg vom Abruf zum DOCX prüfen und verbleibende Lücken schliessen.
 4. Redaktionelle Inhalte nach bestätigter Referenzsemantik anbinden ([D05–D06](OPEN_DECISIONS.md)).
 5. Word-Bearbeitbarkeit mit Sales prüfen und den Finalisierungsaufwand im Pilot messen.
 

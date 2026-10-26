@@ -30,3 +30,6 @@ __pycache__/
 /exports/
 /output/
 /output_docs/
+
+# Confidential local management documents; never commit or publish.
+/docs/management/

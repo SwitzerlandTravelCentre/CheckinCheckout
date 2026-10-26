@@ -2,16 +2,17 @@
 
 Aus Nezasa-Buchungen editierbare Word-Reiseunterlagen für Sales / Travel Agents erstellen. Dieses Repository enthält Entwicklungscode, bereinigte Testdaten und die dafür nötige Dokumentation.
 
-## Aktueller Stand · 22.10.2026
+## Aktueller Stand · 26.10.2026
 
 | Bereich | Stand |
 | --- | --- |
-| MVP-Ziel | Direkter Nezasa-Abruf in der finalen Anwendung → strukturiertes DOCX → manuelle Finalisierung in Word. Termin: **Ende Dezember 2026**. |
+| MVP-Ziel | B2C: direkter Nezasa-Abruf in der finalen Anwendung → strukturiertes DOCX → manuelle Finalisierung in Word. Termin: **Ende Dezember 2026**. |
+| Rollen | Anwendungsentwicklung, IT-Betrieb und fachliche Abnahme durch B2C. Inhaltspflege und Freigabeablauf sind noch zu konkretisieren. |
 | Vorhandener Code | Python-/Tkinter-Fetcher für JSON-Testdaten, mit Offline-Tests. Die API funktioniert laut Nutzerbestätigung. |
-| Noch zu bauen | Finale Anwendung mit eigenem Abruf, Verarbeitung, Inhaltsintegration und DOCX-Erzeugung. Ihr Stack ist offen. |
+| Anwendungsstand | Export-Prototypen und interne Tests sind laut Projektangaben vorhanden; eine Word-Inhaltsvorlage dient der weiteren fachlichen Prüfung. Anwendungscode ist in diesem Repository nicht enthalten. Operative Abnahme und dokumentierte technische Übergabe stehen aus. |
 | Fetcher-Rolle | Ausschliesslich Entwicklung; erzeugt nur JSON und wird final nicht benötigt. |
-| Azure | STC-Inhaltsablage für Bilder, Hinweise und Querverweise angefordert. Konkreter Entwurf vorhanden, noch nicht bereitgestellt. |
-| Nächste fachliche Grundlage | Akzeptierte Word-Zielvorlage, Pflichtinhalte/Sprachen sowie Tages- und Statusregeln festlegen. |
+| Azure | Schlanke Ergänzung für redaktionelle Texte und Bilder. Nezasa bleibt die Hauptquelle; keine manuelle Pflege von Buchungsfakten auf Azure. Bereitstellung noch nicht bestätigt. |
+| Nächste fachliche Grundlage | Aktuellen Template-Export fachlich prüfen und durch B2C freigeben; verbleibende Pflichtinhalte/Sprachen sowie Tages- und Statusregeln bestätigen. |
 
 Die aktuelle Grundlage ist in [MVP](docs/MVP.md) konkretisiert; die Herkunft der Entscheidungen steht im [Quellenregister](docs/concepts/SOURCES_AND_DECISIONS.md).
 
@@ -29,6 +30,10 @@ Die aktuelle Grundlage ist in [MVP](docs/MVP.md) konkretisiert; die Herkunft der
 | Mit einem AI-Coder arbeiten | [AGENTS.md](AGENTS.md) |
 | Fachlichen Hintergrund nachlesen | [Konzepte und Quellen](docs/concepts/README.md) |
 | Review-Ergebnis nachvollziehen | [Repository-Review](docs/reviews/2026-10-22.md) |
+
+## Aktuelle Inhaltsarchitektur
+
+Die Anwendung liest Nezasa und ergänzt ausschliesslich ausgewählte redaktionelle Variablen. Inhalte werden nach Produkt, Saison und Anreise ausgewählt; spätere Drittquellen können einzelne Ergänzungsfelder übernehmen. [Quellen, Auswahlregeln und Grenzen](docs/CONTENT_STRUCTURE.md). Die öffentlichen v1-Beispiele zeigen weiterhin nur den früheren Release-Vertrag, keine fertige Implementierung dieser Regeln.
 
 ## Testdaten sofort finden
 

@@ -1,5 +1,7 @@
 # Synthetisches Inhaltsrelease
 
+Hinweis vom 26.10.2026: Dieses Beispiel bleibt auf dem früheren Vertragsentwurf v1. Es implementiert noch nicht die aktuelle Quellenabgrenzung und Produkt-/Saison-/Anreiseauswahl aus dem [Inhaltskonzept](../../docs/CONTENT_STRUCTURE.md).
+
 Kleines, eigenständiges Beispiel zum vorgeschlagenen [Inhaltsvertrag](../../docs/CONTENT_STRUCTURE.md) und [Azure-Setup](../../docs/AZURE_IT_SETUP.md). Es ist lokal gespeichert und wurde nicht auf Azure veröffentlicht. [Zur Beispielübersicht](../README.md).
 
 | Datei | Zweck |

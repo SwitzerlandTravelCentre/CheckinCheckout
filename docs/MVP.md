@@ -1,31 +1,36 @@
 # MVP: Umfang und Abnahme
 
-Stand: 22.10.2026. Bestätigter Zielweg und Termin aus [S7](concepts/SOURCES_AND_DECISIONS.md); die fachlichen Details und Abnahmeszenarien unten sind noch abzustimmen.
+Stand: 26.10.2026. Bestätigter Zielweg und Termin aus [S7](concepts/SOURCES_AND_DECISIONS.md); die fachlichen Details und Abnahmeszenarien unten sind noch abzustimmen.
 
 ## Ergebnis
 
-Bis **Ende Dezember 2026** soll Sales / Travel Agents aus einer Nezasa-Buchung direkt ein sauber strukturiertes, bearbeitbares Word-Dokument erhalten. Die Anwendung integriert den Abruf selbst. Der separate Fetcher dient ausschliesslich der Beschaffung von JSON-Testdaten.
+Bis **Ende Dezember 2026** soll B2C Sales / Travel Agents aus einer Nezasa-Buchung direkt ein sauber strukturiertes, bearbeitbares Word-Dokument erhalten. Die Anwendung integriert den Abruf selbst. Der separate Fetcher dient ausschliesslich der Beschaffung von JSON-Testdaten.
 
 Travel Docs erklären die gesamte Reise vor und während der Reise: Hotels, Leistungen, Tagesabläufe, Zeiten sowie relevante Hinweise und Reservierungsinformationen. Ergänzende Tickets und Voucher können zum Reisedossier gehören; deren automatische Beschaffung ist nicht als MVP-Pflicht beschlossen.
+
+Zielgruppe ist zunächst B2C. Anwendungsentwicklung und IT-Bereitstellung sind getrennte Aufgaben (S11). Die fachliche Abnahme liegt bei B2C; operative Inhaltspflege und Freigabeablauf sind noch zu konkretisieren.
+
+Laut Projektangaben liegen Export-Prototypen und interne Tests vor. Eine Word-Inhaltsvorlage dient der fachlichen Weiterentwicklung. Diese Ergebnisse sind keine bestätigte operative Abnahme; Anwendungscode und Template-Datei sind hier nicht abgelegt.
 
 ## Umfang
 
 | Bereich | Arbeitsgrundlage |
 | --- | --- |
-| Buchungsquelle | Nezasa; API-Funktion durch Nutzer bestätigt. Produktionsadapter der finalen Anwendung noch zu bauen. |
-| Ausgabe | Neues, editierbares DOCX. Zielvorlage, Formatvorlagen und unterstützte Word-Umgebung offen. |
+| Buchungsquelle | Nezasa; API-Funktion durch Nutzer bestätigt. Produktionsadapter und Betriebsreife mit der Anwendungsentwicklung technisch klären; kein Anwendungscode in diesem Repository. |
+| Ausgabe | Neues, editierbares DOCX. Aktueller Template-Export vorhanden; fachliche Freigabe, Formatvorlagen und unterstützte Word-Umgebung noch zu bestätigen. |
 | Verarbeitung | Gebuchte Leistungen und tatsächlichen Reiseablauf korrekt darstellen; Regelkatalog offen. |
 | Kontrolle | Travel Agent prüft, ergänzt und finalisiert in Word. |
-| Redaktionelle Inhalte | Azure als Quelle für Bilder, Hinweise und Querverweise angefordert; benötigte Inhaltsarten im ersten MVP noch festzulegen. |
+| Redaktionelle Inhalte | Nur Ergänzungsfelder: Willkommen, Vorbereitung inkl. allgemeiner Anreisehinweise und Hero-Bild; Orts-/Tagesbeschreibungen und weitere Bilder bei Bedarf. Umfang und Quellen siehe [Inhaltsstruktur](CONTENT_STRUCTURE.md). |
 | Weitere Templates | Optionaler Konzeptvorschlag, keine Pflicht. |
 | Personalisierung / weitere Kanäle | Zukunftskontext; nicht aus der Vision in den MVP übernehmen. |
 
-Stack, Oberfläche und Betriebsmodell der finalen Anwendung sind noch nicht beschlossen. Die aktuellen Implementierungen und Beispiele sind in [README](../README.md) verzeichnet.
+Stack, Oberfläche und Betriebsmodell des vorhandenen Lösungsstands sind in diesem Repository noch nicht dokumentiert bzw. für den Betrieb bestätigt. Die aktuellen Implementierungen und Beispiele sind in [README](../README.md) verzeichnet.
 
 ## Fachliche Leitplanken
 
 - Gebucht, offen, inkludiert und bezahlt sind unterschiedliche Aussagen. Keine davon aus einer anderen ableiten.
-- Buchungsfakten und redaktionelle Ergänzungen unterscheidbar halten.
+- Nezasa ist die zentrale Quelle für Buchungsfakten. Azure enthält keine zweite Buchungs- oder Reiseablaufpflege.
+- Redaktionelle Inhalte nur in erlaubte Ergänzungsfelder einsetzen; spätere Drittquellen ersetzen deren Quelle, nicht die Template-Variable.
 - Fehlende Daten nicht durch erfundene Zeiten, Leistungen oder Reservierungen ersetzen.
 - Zimmer-/Reisendenzuordnungen erhalten; ähnliche Leistungen sind nicht automatisch Dubletten.
 - Der alte Nezasa-Word-Export zeigt Probleme, ist keine Zielvorlage.
